@@ -1,16 +1,41 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Card from "@/components/Card";
 import Badge from "@/components/Badge";
-import StatCard from "@/components/StatCard";
 import {
   botStatus,
   tradingSummary,
   todaySchedule,
-  weather,
   quickStats,
 } from "@/lib/mockData";
 
+interface WeatherData {
+  temp: number;
+  condition: string;
+  emoji: string;
+  high: number;
+  low: number;
+  humidity: number;
+  windspeed: number;
+  location: string;
+}
+
 export default function DashboardPage() {
   const pnlPositive = botStatus.todayPnl >= 0;
+
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  const [weatherLoading, setWeatherLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/weather")
+      .then((r) => r.json())
+      .then((data) => {
+        setWeather(data);
+        setWeatherLoading(false);
+      })
+      .catch(() => setWeatherLoading(false));
+  }, []);
 
   return (
     <div className="p-6 space-y-6">
@@ -140,23 +165,39 @@ export default function DashboardPage() {
         </Card>
 
         {/* ── Weather Card ── */}
-        <Card title="Weather" subtitle={weather.location}>
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-mono font-bold text-[#e8f5e9]">
-                  {weather.temp}°
-                </span>
-                <span className="text-lg text-[#81c784]">F</span>
-              </div>
-              <p className="text-[#81c784] mt-1">{weather.condition}</p>
-              <div className="flex gap-3 mt-2 text-xs font-mono text-[#81c784]">
-                <span>H: {weather.high}°</span>
-                <span>L: {weather.low}°</span>
+        <Card title="Weather" subtitle={weather?.location ?? "Los Angeles, CA"}>
+          {weatherLoading ? (
+            <div className="animate-pulse space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="space-y-2">
+                  <div className="h-10 w-24 bg-[#1e3320] rounded" />
+                  <div className="h-4 w-28 bg-[#1e3320] rounded" />
+                  <div className="h-3 w-20 bg-[#1e3320] rounded" />
+                </div>
+                <div className="h-14 w-14 bg-[#1e3320] rounded-full" />
               </div>
             </div>
-            <span className="text-6xl">{weather.emoji}</span>
-          </div>
+          ) : weather ? (
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-4xl font-mono font-bold text-[#e8f5e9]">
+                    {weather.temp}°
+                  </span>
+                  <span className="text-lg text-[#81c784]">F</span>
+                </div>
+                <p className="text-[#81c784] mt-1">{weather.condition}</p>
+                <div className="flex gap-3 mt-2 text-xs font-mono text-[#81c784]">
+                  <span>H: {weather.high}°</span>
+                  <span>L: {weather.low}°</span>
+                  <span>💧 {weather.humidity}%</span>
+                </div>
+              </div>
+              <span className="text-6xl">{weather.emoji}</span>
+            </div>
+          ) : (
+            <p className="text-[#81c784] text-sm">Unable to load weather.</p>
+          )}
         </Card>
 
         {/* ── Quick Stats Card ── */}

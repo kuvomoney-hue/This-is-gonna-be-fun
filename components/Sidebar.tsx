@@ -8,6 +8,7 @@ import {
   CheckSquare,
   FolderOpen,
   Bot,
+  Video,
 } from "lucide-react";
 
 const navItems = [
@@ -16,6 +17,7 @@ const navItems = [
   { href: "/tasks",    label: "Tasks",     icon: CheckSquare },
   { href: "/projects", label: "Projects",  icon: FolderOpen },
   { href: "/scout",    label: "Scout",     icon: Bot },
+  { href: "/videos",   label: "AI Videos", icon: Video },
 ];
 
 export default function Sidebar() {
