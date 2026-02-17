@@ -10,6 +10,7 @@ import {
   contextFilter,
   activePosition,
   robinhoodStatus,
+  equityStats,
 } from "@/lib/mockData";
 import {
   LineChart,
@@ -156,6 +157,83 @@ export default function TradingPage() {
             </div>
           )}
         </Card>
+      </div>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* EQUITY SIGNALS — SPY & QQQ */}
+      {/* ══════════════════════════════════════════════════ */}
+      <div>
+        <h2 className="text-lg font-bold text-[#e8f5e9] mb-1">📊 Equity Signals — SPY &amp; QQQ</h2>
+        <p className="text-xs text-[#81c784] mb-4">Real-time regime &amp; trend context for options signals</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {([equityStats.SPY, equityStats.QQQ] as const).map((eq) => {
+            const regimeBadge =
+              eq.regime === 'trending_up'
+                ? { label: 'TRENDING UP', cls: 'text-[#4caf50] bg-[#4caf50]/10' }
+                : eq.regime === 'trending_down'
+                ? { label: 'TRENDING DOWN', cls: 'text-[#ef5350] bg-[#ef5350]/10' }
+                : eq.regime === 'volatile'
+                ? { label: 'VOLATILE', cls: 'text-orange-400 bg-orange-400/10' }
+                : { label: 'CHOPPY', cls: 'text-yellow-400 bg-yellow-400/10' };
+
+            const trendBadge = (t: 'bullish' | 'bearish' | 'neutral') =>
+              t === 'bullish'
+                ? { label: 'BULLISH', cls: 'text-[#4caf50] bg-[#4caf50]/10' }
+                : t === 'bearish'
+                ? { label: 'BEARISH', cls: 'text-[#ef5350] bg-[#ef5350]/10' }
+                : { label: 'NEUTRAL', cls: 'text-yellow-400 bg-yellow-400/10' };
+
+            const t1h = trendBadge(eq.trend1h);
+            const t4h = trendBadge(eq.trend4h);
+
+            return (
+              <Card key={eq.symbol}>
+                {/* Header */}
+                <div className="flex items-start justify-between mb-3">
+                  <div>
+                    <p className="text-2xl font-mono font-bold text-[#e8f5e9]">{eq.symbol}</p>
+                    <p className="text-xs text-[#81c784] mt-0.5">{eq.name}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-2xl font-mono font-bold text-[#4caf50]">${eq.price.toFixed(2)}</p>
+                    <p className="text-xs text-[#81c784] mt-0.5">
+                      {eq.change >= 0 ? '+' : ''}{eq.change.toFixed(2)} ({eq.changePct >= 0 ? '+' : ''}{eq.changePct.toFixed(2)}%)
+                    </p>
+                  </div>
+                </div>
+
+                {/* Regime */}
+                <div className="flex items-center justify-between py-2 border-b border-[#1e3320]">
+                  <span className="text-xs text-[#81c784]">Regime</span>
+                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${regimeBadge.cls}`}>
+                    {regimeBadge.label}
+                  </span>
+                </div>
+
+                {/* Trends */}
+                <div className="flex items-center justify-between py-2 border-b border-[#1e3320]">
+                  <span className="text-xs text-[#81c784]">1H Trend</span>
+                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${t1h.cls}`}>{t1h.label}</span>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-[#1e3320]">
+                  <span className="text-xs text-[#81c784]">4H Trend</span>
+                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${t4h.cls}`}>{t4h.label}</span>
+                </div>
+
+                {/* Stats row */}
+                <div className="flex items-center gap-4 py-2 border-b border-[#1e3320] text-xs text-[#81c784]">
+                  <span>Signals Today: <span className="font-mono text-[#e8f5e9]">{eq.signalsToday}</span></span>
+                  <span>Approved: <span className="font-mono text-[#4caf50]">{eq.approvedToday}</span></span>
+                  <span>Filter: <span className="font-mono text-[#e8f5e9]">60/100</span></span>
+                </div>
+
+                {/* Last signal */}
+                <p className="text-xs text-[#81c784]/60 mt-2 truncate">{eq.lastSignal}</p>
+              </Card>
+            );
+          })}
+        </div>
       </div>
 
       {/* ══════════════════════════════════════════════════ */}

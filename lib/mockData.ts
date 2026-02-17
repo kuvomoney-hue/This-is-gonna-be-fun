@@ -269,6 +269,36 @@ export const robinhoodStatus = {
   status: 'ready' as 'ready' | 'in_position' | 'market_closed' | 'offline',
 };
 
+// ----- EQUITY SIGNALS (SPY / QQQ) -----
+export const equityStats = {
+  SPY: {
+    symbol: 'SPY',
+    name: 'S&P 500 ETF',
+    price: 684.32,
+    change: 0.0,
+    changePct: 0.0,
+    regime: 'choppy' as 'trending_up' | 'trending_down' | 'choppy' | 'volatile',
+    trend1h: 'neutral' as 'bullish' | 'bearish' | 'neutral',
+    trend4h: 'neutral' as 'bullish' | 'bearish' | 'neutral',
+    signalsToday: 4,
+    approvedToday: 0,
+    lastSignal: 'LONG @ 682.09 — REJECTED (0/100)',
+  },
+  QQQ: {
+    symbol: 'QQQ',
+    name: 'Nasdaq ETF',
+    price: 601.00,
+    change: 0.0,
+    changePct: 0.0,
+    regime: 'choppy' as 'trending_up' | 'trending_down' | 'choppy' | 'volatile',
+    trend1h: 'neutral' as 'bullish' | 'bearish' | 'neutral',
+    trend4h: 'neutral' as 'bullish' | 'bearish' | 'neutral',
+    signalsToday: 4,
+    approvedToday: 0,
+    lastSignal: 'LONG @ 601.00 — REJECTED (0/100)',
+  }
+};
+
 // ----- QUICK STATS -----
 export const quickStats = {
   tasksThisWeek: 3,

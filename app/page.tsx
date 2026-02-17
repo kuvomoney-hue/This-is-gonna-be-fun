@@ -9,6 +9,7 @@ import {
   todaySchedule,
   quickStats,
   robinhoodStatus,
+  equityStats,
 } from "@/lib/mockData";
 
 interface WeatherData {
@@ -177,6 +178,42 @@ export default function DashboardPage() {
               </div>
             );
           })()}
+        </Card>
+
+        {/* ── Market Pulse Card (SPY / QQQ) ── */}
+        <Card title="Market Pulse" subtitle="SPY &amp; QQQ equity signals">
+          <div className="space-y-3">
+            {([equityStats.SPY, equityStats.QQQ] as const).map((eq) => {
+              const regimeCls =
+                eq.regime === 'trending_up'
+                  ? 'text-[#4caf50] bg-[#4caf50]/10'
+                  : eq.regime === 'trending_down'
+                  ? 'text-[#ef5350] bg-[#ef5350]/10'
+                  : eq.regime === 'volatile'
+                  ? 'text-orange-400 bg-orange-400/10'
+                  : 'text-yellow-400 bg-yellow-400/10';
+              const regimeLabel =
+                eq.regime === 'trending_up' ? 'TRENDING UP' :
+                eq.regime === 'trending_down' ? 'TRENDING DOWN' :
+                eq.regime === 'volatile' ? 'VOLATILE' : 'CHOPPY';
+
+              return (
+                <div key={eq.symbol} className="bg-[#0a0f0a] rounded-lg p-3 flex items-center justify-between gap-3 flex-wrap">
+                  <div className="flex items-center gap-3 min-w-0">
+                    <span className="font-mono font-bold text-[#e8f5e9] shrink-0">{eq.symbol}</span>
+                    <span className="font-mono text-sm text-[#4caf50] shrink-0">${eq.price.toFixed(2)}</span>
+                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full shrink-0 ${regimeCls}`}>
+                      {regimeLabel}
+                    </span>
+                  </div>
+                  <span className="text-xs text-[#81c784]/70 shrink-0">{eq.approvedToday} trades approved today</span>
+                </div>
+              );
+            })}
+            <p className="text-xs text-yellow-400/80 text-center pt-1">
+              ⚠️ Filter active — waiting for trending conditions
+            </p>
+          </div>
         </Card>
 
         {/* ── Trading Summary Card ── */}
