@@ -220,6 +220,15 @@ export const projects: Project[] = [
     emoji: "💍",
     color: "#81c784",
   },
+  {
+    id: "p5",
+    title: "Tailscale Security",
+    description: "Lock down the trading operation — private mesh VPN, no more public ngrok, secure access from anywhere",
+    progress: 0,
+    target: "Mar 2026",
+    emoji: "🔒",
+    color: "#2e7d32",
+  },
 ];
 
 // ----- SCOUT AGENT -----
