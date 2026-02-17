@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "@/components/Card";
 import { initialTasks, Task } from "@/lib/mockData";
 import { Plus, Trash2, Check } from "lucide-react";
+
+const STORAGE_KEY = "rendyr_tasks";
 
 type Group = "today" | "week" | "someday";
 
@@ -14,10 +16,23 @@ const groupMeta: Record<Group, { label: string; emoji: string }> = {
 };
 
 export default function TasksPage() {
-  const [tasks, setTasks] = useState<Task[]>(initialTasks);
+  const [tasks, setTasks] = useState<Task[]>(() => {
+    if (typeof window === "undefined") return initialTasks;
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      return stored ? JSON.parse(stored) : initialTasks;
+    } catch {
+      return initialTasks;
+    }
+  });
   const [newText, setNewText] = useState("");
   const [newGroup, setNewGroup] = useState<Group>("today");
   const [showInput, setShowInput] = useState(false);
+
+  // Persist to localStorage whenever tasks change
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
+  }, [tasks]);
 
   const addTask = () => {
     const trimmed = newText.trim();
