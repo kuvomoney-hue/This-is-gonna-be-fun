@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0f0a;
+  --surface: #111811;
+  --primary: #14591D;
+  --primary-bright: #1a7a27;
+  --text-primary: #e8f5e9;
+  --text-secondary: #81c784;
+  --border: #1e3320;
+  --success: #4caf50;
+  --danger: #ef5350;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-bright);
+}
+
+/* Recharts overrides */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #1e3320;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+/* Transitions */
+.card-hover {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  border-color: var(--primary-bright) !important;
+  box-shadow: 0 0 16px rgba(26, 122, 39, 0.25);
+}
+
+@layer utilities {
+  .text-positive {
+    color: #4caf50;
+  }
+  .text-negative {
+    color: #ef5350;
+  }
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
