@@ -8,6 +8,7 @@ import {
   tradingSummary,
   todaySchedule,
   quickStats,
+  robinhoodStatus,
 } from "@/lib/mockData";
 
 interface WeatherData {
@@ -96,6 +97,86 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
+        </Card>
+
+        {/* ── Robinhood Options Card ── */}
+        <Card title="Robinhood Options">
+          {(() => {
+            const rh = robinhoodStatus;
+            const isOnline = rh.connected && rh.status !== 'offline';
+            const pnlPos = rh.todayPnl >= 0;
+            const statusColor =
+              rh.status === 'ready' ? 'text-[#4caf50] bg-[#4caf50]/10' :
+              rh.status === 'in_position' ? 'text-blue-400 bg-blue-400/10' :
+              rh.status === 'market_closed' ? 'text-yellow-400 bg-yellow-400/10' :
+              'text-[#ef5350] bg-[#ef5350]/10';
+            const statusLabel =
+              rh.status === 'ready' ? 'READY' :
+              rh.status === 'in_position' ? 'IN POSITION' :
+              rh.status === 'market_closed' ? 'MARKET CLOSED' : 'OFFLINE';
+            return (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className={`text-sm ${isOnline ? 'text-[#4caf50]' : 'text-[#ef5350]'}`}>●</span>
+                    <span className="text-xs text-[#81c784]">{isOnline ? 'Connected' : 'Offline'}</span>
+                  </div>
+                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${statusColor}`}>
+                    {statusLabel}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-[#0a0f0a] rounded-lg p-3">
+                    <p className="text-xs text-[#81c784] mb-1">Equity</p>
+                    <p className="text-lg font-mono font-bold text-[#e8f5e9]">
+                      ${rh.equity.toFixed(2)}
+                    </p>
+                  </div>
+                  <div className="bg-[#0a0f0a] rounded-lg p-3">
+                    <p className="text-xs text-[#81c784] mb-1">Buying Power</p>
+                    <p className="text-lg font-mono font-bold text-[#e8f5e9]">
+                      ${rh.buyingPower.toFixed(2)}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-[#0a0f0a] rounded-lg p-3 flex items-center justify-between">
+                  <p className="text-xs text-[#81c784]">Today&apos;s P&amp;L</p>
+                  <p className={`text-sm font-mono font-bold ${pnlPos ? 'text-[#4caf50]' : 'text-[#ef5350]'}`}>
+                    {pnlPos ? '+' : ''}${rh.todayPnl.toFixed(2)}
+                  </p>
+                </div>
+
+                {rh.hasPosition && rh.currentPosition ? (
+                  <div className="bg-[#0a0f0a] rounded-lg p-3 space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono font-bold text-[#e8f5e9]">{rh.currentPosition.symbol}</span>
+                      <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${rh.currentPosition.direction === 'call' ? 'text-[#4caf50] bg-[#4caf50]/10' : 'text-[#ef5350] bg-[#ef5350]/10'}`}>
+                        {rh.currentPosition.direction.toUpperCase()}
+                      </span>
+                      <span className="text-xs text-[#81c784]">${rh.currentPosition.strike} · {rh.currentPosition.expiry}</span>
+                    </div>
+                    <div className="flex gap-3 text-xs font-mono text-[#81c784]">
+                      <span>Entry: ${rh.currentPosition.entryPremium.toFixed(2)}</span>
+                      <span>Now: ${rh.currentPosition.currentPremium.toFixed(2)}</span>
+                      <span className={rh.currentPosition.pnlPct >= 0 ? 'text-[#4caf50]' : 'text-[#ef5350]'}>
+                        {rh.currentPosition.pnlPct >= 0 ? '+' : ''}{rh.currentPosition.pnlPct.toFixed(1)}%
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-xs text-[#81c784]/60 text-center py-1">
+                    No open position · Watching for signals
+                  </p>
+                )}
+
+                <p className="text-xs text-[#81c784]/50 text-center">
+                  Market opens Tue 9:30 AM ET
+                </p>
+              </div>
+            );
+          })()}
         </Card>
 
         {/* ── Trading Summary Card ── */}

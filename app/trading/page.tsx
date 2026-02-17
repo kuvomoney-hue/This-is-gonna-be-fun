@@ -9,6 +9,7 @@ import {
   signals,
   contextFilter,
   activePosition,
+  robinhoodStatus,
 } from "@/lib/mockData";
 import {
   LineChart,
@@ -154,6 +155,117 @@ export default function TradingPage() {
               </div>
             </div>
           )}
+        </Card>
+      </div>
+
+      {/* ══════════════════════════════════════════════════ */}
+      {/* ROBINHOOD OPTIONS SECTION */}
+      {/* ══════════════════════════════════════════════════ */}
+      <div>
+        <h2 className="text-lg font-bold text-[#e8f5e9] mb-1">Robinhood Options</h2>
+        <p className="text-xs text-[#81c784] mb-4">
+          SPY &amp; QQQ · ATM options · +30% TP / -15% stop · Market hours only
+        </p>
+
+        {/* Stats row */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5">
+          {[
+            { label: 'Equity', value: `$${robinhoodStatus.equity.toFixed(0)}` },
+            { label: 'Buying Power', value: `$${robinhoodStatus.buyingPower.toFixed(0)}` },
+            { label: 'Trades', value: String(robinhoodStatus.totalTrades) },
+            { label: 'Win Rate', value: `${robinhoodStatus.winRate}%` },
+          ].map((s) => (
+            <Card key={s.label} className="text-center">
+              <p className="text-xs text-[#81c784] uppercase tracking-wider mb-1">{s.label}</p>
+              <p className="text-xl font-mono font-bold text-[#e8f5e9]">{s.value}</p>
+            </Card>
+          ))}
+        </div>
+
+        {/* Current position card */}
+        <Card title="Current Position">
+          {(() => {
+            const rh = robinhoodStatus;
+            const isOnline = rh.connected && rh.status !== 'offline';
+            const pnlPos = rh.todayPnl >= 0;
+            const statusColor =
+              rh.status === 'ready' ? 'text-[#4caf50] bg-[#4caf50]/10' :
+              rh.status === 'in_position' ? 'text-blue-400 bg-blue-400/10' :
+              rh.status === 'market_closed' ? 'text-yellow-400 bg-yellow-400/10' :
+              'text-[#ef5350] bg-[#ef5350]/10';
+            const statusLabel =
+              rh.status === 'ready' ? 'READY' :
+              rh.status === 'in_position' ? 'IN POSITION' :
+              rh.status === 'market_closed' ? 'MARKET CLOSED' : 'OFFLINE';
+            return (
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className={`text-sm ${isOnline ? 'text-[#4caf50]' : 'text-[#ef5350]'}`}>●</span>
+                    <span className="text-xs text-[#81c784]">{isOnline ? 'Connected to Robinhood' : 'Offline'}</span>
+                  </div>
+                  <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${statusColor}`}>
+                    {statusLabel}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="bg-[#0a0f0a] rounded-lg p-3">
+                    <p className="text-xs text-[#81c784] mb-1">Equity</p>
+                    <p className="text-base font-mono font-bold text-[#e8f5e9]">${rh.equity.toFixed(2)}</p>
+                  </div>
+                  <div className="bg-[#0a0f0a] rounded-lg p-3">
+                    <p className="text-xs text-[#81c784] mb-1">Buying Power</p>
+                    <p className="text-base font-mono font-bold text-[#e8f5e9]">${rh.buyingPower.toFixed(2)}</p>
+                  </div>
+                  <div className="bg-[#0a0f0a] rounded-lg p-3">
+                    <p className="text-xs text-[#81c784] mb-1">Today&apos;s P&amp;L</p>
+                    <p className={`text-base font-mono font-bold ${pnlPos ? 'text-[#4caf50]' : 'text-[#ef5350]'}`}>
+                      {pnlPos ? '+' : ''}${rh.todayPnl.toFixed(2)}
+                    </p>
+                  </div>
+                </div>
+
+                {rh.hasPosition && rh.currentPosition ? (
+                  <div className="bg-[#0a0f0a] rounded-lg p-4 space-y-3">
+                    <div className="flex items-center gap-3 flex-wrap">
+                      <span className="text-lg font-mono font-bold text-[#e8f5e9]">{rh.currentPosition.symbol}</span>
+                      <span className={`text-xs font-bold px-2 py-0.5 rounded ${rh.currentPosition.direction === 'call' ? 'text-[#4caf50] bg-[#4caf50]/10' : 'text-[#ef5350] bg-[#ef5350]/10'}`}>
+                        {rh.currentPosition.direction.toUpperCase()}
+                      </span>
+                      <span className="text-sm text-[#81c784]">Strike ${rh.currentPosition.strike}</span>
+                      <span className="text-sm text-[#81c784]">Exp {rh.currentPosition.expiry}</span>
+                    </div>
+                    <div className="grid grid-cols-3 gap-3">
+                      <div>
+                        <p className="text-xs text-[#81c784]">Entry Premium</p>
+                        <p className="font-mono text-sm text-[#e8f5e9]">${rh.currentPosition.entryPremium.toFixed(2)}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-[#81c784]">Current Premium</p>
+                        <p className="font-mono text-sm text-[#e8f5e9]">${rh.currentPosition.currentPremium.toFixed(2)}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-[#81c784]">P&amp;L</p>
+                        <p className={`font-mono text-sm font-bold ${rh.currentPosition.pnlPct >= 0 ? 'text-[#4caf50]' : 'text-[#ef5350]'}`}>
+                          {rh.currentPosition.pnlPct >= 0 ? '+' : ''}{rh.currentPosition.pnlPct.toFixed(1)}%
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col items-center justify-center h-20 gap-2">
+                    <span className="text-3xl opacity-30">📭</span>
+                    <p className="text-xs text-[#81c784]/60">No open position · Watching for signals</p>
+                  </div>
+                )}
+
+                <p className="text-xs text-[#81c784]/50 text-center">
+                  Market opens Tue 9:30 AM ET
+                </p>
+              </div>
+            );
+          })()}
         </Card>
       </div>
 

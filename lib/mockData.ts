@@ -247,6 +247,28 @@ export const scoutStats = {
   rejectedSignals: 2,
 };
 
+// ----- ROBINHOOD OPTIONS -----
+export const robinhoodStatus = {
+  connected: true,
+  equity: 400.00,
+  buyingPower: 400.00,
+  todayPnl: 0.00,
+  todayPnlPct: 0.00,
+  hasPosition: false,
+  currentPosition: null as null | {
+    symbol: string;
+    direction: 'call' | 'put';
+    strike: number;
+    expiry: string;
+    entryPremium: number;
+    currentPremium: number;
+    pnlPct: number;
+  },
+  totalTrades: 0,
+  winRate: 0,
+  status: 'ready' as 'ready' | 'in_position' | 'market_closed' | 'offline',
+};
+
 // ----- QUICK STATS -----
 export const quickStats = {
   tasksThisWeek: 3,
