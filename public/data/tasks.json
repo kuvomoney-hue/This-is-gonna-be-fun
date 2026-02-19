@@ -154,6 +154,13 @@
       "category": "trading",
       "priority": "medium",
       "done": false
+    },
+    {
+      "id": "at14",
+      "text": "Set up remote Mac access: Screen Sharing + Tailscale + VNC on phone",
+      "category": "life",
+      "priority": "medium",
+      "done": false
     }
   ],
   "projects": [
