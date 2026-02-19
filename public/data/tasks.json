@@ -1,50 +1,243 @@
 {
   "tasks": [
     {
-      "id": "1",
+      "id": "r1",
+      "text": "Sit down and handle LLC and taxes",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "in-progress",
+      "assignee": "John + Dylan",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r2",
+      "text": "Border Pack — needs review",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "needs-review",
+      "assignee": "John",
+      "due": "2026-02-24",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r3",
+      "text": "Business Bank Account",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "in-progress",
+      "assignee": "John",
+      "due": "2026-02-21",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r4",
+      "text": "Business Credit Card (Amex Gold Biz)",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "not-started",
+      "assignee": "John",
+      "due": "2026-02-23",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r5",
+      "text": "Fund Bank Account w/ $3K from Skool bounty",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "in-progress",
+      "assignee": "John",
+      "due": "2026-02-21",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r6",
+      "text": "Vibe code new landing page designs",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "in-progress",
+      "assignee": "John",
+      "due": "2026-02-18",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r7",
+      "text": "Respond to latest edit reviews",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "in-progress",
+      "assignee": "John",
+      "due": "2026-02-18",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r8",
+      "text": "Product cover",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "postponed",
+      "assignee": "John",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r9",
+      "text": "Product Page #2",
+      "category": "rendyr",
+      "priority": "high",
+      "status": "postponed",
+      "assignee": "John",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r10",
+      "text": "Come up with an ad budget",
+      "category": "rendyr",
+      "priority": "medium",
+      "status": "postponed",
+      "assignee": "John + Dylan",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r11",
+      "text": "Organic Marketing — build page",
+      "category": "rendyr",
+      "priority": "medium",
+      "status": "postponed",
+      "assignee": "John + Dylan",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r12",
+      "text": "Reference board for pinned videos",
+      "category": "rendyr",
+      "priority": "medium",
+      "status": "not-started",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r13",
+      "text": "Skool Course — continue content",
+      "category": "rendyr",
+      "priority": "medium",
+      "status": "in-progress",
+      "assignee": "John",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r14",
+      "text": "Create fish eye effect for pack",
+      "category": "rendyr",
+      "priority": "medium",
+      "status": "not-started",
+      "assignee": "Dylan",
+      "due": "2025-09-26",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r15",
+      "text": "Tame Impala Rendyr Vlog — in editing",
+      "category": "rendyr",
+      "priority": "low",
+      "status": "in-editing",
+      "assignee": "John",
+      "due": "2026-02-21",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r16",
+      "text": "Buy Helvetica Neue license font",
+      "category": "rendyr",
+      "priority": "low",
+      "status": "postponed",
+      "assignee": "Dylan",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r17",
+      "text": "Look into tax workarounds",
+      "category": "rendyr",
+      "priority": "low",
+      "status": "postponed",
+      "assignee": "Dylan",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r18",
+      "text": "Setup Facebook Pixel",
+      "category": "rendyr",
+      "priority": "low",
+      "status": "postponed",
+      "assignee": "Dylan",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "w1",
       "text": "Edit WayofWoof product photos + compress for web",
       "category": "woof",
       "priority": "high",
+      "status": "not-started",
       "done": false,
       "createdAt": "2026-02-18"
     },
     {
-      "id": "2",
-      "text": "Complete Rendyr World 1 lessons (13/20 done)",
-      "category": "rendyr",
-      "priority": "high",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "3",
-      "text": "Set WayofWoof pre-order launch date",
+      "id": "w2",
+      "text": "Set WayofWoof pre-order / soft launch date",
       "category": "woof",
       "priority": "high",
+      "status": "not-started",
       "done": false,
       "createdAt": "2026-02-18"
     },
     {
-      "id": "4",
-      "text": "Build Rendyr 21-day email drip sequence in Omnisend",
-      "category": "rendyr",
+      "id": "w3",
+      "text": "Complete commercial kitchen onboarding",
+      "category": "woof",
       "priority": "high",
+      "status": "in-progress",
       "done": false,
       "createdAt": "2026-02-18"
     },
     {
-      "id": "5",
-      "text": "Organize brand assets — consolidate to Figma",
+      "id": "w4",
+      "text": "Get label approval",
+      "category": "woof",
+      "priority": "high",
+      "status": "in-progress",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "life1",
+      "text": "Get Shopify API access from Dylan + Amanda",
       "category": "life",
       "priority": "medium",
+      "status": "not-started",
       "done": false,
       "createdAt": "2026-02-18"
     },
     {
-      "id": "6",
-      "text": "Get Shopify API permission from Dylan + Amanda",
-      "category": "rendyr",
+      "id": "life2",
+      "text": "Consolidate brand assets to Figma (all businesses)",
+      "category": "life",
       "priority": "medium",
+      "status": "in-progress",
       "done": false,
       "createdAt": "2026-02-18"
     }
