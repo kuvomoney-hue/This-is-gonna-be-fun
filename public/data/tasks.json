@@ -12,7 +12,7 @@
     },
     {
       "id": "r2",
-      "text": "Border Pack — needs review",
+      "text": "Border Pack \u2014 needs review",
       "category": "rendyr",
       "priority": "high",
       "status": "needs-review",
@@ -108,7 +108,7 @@
     },
     {
       "id": "r11",
-      "text": "Organic Marketing — build page",
+      "text": "Organic Marketing \u2014 build page",
       "category": "rendyr",
       "priority": "medium",
       "status": "postponed",
@@ -127,7 +127,7 @@
     },
     {
       "id": "r13",
-      "text": "Skool Course — continue content",
+      "text": "Skool Course \u2014 continue content",
       "category": "rendyr",
       "priority": "medium",
       "status": "in-progress",
@@ -148,7 +148,7 @@
     },
     {
       "id": "r15",
-      "text": "Tame Impala Rendyr Vlog — in editing",
+      "text": "Tame Impala Rendyr Vlog \u2014 in editing",
       "category": "rendyr",
       "priority": "low",
       "status": "in-editing",
@@ -238,6 +238,16 @@
       "category": "life",
       "priority": "medium",
       "status": "in-progress",
+      "done": false,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": "r19",
+      "text": "Decide: add Academy link/section to rendyr.video bundle page?",
+      "category": "rendyr",
+      "priority": "medium",
+      "status": "not-started",
+      "note": "Currently no path from bundle page to Academy \u2014 connection only via email drip. Is that intentional long-term?",
       "done": false,
       "createdAt": "2026-02-18"
     }
