@@ -114,21 +114,35 @@
     },
     {
       "id": "at8",
-      "text": "Get WayofWoof label approval",
+      "text": "Finalize label design + send to printer",
       "category": "woof",
       "priority": "high",
       "done": false
     },
     {
       "id": "at9",
-      "text": "Nail first production run — document batch size, yield, time",
+      "text": "Build dedicated product page — Peanut Butter (imagery + copy + flow)",
       "category": "woof",
       "priority": "high",
       "done": false
     },
     {
       "id": "at10",
-      "text": "Confirm shelf life + storage requirements for PB + Hot Milk",
+      "text": "Build dedicated product pages — Hot Milk (all 5 flavors, imagery + copy + flow)",
+      "category": "woof",
+      "priority": "high",
+      "done": false
+    },
+    {
+      "id": "at11",
+      "text": "Finish editing product imagery for web (Amanda: copy + flow in progress)",
+      "category": "woof",
+      "priority": "high",
+      "done": false
+    },
+    {
+      "id": "at12",
+      "text": "Finalize label design + send off (no approval needed)",
       "category": "woof",
       "priority": "high",
       "done": false
@@ -328,7 +342,17 @@
         },
         {
           "id": "p2s9",
-          "text": "Get label approval",
+          "text": "Finalize label design + send off",
+          "done": false
+        },
+        {
+          "id": "p2s10",
+          "text": "Build dedicated product page — PB (you + imagery; Amanda on copy)",
+          "done": false
+        },
+        {
+          "id": "p2s11",
+          "text": "Build dedicated product pages — Hot Milk all 5 flavors",
           "done": false
         }
       ]
