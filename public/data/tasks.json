@@ -135,9 +135,10 @@
     },
     {
       "id": "at11",
-      "text": "Finish editing product imagery for web (Amanda: copy + flow in progress)",
+      "text": "Edit + compress WayofWoof product photos for web — DO THIS FIRST",
       "category": "woof",
       "priority": "high",
+      "due": "2026-02-19",
       "done": false
     },
     {
