@@ -1,0 +1,71 @@
+{
+  "btc_price": 66928.48,
+  "account_total": 483.06,
+  "usdt_balance": 482.96,
+  "btc_balance": 1.56e-06,
+  "open_orders": [],
+  "recent_trades": [
+    {
+      "time": "2026-02-15T12:41:41.383Z",
+      "side": "sell",
+      "price": 70229.89,
+      "amount": 0.0047
+    },
+    {
+      "time": "2026-02-15T19:32:33.242Z",
+      "side": "buy",
+      "price": 68440.09,
+      "amount": 0.00486
+    },
+    {
+      "time": "2026-02-15T20:02:24.047Z",
+      "side": "sell",
+      "price": 68176.73,
+      "amount": 0.00325
+    },
+    {
+      "time": "2026-02-15T20:02:24.047Z",
+      "side": "sell",
+      "price": 68176.72,
+      "amount": 0.00159
+    },
+    {
+      "time": "2026-02-15T21:04:00.280Z",
+      "side": "buy",
+      "price": 68615.59,
+      "amount": 0.00394
+    },
+    {
+      "time": "2026-02-15T21:04:00.280Z",
+      "side": "buy",
+      "price": 68615.6,
+      "amount": 0.00017
+    },
+    {
+      "time": "2026-02-15T21:04:00.280Z",
+      "side": "buy",
+      "price": 68628.47,
+      "amount": 0.00074
+    },
+    {
+      "time": "2026-02-16T03:21:09.560Z",
+      "side": "sell",
+      "price": 68338.51,
+      "amount": 0.00088
+    },
+    {
+      "time": "2026-02-16T03:21:09.560Z",
+      "side": "sell",
+      "price": 68319.6,
+      "amount": 0.00017
+    },
+    {
+      "time": "2026-02-16T03:21:09.560Z",
+      "side": "sell",
+      "price": 68319.06,
+      "amount": 0.00377
+    }
+  ],
+  "has_position": false,
+  "_updated": "2026-02-19T18:32:45.180290Z"
+}
