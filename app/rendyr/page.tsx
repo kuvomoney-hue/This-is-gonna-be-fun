@@ -47,13 +47,11 @@ const emails = [
   { day: 21, label: "Day 21 — Academy hard offer" },
 ];
 
-const HEYGEN_KEY = "rendyr_heygen_bounty";
-
 export default function RendyrPage() {
   const [data, setData] = useState<RendyrData>(DEFAULTS);
   const [emailDripBuilt, setEmailDripBuilt] = useState(false);
   const [emailChecks, setEmailChecks] = useState<boolean[]>(Array(emails.length).fill(false));
-  const [heygenEarned, setHeygenEarned] = useState(0);
+  // HeyGen bounty closed — won $3K (Feb 2026)
 
   useEffect(() => {
     fetch("/data/rendyr.json", { cache: "no-store" })
@@ -68,10 +66,6 @@ export default function RendyrPage() {
       }
     } catch {}
 
-    try {
-      const hg = localStorage.getItem(HEYGEN_KEY);
-      if (hg) setHeygenEarned(Number(hg));
-    } catch {}
   }, []);
 
   const saveEmailDrip = (built: boolean, checks: boolean[]) => {
@@ -101,8 +95,6 @@ export default function RendyrPage() {
     { name: "World 3", data: data.academyProgress.world3, color: "bg-primary-bright/40" },
     { name: "World 4", data: data.academyProgress.world4, color: "bg-primary-bright/20" },
   ];
-
-  const heygenPct = Math.min(100, Math.round((heygenEarned / 15000) * 100));
 
   return (
     <div className="p-4 md:p-6 space-y-8 max-w-6xl mx-auto">
@@ -262,43 +254,16 @@ export default function RendyrPage() {
         </div>
       </div>
 
-      {/* ── HeyGen Bounty ────────────────────────────────────── */}
-      <div className="bg-surface border border-wow-amber/30 rounded-xl p-5 shadow-glow-amber">
-        <div className="flex items-center justify-between mb-1">
-          <div>
-            <h2 className="text-text-primary font-bold text-sm uppercase tracking-wider">
-              🏆 HeyGen Bounty Tracker
-            </h2>
-            <p className="text-text-secondary text-xs mt-0.5">Priority #3</p>
-          </div>
-          <div className="text-right">
-            <p className="text-2xl font-mono font-bold text-wow-amber">${heygenEarned.toLocaleString()}</p>
-            <p className="text-text-secondary text-xs">of $15,000 goal</p>
-          </div>
+      {/* ── HeyGen Win ───────────────────────────────────────── */}
+      <div className="bg-surface border border-primary-bright/20 rounded-xl p-5 flex items-center gap-4">
+        <div className="text-3xl">🏆</div>
+        <div>
+          <p className="text-text-primary font-bold text-sm">HeyGen Bounty — Won</p>
+          <p className="text-text-secondary text-xs mt-0.5">$3,000 closed early · going into Rendyr bank this weekend</p>
         </div>
-        <div className="mt-4 h-3 bg-surface2 rounded-full overflow-hidden">
-          <div
-            className="h-full bg-wow-amber rounded-full transition-all"
-            style={{ width: `${heygenPct}%` }}
-          />
-        </div>
-        <div className="flex items-center justify-between mt-1">
-          <span className="text-xs text-text-secondary">{heygenPct}% complete</span>
-          <span className="text-xs text-text-secondary">$15,000</span>
-        </div>
-        <div className="mt-4 flex gap-3">
-          <button
-            onClick={() => {
-              const val = Number(prompt("Update HeyGen earnings ($):", String(heygenEarned)));
-              if (!isNaN(val)) {
-                setHeygenEarned(val);
-                try { localStorage.setItem(HEYGEN_KEY, String(val)); } catch {}
-              }
-            }}
-            className="text-xs px-3 py-1.5 rounded-lg border border-wow-amber/30 text-wow-amber hover:bg-wow-amber/10 transition-colors"
-          >
-            Update Earnings
-          </button>
+        <div className="ml-auto text-right">
+          <p className="text-2xl font-mono font-bold text-primary-bright">$3K</p>
+          <p className="text-text-secondary text-xs">✓ closed</p>
         </div>
       </div>
 
