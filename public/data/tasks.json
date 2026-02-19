@@ -107,14 +107,28 @@
     },
     {
       "id": "at7",
-      "text": "Complete commercial kitchen onboarding",
+      "text": "Complete commercial kitchen onboarding ✅",
+      "category": "woof",
+      "priority": "high",
+      "done": true
+    },
+    {
+      "id": "at8",
+      "text": "Get WayofWoof label approval",
       "category": "woof",
       "priority": "high",
       "done": false
     },
     {
-      "id": "at8",
-      "text": "Get WayofWoof label approval",
+      "id": "at9",
+      "text": "Nail first production run — document batch size, yield, time",
+      "category": "woof",
+      "priority": "high",
+      "done": false
+    },
+    {
+      "id": "at10",
+      "text": "Confirm shelf life + storage requirements for PB + Hot Milk",
       "category": "woof",
       "priority": "high",
       "done": false
@@ -270,7 +284,7 @@
       "title": "WayofWoof Pre-Launch",
       "category": "woof",
       "priority": "high",
-      "progress": 35,
+      "progress": 45,
       "subtasks": [
         {
           "id": "p2s1",
@@ -309,8 +323,8 @@
         },
         {
           "id": "p2s8",
-          "text": "Complete kitchen onboarding",
-          "done": false
+          "text": "Complete kitchen onboarding ✅",
+          "done": true
         },
         {
           "id": "p2s9",

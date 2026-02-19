@@ -3,13 +3,14 @@
   "milestones": {
     "rdComplete": true,
     "labelsSubmitted": true,
-    "kitchenOnboarding": false,
+    "kitchenOnboarding": true,
+    "inventionInProgress": true,
     "labelApproval": false,
     "launched": false
   },
   "inventory": {
-    "peanutButter": {"capacity": 280, "sold": 0},
-    "hotMilk": {"capacity": 500, "sold": 0}
+    "peanutButter": {"capacity": 280, "inProduction": true, "sold": 0},
+    "hotMilk": {"capacity": 500, "inProduction": true, "sold": 0}
   },
   "social": {
     "instagramFollowers": 1047,
