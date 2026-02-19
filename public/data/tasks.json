@@ -147,6 +147,13 @@
       "category": "woof",
       "priority": "high",
       "done": false
+    },
+    {
+      "id": "at13",
+      "text": "Add ngrok auto-restart so bot never misses signals during downtime",
+      "category": "trading",
+      "priority": "medium",
+      "done": false
     }
   ],
   "projects": [
@@ -482,5 +489,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-02-18"
+  "lastUpdated": "2026-02-19"
 }
