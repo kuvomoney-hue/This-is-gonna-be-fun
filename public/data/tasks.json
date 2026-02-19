@@ -1,255 +1,446 @@
 {
-  "tasks": [
+  "quickWins": [
     {
-      "id": "r1",
-      "text": "Sit down and handle LLC and taxes",
+      "id": "qw1",
+      "text": "Respond to latest Rendyr edit reviews",
       "category": "rendyr",
-      "priority": "high",
-      "status": "in-progress",
-      "assignee": "John + Dylan",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "est": "20min",
+      "done": false
     },
     {
-      "id": "r2",
-      "text": "Border Pack \u2014 needs review",
-      "category": "rendyr",
-      "priority": "high",
-      "status": "needs-review",
-      "assignee": "John",
-      "due": "2026-02-24",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "id": "qw2",
+      "text": "Set up WELCOME15, LAUNCH15, SIMBA20 discount codes in WayofWoof Shopify",
+      "category": "woof",
+      "est": "15min",
+      "done": false
     },
     {
-      "id": "r3",
-      "text": "Business Bank Account",
-      "category": "rendyr",
-      "priority": "high",
-      "status": "in-progress",
-      "assignee": "John",
-      "due": "2026-02-21",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "id": "qw3",
+      "text": "Install Meta Pixel on wayofwoof.com Shopify",
+      "category": "woof",
+      "est": "20min",
+      "done": false
     },
     {
-      "id": "r4",
-      "text": "Business Credit Card (Amex Gold Biz)",
-      "category": "rendyr",
-      "priority": "high",
-      "status": "not-started",
-      "assignee": "John",
-      "due": "2026-02-23",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "id": "qw4",
+      "text": "Paste Welcome Series Email 1 copy into Omnisend draft (already created)",
+      "category": "woof",
+      "est": "25min",
+      "done": false
     },
     {
-      "id": "r5",
-      "text": "Fund Bank Account w/ $3K from Skool bounty",
-      "category": "rendyr",
-      "priority": "high",
-      "status": "in-progress",
-      "assignee": "John",
-      "due": "2026-02-21",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "id": "qw5",
+      "text": "Post 1 piece of content on @wayofwoof today",
+      "category": "woof",
+      "est": "15min",
+      "done": false
     },
     {
-      "id": "r6",
-      "text": "Vibe code new landing page designs",
+      "id": "qw6",
+      "text": "Add bundle upsell to rendyr.video checkout",
       "category": "rendyr",
-      "priority": "high",
-      "status": "in-progress",
-      "assignee": "John",
-      "due": "2026-02-18",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "est": "20min",
+      "done": false
     },
     {
-      "id": "r7",
-      "text": "Respond to latest edit reviews",
+      "id": "qw7",
+      "text": "Buy Helvetica Neue font license",
       "category": "rendyr",
-      "priority": "high",
-      "status": "in-progress",
-      "assignee": "John",
-      "due": "2026-02-18",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "est": "10min",
+      "done": false
     },
     {
-      "id": "r8",
-      "text": "Product cover",
-      "category": "rendyr",
-      "priority": "high",
-      "status": "postponed",
-      "assignee": "John",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
+      "id": "qw8",
+      "text": "Set WayofWoof pre-order launch date (even a soft target)",
+      "category": "woof",
+      "est": "10min",
+      "done": false
+    }
+  ],
+  "activeTasks": [
     {
-      "id": "r9",
-      "text": "Product Page #2",
-      "category": "rendyr",
-      "priority": "high",
-      "status": "postponed",
-      "assignee": "John",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r10",
-      "text": "Come up with an ad budget",
-      "category": "rendyr",
-      "priority": "medium",
-      "status": "postponed",
-      "assignee": "John + Dylan",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r11",
-      "text": "Organic Marketing \u2014 build page",
-      "category": "rendyr",
-      "priority": "medium",
-      "status": "postponed",
-      "assignee": "John + Dylan",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r12",
-      "text": "Reference board for pinned videos",
-      "category": "rendyr",
-      "priority": "medium",
-      "status": "not-started",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r13",
-      "text": "Skool Course \u2014 continue content",
-      "category": "rendyr",
-      "priority": "medium",
-      "status": "in-progress",
-      "assignee": "John",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r14",
-      "text": "Create fish eye effect for pack",
-      "category": "rendyr",
-      "priority": "medium",
-      "status": "not-started",
-      "assignee": "Dylan",
-      "due": "2025-09-26",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r15",
-      "text": "Tame Impala Rendyr Vlog \u2014 in editing",
-      "category": "rendyr",
-      "priority": "low",
-      "status": "in-editing",
-      "assignee": "John",
-      "due": "2026-02-21",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r16",
-      "text": "Buy Helvetica Neue license font",
-      "category": "rendyr",
-      "priority": "low",
-      "status": "postponed",
-      "assignee": "Dylan",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r17",
-      "text": "Look into tax workarounds",
-      "category": "rendyr",
-      "priority": "low",
-      "status": "postponed",
-      "assignee": "Dylan",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "r18",
-      "text": "Setup Facebook Pixel",
-      "category": "rendyr",
-      "priority": "low",
-      "status": "postponed",
-      "assignee": "Dylan",
-      "done": false,
-      "createdAt": "2026-02-18"
-    },
-    {
-      "id": "w1",
+      "id": "at1",
       "text": "Edit WayofWoof product photos + compress for web",
       "category": "woof",
       "priority": "high",
-      "status": "not-started",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "due": "2026-02-21",
+      "done": false
     },
     {
-      "id": "w2",
-      "text": "Set WayofWoof pre-order / soft launch date",
-      "category": "woof",
+      "id": "at2",
+      "text": "Open business bank account",
+      "category": "rendyr",
       "priority": "high",
-      "status": "not-started",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "due": "2026-02-21",
+      "done": false
     },
     {
-      "id": "w3",
+      "id": "at3",
+      "text": "Apply for Amex Gold Business Card",
+      "category": "rendyr",
+      "priority": "high",
+      "due": "2026-02-23",
+      "done": false
+    },
+    {
+      "id": "at4",
+      "text": "Fund bank account w/ $3K from Skool bounty",
+      "category": "rendyr",
+      "priority": "high",
+      "due": "2026-02-21",
+      "done": false
+    },
+    {
+      "id": "at5",
+      "text": "Finish editing Tame Impala Rendyr Vlog",
+      "category": "rendyr",
+      "priority": "medium",
+      "due": "2026-02-21",
+      "done": false
+    },
+    {
+      "id": "at6",
+      "text": "Handle LLC formation + taxes (sit down w/ Dylan)",
+      "category": "rendyr",
+      "priority": "high",
+      "done": false
+    },
+    {
+      "id": "at7",
       "text": "Complete commercial kitchen onboarding",
       "category": "woof",
       "priority": "high",
-      "status": "in-progress",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "done": false
     },
     {
-      "id": "w4",
-      "text": "Get label approval",
+      "id": "at8",
+      "text": "Get WayofWoof label approval",
       "category": "woof",
       "priority": "high",
-      "status": "in-progress",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "done": false
+    }
+  ],
+  "projects": [
+    {
+      "id": "p6",
+      "title": "Rendyr Content Pipeline",
+      "category": "rendyr",
+      "priority": "high",
+      "progress": 30,
+      "note": "Core growth engine \u2014 lessons + edit reviews drive Skool engagement and organic reach",
+      "subtasks": [
+        {
+          "id": "p6s1",
+          "text": "Film Rendyr lesson 14: Timelapse",
+          "done": false
+        },
+        {
+          "id": "p6s2",
+          "text": "Film Rendyr lessons 15-17: Hyperlapse L1/L2/L3",
+          "done": false
+        },
+        {
+          "id": "p6s3",
+          "text": "Film Rendyr lessons 18-20: Final World 1 lessons",
+          "done": false
+        },
+        {
+          "id": "p6s4",
+          "text": "Record edit review video for community (this week)",
+          "done": false
+        },
+        {
+          "id": "p6s5",
+          "text": "Post 3x Instagram Reels this week",
+          "done": false
+        },
+        {
+          "id": "p6s6",
+          "text": "Reference board for pinned videos on Skool/IG",
+          "done": false
+        },
+        {
+          "id": "p6s7",
+          "text": "Set weekly content cadence (batch filming schedule)",
+          "done": false
+        }
+      ]
     },
     {
-      "id": "life1",
-      "text": "Get Shopify API access from Dylan + Amanda",
-      "category": "life",
-      "priority": "medium",
-      "status": "not-started",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "id": "p7",
+      "title": "Rendyr Website Revamp (rendyr.video)",
+      "category": "rendyr",
+      "priority": "high",
+      "progress": 10,
+      "note": "Must convert well before scaling with paid ads \u2014 nail CVR first",
+      "subtasks": [
+        {
+          "id": "p7s1",
+          "text": "Audit current rendyr.video conversion rate",
+          "done": false
+        },
+        {
+          "id": "p7s2",
+          "text": "Vibe code new landing page designs",
+          "done": false
+        },
+        {
+          "id": "p7s3",
+          "text": "Add before/after LUT demos to product page",
+          "done": false
+        },
+        {
+          "id": "p7s4",
+          "text": "Add Academy teaser section (subtle, not direct link)",
+          "done": false
+        },
+        {
+          "id": "p7s5",
+          "text": "Add social proof (reviews, follower count, viral post)",
+          "done": false
+        },
+        {
+          "id": "p7s6",
+          "text": "Optimize checkout flow",
+          "done": false
+        },
+        {
+          "id": "p7s7",
+          "text": "Install Meta Pixel + Google Analytics 4",
+          "done": false
+        }
+      ]
     },
     {
-      "id": "life2",
-      "text": "Consolidate brand assets to Figma (all businesses)",
-      "category": "life",
-      "priority": "medium",
-      "status": "in-progress",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "id": "p1",
+      "title": "WayofWoof Email System",
+      "category": "woof",
+      "priority": "high",
+      "progress": 10,
+      "subtasks": [
+        {
+          "id": "p1s1",
+          "text": "Welcome Series (3 emails) \u2014 copy paste into Omnisend",
+          "done": false
+        },
+        {
+          "id": "p1s2",
+          "text": "Abandoned Cart (3 emails) \u2014 set up trigger + copy",
+          "done": false
+        },
+        {
+          "id": "p1s3",
+          "text": "Order Confirmation email \u2014 replace Shopify default",
+          "done": false
+        },
+        {
+          "id": "p1s4",
+          "text": "Post-Purchase: Hot Milk flow (4 emails)",
+          "done": false
+        },
+        {
+          "id": "p1s5",
+          "text": "Post-Purchase: Peanut Butter flow (4 emails)",
+          "done": false
+        },
+        {
+          "id": "p1s6",
+          "text": "Bundle VIP flow (5 emails)",
+          "done": false
+        },
+        {
+          "id": "p1s7",
+          "text": "Review Request email (1 email)",
+          "done": false
+        },
+        {
+          "id": "p1s8",
+          "text": "Win-back Campaign (3 emails)",
+          "done": false
+        },
+        {
+          "id": "p1s9",
+          "text": "Tag all existing contacts (bundle/HM/PB/subscriber)",
+          "done": false
+        }
+      ]
     },
     {
-      "id": "r19",
-      "text": "Decide: add Academy link/section to rendyr.video bundle page?",
+      "id": "p2",
+      "title": "WayofWoof Pre-Launch",
+      "category": "woof",
+      "priority": "high",
+      "progress": 35,
+      "subtasks": [
+        {
+          "id": "p2s1",
+          "text": "Edit + compress product photos for web",
+          "done": false
+        },
+        {
+          "id": "p2s2",
+          "text": "Update website product pages with new photos",
+          "done": false
+        },
+        {
+          "id": "p2s3",
+          "text": "Set up pre-order flow in Shopify",
+          "done": false
+        },
+        {
+          "id": "p2s4",
+          "text": "Finalize pricing (confirm margins)",
+          "done": false
+        },
+        {
+          "id": "p2s5",
+          "text": "Set launch date",
+          "done": false
+        },
+        {
+          "id": "p2s6",
+          "text": "Batch film 10+ pieces of content",
+          "done": false
+        },
+        {
+          "id": "p2s7",
+          "text": "Order business cards + QR codes",
+          "done": false
+        },
+        {
+          "id": "p2s8",
+          "text": "Complete kitchen onboarding",
+          "done": false
+        },
+        {
+          "id": "p2s9",
+          "text": "Get label approval",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Rendyr Academy \u2014 World 1 Completion",
+      "category": "rendyr",
+      "priority": "high",
+      "progress": 65,
+      "subtasks": [
+        {
+          "id": "p3s1",
+          "text": "Lesson 14: Timelapse",
+          "done": false
+        },
+        {
+          "id": "p3s2",
+          "text": "Lesson 15-16: Hyperlapse L1/L2/L3",
+          "done": false
+        },
+        {
+          "id": "p3s3",
+          "text": "Lesson 17: Photoshop Collage",
+          "done": false
+        },
+        {
+          "id": "p3s4",
+          "text": "Lesson 18: Dynamic Resolution",
+          "done": false
+        },
+        {
+          "id": "p3s5",
+          "text": "Lesson 19: Basics of Editing Video",
+          "done": false
+        },
+        {
+          "id": "p3s6",
+          "text": "Lesson 20: Practical Video Exercises",
+          "done": false
+        },
+        {
+          "id": "p3s7",
+          "text": "Set paywall once World 1 complete",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "Rendyr Paid Ads Launch",
       "category": "rendyr",
       "priority": "medium",
-      "status": "not-started",
-      "note": "Currently no path from bundle page to Academy \u2014 connection only via email drip. Is that intentional long-term?",
-      "done": false,
-      "createdAt": "2026-02-18"
+      "progress": 0,
+      "subtasks": [
+        {
+          "id": "p4s1",
+          "text": "Set ad budget (w/ Dylan)",
+          "done": false
+        },
+        {
+          "id": "p4s2",
+          "text": "Film 5 ad creative variations (before/after LUTs)",
+          "done": false
+        },
+        {
+          "id": "p4s3",
+          "text": "Set up Facebook Ads Manager",
+          "done": false
+        },
+        {
+          "id": "p4s4",
+          "text": "Install Meta Pixel on rendyr.video",
+          "done": false
+        },
+        {
+          "id": "p4s5",
+          "text": "Build Rendyr email drip sequence in Omnisend",
+          "done": false
+        },
+        {
+          "id": "p4s6",
+          "text": "Launch at $20/day \u2014 test creatives",
+          "done": false
+        }
+      ],
+      "note": "After website CVR is nailed \u2014 scale what already converts"
+    },
+    {
+      "id": "p5",
+      "title": "Rendyr Business Formation",
+      "category": "rendyr",
+      "priority": "high",
+      "progress": 20,
+      "subtasks": [
+        {
+          "id": "p5s1",
+          "text": "Decide: CA LLC vs General Partnership + DBA",
+          "done": false
+        },
+        {
+          "id": "p5s2",
+          "text": "File entity formation",
+          "done": false
+        },
+        {
+          "id": "p5s3",
+          "text": "Open business bank account",
+          "done": false
+        },
+        {
+          "id": "p5s4",
+          "text": "Apply for Amex Gold Business card",
+          "done": false
+        },
+        {
+          "id": "p5s5",
+          "text": "Handle taxes (w/ Dylan)",
+          "done": false
+        },
+        {
+          "id": "p5s6",
+          "text": "Fund account w/ $3K from Skool bounty",
+          "done": false
+        }
+      ]
     }
   ],
   "lastUpdated": "2026-02-18"
