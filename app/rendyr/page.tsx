@@ -51,7 +51,6 @@ export default function RendyrPage() {
   const [data, setData] = useState<RendyrData>(DEFAULTS);
   const [emailDripBuilt, setEmailDripBuilt] = useState(false);
   const [emailChecks, setEmailChecks] = useState<boolean[]>(Array(emails.length).fill(false));
-  // HeyGen bounty closed — won $3K (Feb 2026)
 
   useEffect(() => {
     fetch("/data/rendyr.json", { cache: "no-store" })
@@ -254,18 +253,6 @@ export default function RendyrPage() {
         </div>
       </div>
 
-      {/* ── HeyGen Win ───────────────────────────────────────── */}
-      <div className="bg-surface border border-primary-bright/20 rounded-xl p-5 flex items-center gap-4">
-        <div className="text-3xl">🏆</div>
-        <div>
-          <p className="text-text-primary font-bold text-sm">HeyGen Bounty — Won</p>
-          <p className="text-text-secondary text-xs mt-0.5">$3,000 closed early · going into Rendyr bank this weekend</p>
-        </div>
-        <div className="ml-auto text-right">
-          <p className="text-2xl font-mono font-bold text-primary-bright">$3K</p>
-          <p className="text-text-secondary text-xs">✓ closed</p>
-        </div>
-      </div>
 
     </div>
   );
