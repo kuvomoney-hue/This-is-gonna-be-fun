@@ -1,0 +1,15 @@
+{
+  "skoolMembers": 698,
+  "instagramFollowers": 12500,
+  "bundleSalesThisMonth": 15,
+  "bundleSalesAllTimeBest": 16,
+  "mrr": 0,
+  "paywalled": false,
+  "academyProgress": {
+    "world1": {"complete": 13, "total": 20},
+    "world2": {"complete": 0, "total": 10},
+    "world3": {"complete": 0, "total": 18},
+    "world4": {"complete": 0, "total": null}
+  },
+  "lastUpdated": "2026-02-18"
+}

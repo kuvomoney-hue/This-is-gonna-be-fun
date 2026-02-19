@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#0a0f0a] text-[#e8f5e9] min-h-screen">
+      <body className="bg-bg text-text-primary min-h-screen">
         <Sidebar />
         {/* Desktop: offset for sidebar; Mobile: offset for bottom tab bar */}
         <main className="md:ml-60 mb-16 md:mb-0 min-h-screen">

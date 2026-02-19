@@ -1,19 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Card from "@/components/Card";
+import { useState, useEffect, useRef } from "react";
 import { initialTasks, Task } from "@/lib/mockData";
-import { Plus, Trash2, Check } from "lucide-react";
+import { Plus, Trash2, ChevronDown, ChevronRight } from "lucide-react";
 
-const STORAGE_KEY = "rendyr_tasks";
-
-type Group = "today" | "week" | "someday";
-
-const groupMeta: Record<Group, { label: string; emoji: string }> = {
-  today:   { label: "Today",     emoji: "🎯" },
-  week:    { label: "This Week", emoji: "📅" },
-  someday: { label: "Someday",   emoji: "🌙" },
-};
+const STORAGE_KEY = "rendyr_tasks_v2";
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState<Task[]>(() => {
@@ -25,11 +16,11 @@ export default function TasksPage() {
       return initialTasks;
     }
   });
-  const [newText, setNewText] = useState("");
-  const [newGroup, setNewGroup] = useState<Group>("today");
-  const [showInput, setShowInput] = useState(false);
 
-  // Persist to localStorage whenever tasks change
+  const [newText, setNewText] = useState("");
+  const [showCompleted, setShowCompleted] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
   }, [tasks]);
@@ -41,146 +32,160 @@ export default function TasksPage() {
       id: `t${Date.now()}`,
       text: trimmed,
       completed: false,
-      group: newGroup,
+      group: "today",
     };
-    setTasks((prev) => [...prev, task]);
+    setTasks(prev => [task, ...prev]);
     setNewText("");
-    setShowInput(false);
+    inputRef.current?.focus();
   };
 
   const toggleTask = (id: string) => {
-    setTasks((prev) =>
-      prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t))
+    setTasks(prev =>
+      prev.map(t => t.id === id ? { ...t, completed: !t.completed } : t)
     );
   };
 
   const deleteTask = (id: string) => {
-    setTasks((prev) => prev.filter((t) => t.id !== id));
+    setTasks(prev => prev.filter(t => t.id !== id));
   };
 
-  const completedCount = tasks.filter((t) => t.completed).length;
+  const activeTasks = tasks.filter(t => !t.completed);
+  const completedTasks = tasks.filter(t => t.completed);
 
   return (
-    <div className="p-6 space-y-6">
-      <div className="flex items-start justify-between">
+    <div className="p-4 md:p-6 max-w-2xl mx-auto space-y-6">
+
+      {/* ── Header ──────────────────────────────────────────── */}
+      <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-[#e8f5e9]">Tasks</h1>
-          <p className="text-[#81c784] text-sm mt-1">
-            {completedCount} of {tasks.length} complete
+          <h1 className="text-3xl font-bold text-text-primary">Tasks</h1>
+          <p className="text-text-secondary text-sm mt-0.5">
+            {activeTasks.length} remaining · {completedTasks.length} done
           </p>
         </div>
         <button
-          onClick={() => setShowInput((v) => !v)}
-          className="flex items-center gap-2 px-4 py-2 bg-[#14591D] hover:bg-[#1a7a27] text-[#e8f5e9] rounded-lg text-sm font-medium transition-colors"
+          onClick={() => {
+            fetch("https://tasks.googleapis.com", { mode: "no-cors" }).catch(() => {});
+            alert("Google Tasks integration coming soon!");
+          }}
+          className="flex items-center gap-2 text-xs px-3 py-2 rounded-lg border border-border text-text-secondary hover:border-wow-amber/40 hover:text-wow-amber transition-all"
         >
-          <Plus size={16} />
-          Add Task
+          <span>🔗</span>
+          Connect Google Tasks
         </button>
       </div>
 
-      {/* Add Task Input */}
-      {showInput && (
-        <Card>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              type="text"
-              value={newText}
-              onChange={(e) => setNewText(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && addTask()}
-              placeholder="What needs to get done?"
-              autoFocus
-              className="flex-1 bg-[#0a0f0a] border border-[#1e3320] rounded-lg px-4 py-2.5 text-sm text-[#e8f5e9] placeholder-[#81c784]/50 focus:outline-none focus:border-[#14591D] focus:ring-1 focus:ring-[#14591D]/50 transition-colors"
-            />
-            <select
-              value={newGroup}
-              onChange={(e) => setNewGroup(e.target.value as Group)}
-              className="bg-[#0a0f0a] border border-[#1e3320] rounded-lg px-3 py-2.5 text-sm text-[#81c784] focus:outline-none focus:border-[#14591D] cursor-pointer"
-            >
-              <option value="today">Today</option>
-              <option value="week">This Week</option>
-              <option value="someday">Someday</option>
-            </select>
-            <div className="flex gap-2">
-              <button
-                onClick={addTask}
-                className="px-4 py-2.5 bg-[#14591D] hover:bg-[#1a7a27] text-[#e8f5e9] rounded-lg text-sm font-medium transition-colors"
-              >
-                Add
-              </button>
-              <button
-                onClick={() => setShowInput(false)}
-                className="px-4 py-2.5 bg-[#1e3320] hover:bg-[#2a4530] text-[#81c784] rounded-lg text-sm transition-colors"
-              >
-                Cancel
-              </button>
-            </div>
+      {/* ── Add Task Input ───────────────────────────────────── */}
+      <div className="bg-surface border border-border rounded-xl p-4 flex gap-3">
+        <input
+          ref={inputRef}
+          type="text"
+          value={newText}
+          onChange={e => setNewText(e.target.value)}
+          onKeyDown={e => e.key === "Enter" && addTask()}
+          placeholder="Add a task… (press Enter)"
+          className="flex-1 bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text-primary placeholder-text-secondary/50 focus:outline-none focus:border-primary-bright/50 focus:ring-1 focus:ring-primary-bright/20 transition-colors"
+        />
+        <button
+          onClick={addTask}
+          disabled={!newText.trim()}
+          className="px-4 py-2.5 bg-primary hover:bg-primary-bright/20 disabled:opacity-40 disabled:cursor-not-allowed text-primary-bright border border-primary-bright/30 rounded-lg text-sm font-medium transition-all flex items-center gap-1.5"
+        >
+          <Plus size={16} />
+          Add
+        </button>
+      </div>
+
+      {/* ── Active Tasks ─────────────────────────────────────── */}
+      <div className="space-y-2">
+        {activeTasks.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-4xl mb-3">🎉</p>
+            <p className="text-text-primary font-medium">All clear!</p>
+            <p className="text-text-secondary text-sm mt-1">No tasks remaining. Add one above.</p>
           </div>
-        </Card>
+        ) : (
+          activeTasks.map(task => (
+            <TaskRow key={task.id} task={task} onToggle={toggleTask} onDelete={deleteTask} />
+          ))
+        )}
+      </div>
+
+      {/* ── Completed Section ────────────────────────────────── */}
+      {completedTasks.length > 0 && (
+        <div>
+          <button
+            onClick={() => setShowCompleted(v => !v)}
+            className="flex items-center gap-2 text-xs text-text-secondary hover:text-text-primary transition-colors py-2 w-full"
+          >
+            {showCompleted
+              ? <ChevronDown size={14} />
+              : <ChevronRight size={14} />
+            }
+            <span className="uppercase tracking-wider font-medium">
+              Completed ({completedTasks.length})
+            </span>
+          </button>
+
+          {showCompleted && (
+            <div className="space-y-2 mt-2 opacity-70">
+              {completedTasks.map(task => (
+                <TaskRow key={task.id} task={task} onToggle={toggleTask} onDelete={deleteTask} />
+              ))}
+            </div>
+          )}
+        </div>
       )}
 
-      {/* Task Groups */}
-      {(["today", "week", "someday"] as Group[]).map((group) => {
-        const groupTasks = tasks.filter((t) => t.group === group);
-        const { label, emoji } = groupMeta[group];
-        return (
-          <Card key={group} title={`${emoji} ${label}`} subtitle={`${groupTasks.filter(t => !t.completed).length} remaining`}>
-            {groupTasks.length === 0 ? (
-              <p className="text-sm text-[#81c784]/50 italic py-2">No tasks here — nice!</p>
-            ) : (
-              <div className="space-y-1">
-                {groupTasks.map((task) => (
-                  <div
-                    key={task.id}
-                    className={`
-                      flex items-center gap-3 px-3 py-2.5 rounded-lg group/task
-                      transition-colors hover:bg-[#14591D]/10
-                    `}
-                  >
-                    <button
-                      onClick={() => toggleTask(task.id)}
-                      className={`
-                        w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0
-                        transition-all duration-150
-                        ${task.completed
-                          ? "bg-[#4caf50] border-[#4caf50]"
-                          : "border-[#1e3320] hover:border-[#14591D]"
-                        }
-                      `}
-                    >
-                      {task.completed && <Check size={11} className="text-white" strokeWidth={3} />}
-                    </button>
-                    <span
-                      className={`flex-1 text-sm ${
-                        task.completed
-                          ? "line-through text-[#81c784]/40"
-                          : "text-[#e8f5e9]"
-                      }`}
-                    >
-                      {task.text}
-                    </span>
-                    <button
-                      onClick={() => deleteTask(task.id)}
-                      className="opacity-0 group-hover/task:opacity-100 transition-opacity p-1 hover:text-[#ef5350] text-[#81c784]/40"
-                    >
-                      <Trash2 size={14} />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
-          </Card>
-        );
-      })}
+    </div>
+  );
+}
 
-      {/* Integration placeholder */}
-      <div className="flex items-center gap-3 p-4 border border-dashed border-[#1e3320] rounded-xl">
-        <span className="text-2xl">🔗</span>
-        <div>
-          <p className="text-sm text-[#81c784] font-medium">Google Tasks Integration</p>
-          <p className="text-xs text-[#81c784]/50 mt-0.5">Sync with Google Tasks coming in V2</p>
-        </div>
-        <span className="ml-auto text-xs text-[#81c784]/40 border border-[#1e3320] px-2 py-1 rounded">Soon</span>
-      </div>
+// ── Task Row Component ─────────────────────────────────────
+function TaskRow({
+  task,
+  onToggle,
+  onDelete,
+}: {
+  task: Task;
+  onToggle: (id: string) => void;
+  onDelete: (id: string) => void;
+}) {
+  return (
+    <div className={`flex items-center gap-3 px-4 py-3 rounded-xl border group transition-all ${
+      task.completed
+        ? "bg-surface border-border opacity-60"
+        : "bg-surface border-border hover:border-primary-bright/20"
+    }`}>
+      <button
+        onClick={() => onToggle(task.id)}
+        className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 transition-all ${
+          task.completed
+            ? "bg-primary-bright border-primary-bright"
+            : "border-border hover:border-primary-bright"
+        }`}
+      >
+        {task.completed && (
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+            <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        )}
+      </button>
+
+      <span className={`flex-1 text-sm ${
+        task.completed
+          ? "line-through text-text-secondary"
+          : "text-text-primary"
+      }`}>
+        {task.text}
+      </span>
+
+      <button
+        onClick={() => onDelete(task.id)}
+        className="opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:text-danger text-text-secondary/40 rounded"
+      >
+        <Trash2 size={14} />
+      </button>
     </div>
   );
 }

@@ -24,20 +24,20 @@ interface BadgeProps {
 }
 
 const variantStyles: Record<BadgeVariant, string> = {
-  online:    "bg-[#14591D]/30 text-[#4caf50] border border-[#4caf50]/30",
-  offline:   "bg-[#ef5350]/10 text-[#ef5350] border border-[#ef5350]/30",
-  approved:  "bg-[#14591D]/40 text-[#4caf50] border border-[#4caf50]/40",
-  rejected:  "bg-[#ef5350]/10 text-[#ef5350] border border-[#ef5350]/30",
-  long:      "bg-[#14591D]/40 text-[#4caf50] border border-[#4caf50]/40",
-  short:     "bg-[#ef5350]/10 text-[#ef5350] border border-[#ef5350]/30",
-  choppy:    "bg-yellow-900/20 text-yellow-400 border border-yellow-600/30",
-  trending:  "bg-[#14591D]/40 text-[#4caf50] border border-[#4caf50]/40",
-  volatile:  "bg-orange-900/20 text-orange-400 border border-orange-600/30",
-  bullish:   "bg-[#14591D]/40 text-[#4caf50] border border-[#4caf50]/40",
-  bearish:   "bg-[#ef5350]/10 text-[#ef5350] border border-[#ef5350]/30",
-  neutral:   "bg-[#1e3320]/60 text-[#81c784] border border-[#1e3320]",
-  running:   "bg-[#14591D]/40 text-[#4caf50] border border-[#4caf50]/40",
-  stopped:   "bg-[#ef5350]/10 text-[#ef5350] border border-[#ef5350]/30",
+  online:   "bg-primary/30 text-primary-bright border border-primary-bright/30",
+  offline:  "bg-danger/10 text-danger border border-danger/30",
+  approved: "bg-primary/30 text-primary-bright border border-primary-bright/30",
+  rejected: "bg-danger/10 text-danger border border-danger/30",
+  long:     "bg-primary/30 text-primary-bright border border-primary-bright/30",
+  short:    "bg-danger/10 text-danger border border-danger/30",
+  choppy:   "bg-wow-amber/10 text-wow-amber border border-wow-amber/30",
+  trending: "bg-primary/30 text-primary-bright border border-primary-bright/30",
+  volatile: "bg-orange-900/20 text-orange-400 border border-orange-600/30",
+  bullish:  "bg-primary/30 text-primary-bright border border-primary-bright/30",
+  bearish:  "bg-danger/10 text-danger border border-danger/30",
+  neutral:  "bg-surface2 text-text-secondary border border-border",
+  running:  "bg-primary/30 text-primary-bright border border-primary-bright/30",
+  stopped:  "bg-danger/10 text-danger border border-danger/30",
 };
 
 const variantLabels: Partial<Record<BadgeVariant, string>> = {

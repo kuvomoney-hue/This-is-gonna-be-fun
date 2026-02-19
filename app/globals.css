@@ -5,15 +5,21 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0a0f0a;
-  --surface: #111811;
-  --primary: #14591D;
-  --primary-bright: #1a7a27;
-  --text-primary: #e8f5e9;
-  --text-secondary: #81c784;
-  --border: #1e3320;
-  --success: #4caf50;
-  --danger: #ef5350;
+  --bg:              #0C0C0F;
+  --surface:         #13131A;
+  --surface2:        #1A1A24;
+  --border:          #22223A;
+  --primary:         #14591D;
+  --primary-dim:     #0D3912;
+  --primary-bright:  #22C55E;
+  --text-primary:    #F0EEF8;
+  --text-secondary:  #8B8BA0;
+  --success:         #22C55E;
+  --danger:          #EF4444;
+  --wow-navy:        #0A1E76;
+  --wow-navy-dim:    #071144;
+  --wow-purple:      #C59FC6;
+  --wow-amber:       #B8A830;
 }
 
 * {
@@ -41,7 +47,7 @@ body {
   background: var(--surface);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--border);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -51,30 +57,32 @@ body {
 /* Recharts overrides */
 .recharts-cartesian-grid-horizontal line,
 .recharts-cartesian-grid-vertical line {
-  stroke: #1e3320;
+  stroke: #22223A;
 }
 
 .recharts-tooltip-wrapper {
   outline: none !important;
 }
 
-/* Transitions */
+/* Card hover */
 .card-hover {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .card-hover:hover {
-  border-color: var(--primary-bright) !important;
-  box-shadow: 0 0 16px rgba(26, 122, 39, 0.25);
+  border-color: #22C55E40;
+  box-shadow: 0 0 20px rgba(34,197,94,0.12);
+}
+
+.card-hover-navy:hover {
+  border-color: #0A1E7640;
+  box-shadow: 0 0 20px rgba(10,30,118,0.25);
 }
 
 @layer utilities {
-  .text-positive {
-    color: #4caf50;
-  }
-  .text-negative {
-    color: #ef5350;
-  }
-  .font-mono-num {
-    font-family: 'JetBrains Mono', monospace;
-  }
+  .text-positive { color: #22C55E; }
+  .text-negative { color: #EF4444; }
+  .font-mono-num { font-family: 'JetBrains Mono', monospace; }
+  .glow-green  { box-shadow: 0 0 20px rgba(34,197,94,0.25); }
+  .glow-navy   { box-shadow: 0 0 20px rgba(10,30,118,0.4); }
+  .glow-purple { box-shadow: 0 0 20px rgba(197,159,198,0.25); }
 }

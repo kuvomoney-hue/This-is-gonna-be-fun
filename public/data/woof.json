@@ -1,0 +1,20 @@
+{
+  "status": "pre-launch",
+  "milestones": {
+    "rdComplete": true,
+    "labelsSubmitted": true,
+    "kitchenOnboarding": false,
+    "labelApproval": false,
+    "launched": false
+  },
+  "inventory": {
+    "peanutButter": {"capacity": 280, "sold": 0},
+    "hotMilk": {"capacity": 500, "sold": 0}
+  },
+  "social": {
+    "instagramFollowers": 1047,
+    "instagramHandle": "@wayofwoof",
+    "viralVideos": true
+  },
+  "lastUpdated": "2026-02-18"
+}
