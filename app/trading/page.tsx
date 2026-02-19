@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Card from "@/components/Card";
 import Badge from "@/components/Badge";
 import SignalRow from "@/components/SignalRow";
@@ -22,6 +23,16 @@ import {
   ResponsiveContainer,
   ReferenceLine,
 } from "recharts";
+
+interface LiveData {
+  btc_price?: number;
+  account_total?: number;
+  usdt_balance?: number;
+  has_position?: boolean;
+  spy?: { price: number; change_pct: number };
+  qqq?: { price: number; change_pct: number };
+  signals_today?: { approved: number; rejected: number; total: number };
+}
 
 const CustomTooltip = ({
   active,
@@ -49,6 +60,20 @@ const trendVariant = (t: "BULLISH" | "BEARISH" | "NEUTRAL") =>
   t === "BULLISH" ? "bullish" : t === "BEARISH" ? "bearish" : "neutral";
 
 export default function TradingPage() {
+  const [live, setLive] = useState<LiveData>({});
+
+  useEffect(() => {
+    fetch("/data/trading.json", { cache: "no-store" })
+      .then(r => r.json())
+      .then(setLive)
+      .catch(() => {});
+  }, []);
+
+  const fmtChange = (pct?: number) => {
+    if (pct == null) return "—";
+    return `${pct >= 0 ? "+" : ""}${pct.toFixed(2)}%`;
+  };
+
   return (
     <div className="p-4 md:p-6 space-y-6 max-w-7xl mx-auto">
 
@@ -56,6 +81,54 @@ export default function TradingPage() {
       <div>
         <h1 className="text-3xl font-bold text-text-primary">📈 Trading</h1>
         <p className="text-text-secondary text-sm mt-1">BTC/USD · Scout Signal Engine</p>
+      </div>
+
+      {/* ── Live Prices + Signal Stats Strip ── */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {/* BTC */}
+        <div className="bg-surface border border-primary-bright/20 rounded-xl p-4 shadow-glow-green">
+          <p className="text-[10px] text-text-secondary uppercase tracking-wider mb-1">BTC</p>
+          <p className="text-xl font-mono font-bold text-primary-bright">
+            ${live.btc_price ? live.btc_price.toLocaleString() : "—"}
+          </p>
+          <p className="text-xs text-text-secondary mt-1">
+            {live.has_position ? "🟢 in position" : "⚪ no position"}
+          </p>
+        </div>
+
+        {/* SPY */}
+        <div className="bg-surface border border-border rounded-xl p-4">
+          <p className="text-[10px] text-text-secondary uppercase tracking-wider mb-1">SPY</p>
+          <p className="text-xl font-mono font-bold text-text-primary">
+            ${live.spy?.price ?? "—"}
+          </p>
+          <p className={`text-xs mt-1 font-mono ${(live.spy?.change_pct ?? 0) >= 0 ? "text-primary-bright" : "text-danger"}`}>
+            {fmtChange(live.spy?.change_pct)}
+          </p>
+        </div>
+
+        {/* QQQ */}
+        <div className="bg-surface border border-border rounded-xl p-4">
+          <p className="text-[10px] text-text-secondary uppercase tracking-wider mb-1">QQQ</p>
+          <p className="text-xl font-mono font-bold text-text-primary">
+            ${live.qqq?.price ?? "—"}
+          </p>
+          <p className={`text-xs mt-1 font-mono ${(live.qqq?.change_pct ?? 0) >= 0 ? "text-primary-bright" : "text-danger"}`}>
+            {fmtChange(live.qqq?.change_pct)}
+          </p>
+        </div>
+
+        {/* Signals Today */}
+        <div className="bg-surface border border-border rounded-xl p-4">
+          <p className="text-[10px] text-text-secondary uppercase tracking-wider mb-1">Signals Today</p>
+          <p className="text-xl font-mono font-bold text-text-primary">
+            {live.signals_today?.total ?? "—"}
+          </p>
+          <p className="text-xs mt-1">
+            <span className="text-primary-bright">{live.signals_today?.approved ?? 0} approved</span>
+            <span className="text-text-secondary"> · {live.signals_today?.rejected ?? 0} rejected</span>
+          </p>
+        </div>
       </div>
 
       {/* Account Value Chart */}
