@@ -25,6 +25,7 @@ interface WoofData {
     rdComplete: boolean;
     labelsSubmitted: boolean;
     kitchenOnboarding: boolean;
+    inventionInProgress?: boolean;
     labelApproval: boolean;
     launched: boolean;
   };
@@ -51,7 +52,8 @@ const DEFAULT_WOOF: WoofData = {
   milestones: {
     rdComplete: true,
     labelsSubmitted: true,
-    kitchenOnboarding: false,
+    kitchenOnboarding: true,
+    inventionInProgress: true,
     labelApproval: false,
     launched: false,
   },
