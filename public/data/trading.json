@@ -68,12 +68,12 @@
   ],
   "has_position": false,
   "spy": {
-    "price": 688.25,
-    "change_pct": 0.51
+    "price": 688.73,
+    "change_pct": 0.58
   },
   "qqq": {
-    "price": 607.98,
-    "change_pct": 0.69
+    "price": 608.61,
+    "change_pct": 0.79
   },
   "signals_today": {
     "approved": 0,
@@ -184,7 +184,7 @@
         "verdict": "UNKNOWN"
       }
     ],
-    "total": 0
+    "total": 13
   },
-  "_updated": "2026-02-20T18:40:36.449398Z"
+  "_updated": "2026-02-20T18:41:57.448203Z"
 }
