@@ -1,5 +1,5 @@
 {
-  "btc_price": 67201.42,
+  "btc_price": 67281.97,
   "account_total": 483.07,
   "usdt_balance": 482.96,
   "btc_balance": 1.56e-06,
@@ -76,126 +76,16 @@
     "change_pct": -0.41
   },
   "signals_today": {
-    "approved": 8,
-    "rejected": 38,
+    "approved": 2,
+    "rejected": 0,
     "signals": [
       {
         "action": "LONG",
-        "symbol": "QQQ",
-        "price": 490.0
-      },
-      {
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 602.38
-      },
-      {
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 66440.0
-      },
-      {
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 66624.0
-      },
-      {
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 602.98
-      },
-      {
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 601.56
-      },
-      {
-        "action": "SHORT",
         "symbol": "SPY",
-        "price": 682.53
-      },
-      {
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 602.69
-      },
-      {
-        "action": "LONG",
-        "symbol": "SPY",
-        "price": 683.83
-      },
-      {
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 66883.0
-      },
-      {
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 66929.0
-      },
-      {
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 67194.0
-      },
-      {
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 602.38
-      },
-      {
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 66440.0
-      },
-      {
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 66624.0
-      },
-      {
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 602.98
-      },
-      {
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 601.56
-      },
-      {
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 682.53
-      },
-      {
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 602.69
-      },
-      {
-        "action": "LONG",
-        "symbol": "SPY",
-        "price": 683.83
-      },
-      {
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 66883.0
-      },
-      {
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 66929.0
-      },
-      {
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 67194.0
+        "price": 685.0
       }
     ],
-    "total": 46
+    "total": 2
   },
-  "_updated": "2026-02-20T04:35:53.393194Z"
+  "_updated": "2026-02-20T05:06:01.866553Z"
 }
