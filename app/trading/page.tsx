@@ -63,7 +63,9 @@ export default function TradingPage() {
   const [live, setLive] = useState<LiveData>({});
 
   useEffect(() => {
-    fetch("/data/trading.json", { cache: "no-store" })
+    // Add timestamp to bust CDN cache
+    const timestamp = Date.now();
+    fetch(`/data/trading.json?t=${timestamp}`, { cache: "no-store" })
       .then(r => r.json())
       .then(setLive)
       .catch(() => {});
