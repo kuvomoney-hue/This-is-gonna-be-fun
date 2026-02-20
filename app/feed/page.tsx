@@ -12,10 +12,21 @@ interface VideoEntry {
 }
 
 const CHANNEL_COLORS: Record<string, string> = {
+  // Original
   "Runway":         "bg-[#14591D] text-[#a5d6a7]",
   "OpenAI":         "bg-[#1b5e20] text-[#c8e6c9]",
   "Google DeepMind":"bg-[#2e7d32] text-[#dcedc8]",
   "Stability AI":   "bg-[#388e3c] text-[#f1f8e9]",
+  // New
+  "Anthropic":      "bg-[#1b5e20] text-[#c8e6c9]",
+  "Synthesia":      "bg-[#2e7d32] text-[#dcedc8]",
+  "Luma AI":        "bg-[#388e3c] text-[#f1f8e9]",
+  "Pika":           "bg-[#14591D] text-[#a5d6a7]",
+  "Descript":       "bg-[#1b5e20] text-[#c8e6c9]",
+  "Veed.io":        "bg-[#2e7d32] text-[#dcedc8]",
+  "CapCut":         "bg-[#388e3c] text-[#f1f8e9]",
+  "InVideo":        "bg-[#14591D] text-[#a5d6a7]",
+  "HeyGen":         "bg-[#1b5e20] text-[#c8e6c9]",
 };
 
 function relativeTime(iso: string): string {
