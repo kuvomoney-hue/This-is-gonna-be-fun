@@ -69,11 +69,11 @@ function getGreeting() {
 
 // ── Woof milestones ────────────────────────────────────────
 const woofMilestones = [
-  { key: "rdComplete",       label: "R&D Complete",        done: true  },
-  { key: "labelsSubmitted",  label: "Labels Submitted",    done: true  },
-  { key: "kitchenOnboarding",label: "Kitchen Onboarding",  done: false },
-  { key: "labelApproval",    label: "Label Approval",      done: false },
-  { key: "launched",         label: "LAUNCH",              done: false },
+  { key: "rdComplete",       label: "R&D Complete" },
+  { key: "labelsSubmitted",  label: "Labels Submitted" },
+  { key: "kitchenOnboarding",label: "Kitchen Onboarding" },
+  { key: "labelApproval",    label: "Label Approval" },
+  { key: "launched",         label: "LAUNCH" },
 ];
 
 const QUICK_TASKS_KEY = "rendyr_quick_tasks";
@@ -91,19 +91,59 @@ export default function CommandCenter() {
   const [quickTasks, setQuickTasks] = useState(INITIAL_QUICK_TASKS);
 
   useEffect(() => {
-    // Load data files
-    fetch("/data/bot_status.json", { cache: "no-store" })
-      .then(r => r.json()).then(setBot).catch(() => {});
+    // Load trading data (has bot status + prices + balances)
+    fetch("/data/trading.json", { cache: "no-store" })
+      .then(r => {
+        if (!r.ok) throw new Error("Failed to fetch trading data");
+        return r.json();
+      })
+      .then(data => {
+        if (data && typeof data === 'object') {
+          // Map trading.json fields to BotStatus interface
+          setBot({
+            isRunning: data.has_position !== undefined,  // If we have trading data, bot is running
+            btcPrice: data.btc_price || DEFAULT_BOT.btcPrice,
+            accountBalance: data.account_total || DEFAULT_BOT.accountBalance,
+            todayPnl: DEFAULT_BOT.todayPnl,  // TODO: calculate from recent_trades
+            winRate: DEFAULT_BOT.winRate,
+          });
+        }
+      })
+      .catch(err => {
+        console.error("Trading data fetch error:", err);
+      });
+
     fetch("/data/rendyr.json", { cache: "no-store" })
-      .then(r => r.json()).then(setRendyr).catch(() => {});
+      .then(r => {
+        if (!r.ok) throw new Error("Failed to fetch rendyr data");
+        return r.json();
+      })
+      .then(data => {
+        if (data && typeof data === 'object') setRendyr(data);
+      })
+      .catch(err => {
+        console.error("Rendyr data fetch error:", err);
+      });
+
     fetch("/data/woof.json", { cache: "no-store" })
-      .then(r => r.json()).then(setWoof).catch(() => {});
+      .then(r => {
+        if (!r.ok) throw new Error("Failed to fetch woof data");
+        return r.json();
+      })
+      .then(data => {
+        if (data && typeof data === 'object') setWoof(data);
+      })
+      .catch(err => {
+        console.error("Woof data fetch error:", err);
+      });
 
     // Load quick tasks from localStorage
     try {
       const stored = localStorage.getItem(QUICK_TASKS_KEY);
       if (stored) setQuickTasks(JSON.parse(stored));
-    } catch {}
+    } catch (err) {
+      console.error("localStorage error:", err);
+    }
   }, []);
 
   const toggleQuickTask = (id: string) => {

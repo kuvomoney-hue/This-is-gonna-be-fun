@@ -55,6 +55,20 @@
       "category": "woof",
       "est": "10min",
       "done": false
+    },
+    {
+      "id": "qw9",
+      "text": "Get YouTube API key (Google Cloud Console → Enable YouTube Data API v3)",
+      "category": "trading",
+      "est": "5min",
+      "done": false
+    },
+    {
+      "id": "qw10",
+      "text": "Install OpenClaw Chrome extension + log into X (for auto @wayofwoof post scraping)",
+      "category": "woof",
+      "est": "5min",
+      "done": false
     }
   ],
   "activeTasks": [
