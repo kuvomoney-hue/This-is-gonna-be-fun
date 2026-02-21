@@ -3,10 +3,10 @@
   "feels_like": 39,
   "condition": "Clear",
   "emoji": "\u2600\ufe0f",
-  "high": 57,
-  "low": 40,
-  "humidity": 74,
+  "high": 67,
+  "low": 42,
+  "humidity": 80,
   "windspeed": 8,
   "location": "Los Angeles, CA",
-  "_updated": "2026-02-21T07:45:14.470306Z"
+  "_updated": "2026-02-21T08:15:23.862071Z"
 }
