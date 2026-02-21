@@ -175,6 +175,13 @@
       "category": "life",
       "priority": "medium",
       "done": false
+    },
+    {
+      "id": "at15",
+      "text": "Migrate trading bot to Hyperliquid API (off Binance US)",
+      "category": "trading",
+      "priority": "low",
+      "done": false
     }
   ],
   "projects": [
