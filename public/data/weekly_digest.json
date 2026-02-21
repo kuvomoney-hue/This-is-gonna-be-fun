@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-20T19:44:25.361644-08:00",
-  "period_start": "2026-02-14T03:44:21.747952+00:00",
-  "period_end": "2026-02-21T03:44:25.361677+00:00",
+  "generated_at": "2026-02-20T19:45:01.249110-08:00",
+  "period_start": "2026-02-14T03:44:58.420264+00:00",
+  "period_end": "2026-02-21T03:45:01.249139+00:00",
   "categories": {
     "camera_gear": [
       {
@@ -173,7 +173,7 @@
         "published": "2026-02-20T13:05:36+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 662,
+        "score": 661,
         "comments": 148
       },
       {
@@ -193,7 +193,7 @@
         "published": "2026-02-19T20:11:42+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 783,
+        "score": 777,
         "comments": 263
       },
       {
@@ -203,7 +203,7 @@
         "published": "2026-02-19T11:03:36+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 401,
+        "score": 404,
         "comments": 156
       },
       {
@@ -213,7 +213,7 @@
         "published": "2026-02-19T05:13:10+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 478,
+        "score": 473,
         "comments": 165
       },
       {
@@ -223,7 +223,7 @@
         "published": "2026-02-19T04:48:29+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1068,
+        "score": 1071,
         "comments": 175
       },
       {
@@ -233,7 +233,7 @@
         "published": "2026-02-18T11:49:34+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 408,
+        "score": 406,
         "comments": 43
       },
       {
@@ -253,7 +253,7 @@
         "published": "2026-02-17T14:42:06+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 779,
+        "score": 775,
         "comments": 234
       },
       {
@@ -263,7 +263,7 @@
         "published": "2026-02-17T13:00:45+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 371,
+        "score": 370,
         "comments": 81
       },
       {
@@ -283,7 +283,7 @@
         "published": "2026-02-16T22:34:05+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 327,
+        "score": 332,
         "comments": 114
       },
       {
@@ -293,7 +293,7 @@
         "published": "2026-02-16T19:05:32+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 644,
+        "score": 642,
         "comments": 44
       },
       {
@@ -303,7 +303,7 @@
         "published": "2026-02-16T17:49:21+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 663,
+        "score": 667,
         "comments": 98
       },
       {
@@ -313,7 +313,7 @@
         "published": "2026-02-16T09:29:03+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 802,
+        "score": 797,
         "comments": 154
       },
       {
@@ -323,7 +323,7 @@
         "published": "2026-02-16T00:36:08+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 752,
+        "score": 748,
         "comments": 668
       },
       {
@@ -333,7 +333,7 @@
         "published": "2026-02-16T00:24:52+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 346,
+        "score": 344,
         "comments": 62
       },
       {
@@ -343,7 +343,7 @@
         "published": "2026-02-15T22:34:53+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 318,
+        "score": 316,
         "comments": 47
       },
       {
@@ -353,7 +353,7 @@
         "published": "2026-02-15T15:54:25+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 642,
+        "score": 652,
         "comments": 59
       },
       {
@@ -363,7 +363,7 @@
         "published": "2026-02-14T18:48:10+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 517,
+        "score": 515,
         "comments": 89
       }
     ]
