@@ -56,9 +56,20 @@ function extractTag(xml: string, tag: string): string {
 
 function isLikelyShort(title: string): boolean {
   const lowerTitle = title.toLowerCase();
+  
+  // Explicit shorts markers
   if (lowerTitle.includes("#short")) return true;
   if (lowerTitle.includes("shorts")) return true;
-  if (title.length < 20 && !lowerTitle.includes("launch")) return true;
+  if (lowerTitle.includes("#shorts")) return true;
+  
+  // Very short titles (unless they mention launch/release/announce)
+  const hasLaunchKeyword = /launch|release|announc|introduc|unveil|demo|official/i.test(title);
+  if (title.length < 25 && !hasLaunchKeyword) return true;
+  
+  // Common short patterns
+  if (lowerTitle.match(/^(how to|tip|trick|hack|quick)/)) return true;
+  if (lowerTitle.match(/\d+ (second|sec|minute|min) /)) return true;
+  
   return false;
 }
 
