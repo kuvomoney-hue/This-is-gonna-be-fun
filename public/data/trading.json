@@ -1,5 +1,5 @@
 {
-  "btc_price": 64441.17,
+  "btc_price": 64679.7,
   "account_total": 483.06,
   "usdt_balance": 482.96,
   "btc_balance": 1.56e-06,
@@ -68,15 +68,15 @@
   ],
   "has_position": false,
   "spy": {
-    "price": 680.63,
-    "change_pct": -0.61
+    "price": 682.71,
+    "change_pct": -0.3
   },
   "qqq": {
-    "price": 599.48,
-    "change_pct": -0.72
+    "price": 601.53,
+    "change_pct": -0.38
   },
   "signals_today": {
-    "approved": 1,
+    "approved": 0,
     "rejected": 0,
     "signals": [
       {
@@ -156,11 +156,11 @@
         "action": "SHORT",
         "symbol": "SPY",
         "price": 681.16,
-        "score": 45,
-        "verdict": "APPROVED"
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 10
   },
-  "_updated": "2026-02-23T17:38:17.768894Z"
+  "_updated": "2026-02-23T18:08:31.127710Z"
 }
