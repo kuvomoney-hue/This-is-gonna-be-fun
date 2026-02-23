@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { readFile } from "fs/promises";
+import { join } from "path";
 
 interface VideoEntry {
   title: string;
@@ -6,6 +8,25 @@ interface VideoEntry {
   published: string;
   channelName: string;
   thumbnail: string;
+  source?: "youtube" | "x";
+}
+
+interface XVideoEntry {
+  source: "x";
+  brand: string;
+  handle: string;
+  text: string;
+  postUrl: string;
+  videoUrl: string;
+  thumbnail: string;
+  engagement: {
+    likes: number;
+    retweets: number;
+    replies: number;
+    views: number;
+  };
+  timestamp: string;
+  duration_sec: number;
 }
 
 const CHANNELS: { id: string; name: string }[] = [
@@ -25,7 +46,6 @@ const CHANNELS: { id: string; name: string }[] = [
   { id: "UCHXa1e9vcONbg9vXWCyh-Hw", name: "CapCut" },
   { id: "UCJsXKiz-6VrZVYFMUqPY8wQ", name: "InVideo" },
   { id: "UCkZMx7V1CRaRSvpfD7fGVcA", name: "HeyGen" },
-  // Add more as we find official channels - some of these companies don't have active YouTube presence
 ];
 
 function extractTag(xml: string, tag: string): string {
@@ -36,10 +56,8 @@ function extractTag(xml: string, tag: string): string {
 
 function isLikelyShort(title: string): boolean {
   const lowerTitle = title.toLowerCase();
-  // Filter out obvious shorts indicators
   if (lowerTitle.includes("#short")) return true;
   if (lowerTitle.includes("shorts")) return true;
-  // Very short titles (< 20 chars) are often shorts
   if (title.length < 20 && !lowerTitle.includes("launch")) return true;
   return false;
 }
@@ -74,10 +92,6 @@ function parseEntries(xml: string, channelName: string): VideoEntry[] {
 
     // Skip shorts
     if (isLikelyShort(title)) continue;
-    
-    // Only include if it looks like a major launch/announcement
-    // Comment this out if you want all non-shorts videos
-    // if (!isMajorLaunch(title)) continue;
 
     const pubMatch = block.match(/<published>([\s\S]*?)<\/published>/i);
     const published = pubMatch ? pubMatch[1].trim() : new Date(0).toISOString();
@@ -88,38 +102,79 @@ function parseEntries(xml: string, channelName: string): VideoEntry[] {
       published,
       channelName,
       thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+      source: "youtube",
     });
   }
 
   return entries;
 }
 
+async function fetchYouTubeVideos(): Promise<VideoEntry[]> {
+  const results = await Promise.allSettled(
+    CHANNELS.map(({ id, name }) =>
+      fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, {
+        next: { revalidate: 1800 },
+      })
+        .then((r) => {
+          if (!r.ok) throw new Error(`HTTP ${r.status} for ${name}`);
+          return r.text();
+        })
+        .then((xml) => parseEntries(xml, name))
+    )
+  );
+
+  const allVideos: VideoEntry[] = [];
+  for (const result of results) {
+    if (result.status === "fulfilled") {
+      allVideos.push(...result.value);
+    }
+  }
+
+  return allVideos;
+}
+
+async function fetchXVideos(): Promise<VideoEntry[]> {
+  try {
+    const dataPath = join(process.cwd(), "public", "data", "x_videos.json");
+    const fileContent = await readFile(dataPath, "utf-8");
+    const data = JSON.parse(fileContent);
+    
+    // Convert X video format to unified VideoEntry format
+    const xVideos: VideoEntry[] = (data.videos || []).map((xv: XVideoEntry) => ({
+      title: xv.text.slice(0, 100) + (xv.text.length > 100 ? "..." : ""),
+      videoId: xv.postUrl.split("/").pop() || "",
+      published: xv.timestamp,
+      channelName: xv.brand,
+      thumbnail: xv.thumbnail,
+      source: "x" as const,
+      // Additional X-specific data (for future enhancement)
+      handle: xv.handle,
+      engagement: xv.engagement,
+      postUrl: xv.postUrl,
+    }));
+    
+    return xVideos;
+  } catch (err) {
+    console.log("[videos] No X video data available:", err);
+    return [];
+  }
+}
+
 export async function GET() {
   try {
-    const results = await Promise.allSettled(
-      CHANNELS.map(({ id, name }) =>
-        fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, {
-          next: { revalidate: 1800 },
-        })
-          .then((r) => {
-            if (!r.ok) throw new Error(`HTTP ${r.status} for ${name}`);
-            return r.text();
-          })
-          .then((xml) => parseEntries(xml, name))
-      )
-    );
+    // Fetch both YouTube and X videos in parallel
+    const [youtubeVideos, xVideos] = await Promise.all([
+      fetchYouTubeVideos(),
+      fetchXVideos(),
+    ]);
 
-    const allVideos: VideoEntry[] = [];
-    for (const result of results) {
-      if (result.status === "fulfilled") {
-        allVideos.push(...result.value);
-      }
-    }
-
+    // Combine and sort by published date
+    const allVideos = [...youtubeVideos, ...xVideos];
     allVideos.sort(
       (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
     );
 
+    // Return top 30
     return NextResponse.json(allVideos.slice(0, 30));
   } catch (err) {
     console.error("[videos route]", err);

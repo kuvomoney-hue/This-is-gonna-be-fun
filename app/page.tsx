@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import WeeklyDigest from "@/components/WeeklyDigest";
 
 // ── Types ──────────────────────────────────────────────────
 interface BotStatus {
@@ -392,6 +393,9 @@ export default function CommandCenter() {
           ))}
         </div>
       </div>
+
+      {/* ── Row 4: Weekly Digest ───────────────────────────── */}
+      <WeeklyDigest compact={true} />
 
     </div>
   );

@@ -10,6 +10,15 @@ interface VideoEntry {
   published: string;
   channelName: string;
   thumbnail: string;
+  source?: "youtube" | "x";
+  handle?: string;
+  postUrl?: string;
+  engagement?: {
+    likes: number;
+    retweets: number;
+    replies: number;
+    views: number;
+  };
 }
 
 const CHANNEL_COLORS: Record<string, string> = {
@@ -77,7 +86,7 @@ export default function VideosPage() {
       <div>
         <h1 className="text-2xl font-bold text-[#e8f5e9]">AI Video Feed</h1>
         <p className="text-[#81c784] text-sm mt-1">
-          Latest from Runway, OpenAI, Google DeepMind &amp; Stability AI
+          Latest from Runway, OpenAI, Google DeepMind, Stability AI &amp; more • YouTube + X
         </p>
       </div>
 
@@ -94,10 +103,16 @@ export default function VideosPage() {
           : videos.map((v) => {
               const badgeClass =
                 CHANNEL_COLORS[v.channelName] ?? "bg-[#1e3320] text-[#81c784]";
+              
+              // Determine link based on source
+              const videoLink = v.source === "x" 
+                ? v.postUrl || `https://x.com/search?q=${encodeURIComponent(v.title)}`
+                : `https://youtube.com/watch?v=${v.videoId}`;
+              
               return (
                 <a
-                  key={v.videoId}
-                  href={`https://youtube.com/watch?v=${v.videoId}`}
+                  key={`${v.source || 'youtube'}-${v.videoId}`}
+                  href={videoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group block rounded-xl overflow-hidden bg-[#111811] border border-[#1e3320] hover:border-[#4caf50]/50 transition-all duration-200 hover:shadow-[0_0_16px_rgba(76,175,80,0.15)]"
@@ -113,6 +128,13 @@ export default function VideosPage() {
                       unoptimized
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
+                    
+                    {/* Source badge overlay */}
+                    {v.source === "x" && (
+                      <div className="absolute top-2 right-2 bg-black/80 backdrop-blur-sm px-2 py-1 rounded-md">
+                        <span className="text-xs font-bold text-white">𝕏</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Info */}
@@ -127,6 +149,11 @@ export default function VideosPage() {
                       <span className="text-xs text-[#81c784]">
                         {relativeTime(v.published)}
                       </span>
+                      {v.source === "x" && v.engagement && (
+                        <span className="text-xs text-[#81c784]/70">
+                          {v.engagement.likes > 0 && `❤️ ${v.engagement.likes}`}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </a>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar";
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 export const metadata: Metadata = {
   title: "Rendyr Mission Control",
@@ -15,11 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-bg text-text-primary min-h-screen">
-        <Sidebar />
-        {/* Desktop: offset for sidebar; Mobile: offset for bottom tab bar */}
-        <main className="md:ml-60 mb-16 md:mb-0 min-h-screen">
-          {children}
-        </main>
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
