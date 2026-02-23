@@ -1,12 +1,7 @@
 {
-  "has_position": false,
-  "symbol": null,
-  "direction": null,
-  "strike": null,
-  "entry_premium": null,
-  "current_premium": null,
-  "pnl_pct": null,
-  "entry_time": null,
-  "status": "none",
-  "_updated": "2026-02-23T23:40:47.139303Z"
+  "equity": 0.0,
+  "buying_power": 402.91,
+  "positions": [],
+  "has_positions": false,
+  "_updated": "2026-02-23T23:49:09.518081Z"
 }
