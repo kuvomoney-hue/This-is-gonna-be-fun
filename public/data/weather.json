@@ -4,9 +4,9 @@
   "condition": "Clear",
   "emoji": "\u2600\ufe0f",
   "high": 83,
-  "low": 52,
-  "humidity": 50,
+  "low": 51,
+  "humidity": 53,
   "windspeed": 11,
   "location": "Los Angeles, CA",
-  "_updated": "2026-02-23T10:05:22.255949Z"
+  "_updated": "2026-02-23T10:35:32.444117Z"
 }
