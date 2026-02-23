@@ -1,5 +1,5 @@
 {
-  "btc_price": 64722.45,
+  "btc_price": 65210.75,
   "account_total": 483.06,
   "usdt_balance": 482.96,
   "btc_balance": 1.56e-06,
@@ -76,39 +76,39 @@
     "change_pct": 0.83
   },
   "signals_today": {
-    "approved": 2,
-    "rejected": 7,
+    "approved": 1,
+    "rejected": 9,
     "signals": [
       {
         "time": "12:11",
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 67356.0,
-        "score": 70,
-        "verdict": "APPROVED"
+        "score": 20,
+        "verdict": "REJECTED"
       },
       {
         "time": "12:11",
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 67356.0,
-        "score": 70,
-        "verdict": "APPROVED"
+        "score": 20,
+        "verdict": "REJECTED"
       },
       {
         "time": "12:24",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 67449.0,
-        "score": 25,
-        "verdict": "REJECTED"
+        "score": 70,
+        "verdict": "APPROVED"
       },
       {
         "time": "12:49",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 67446.0,
-        "score": 35,
+        "score": 25,
         "verdict": "REJECTED"
       },
       {
@@ -124,7 +124,7 @@
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 67605.0,
-        "score": 15,
+        "score": 35,
         "verdict": "REJECTED"
       },
       {
@@ -132,7 +132,7 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 67554.0,
-        "score": 30,
+        "score": 15,
         "verdict": "REJECTED"
       },
       {
@@ -148,11 +148,19 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 67395.0,
+        "score": 30,
+        "verdict": "REJECTED"
+      },
+      {
+        "time": "21:05",
+        "action": "LONG",
+        "symbol": "BTCUSDT",
+        "price": 64894.0,
         "score": 0,
         "verdict": "REJECTED"
       }
     ],
-    "total": 9
+    "total": 10
   },
-  "_updated": "2026-02-23T04:49:30.769139Z"
+  "_updated": "2026-02-23T05:19:40.293935Z"
 }
