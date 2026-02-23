@@ -1,5 +1,5 @@
 {
-  "btc_price": 65897.38,
+  "btc_price": 65320.46,
   "account_total": 483.06,
   "usdt_balance": 482.96,
   "btc_balance": 1.56e-06,
@@ -68,83 +68,83 @@
   ],
   "has_position": false,
   "spy": {
-    "price": 684.3,
-    "change_pct": -0.07
+    "price": 681.23,
+    "change_pct": -0.52
   },
   "qqq": {
-    "price": 603.76,
-    "change_pct": -0.01
+    "price": 599.7,
+    "change_pct": -0.68
   },
   "signals_today": {
-    "approved": 2,
-    "rejected": 6,
+    "approved": 0,
+    "rejected": 0,
     "signals": [
       {
         "time": "00:08",
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 65785.0,
-        "score": 34,
-        "verdict": "REJECTED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "01:00",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 65753.0,
-        "score": 52,
-        "verdict": "APPROVED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "01:05",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 65742.0,
-        "score": 75,
-        "verdict": "APPROVED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "03:34",
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 66225.0,
-        "score": 15,
-        "verdict": "REJECTED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "04:43",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 66359.0,
-        "score": 30,
-        "verdict": "REJECTED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "06:36",
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 65941.0,
-        "score": 25,
-        "verdict": "REJECTED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "06:39",
         "action": "SHORT",
         "symbol": "QQQ",
         "price": 607.41,
-        "score": 20,
-        "verdict": "REJECTED"
+        "score": null,
+        "verdict": "UNKNOWN"
       },
       {
         "time": "06:48",
         "action": "SHORT",
         "symbol": "SPY",
         "price": 687.47,
-        "score": 25,
-        "verdict": "REJECTED"
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 8
   },
-  "_updated": "2026-02-23T15:37:33.702690Z"
+  "_updated": "2026-02-23T16:07:43.979751Z"
 }
