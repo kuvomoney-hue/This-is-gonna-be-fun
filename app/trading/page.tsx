@@ -373,7 +373,7 @@ export default function TradingPage() {
                   ].map(s => (
                     <div key={s.label} className="bg-surface2 rounded-lg p-3">
                       <p className="text-xs text-text-secondary mb-1">{s.label}</p>
-                      <p className={`text-base font-mono font-bold ${s.color ?? "text-text-primary"}`}>{s.value}</p>
+                      <p className="text-base font-mono font-bold text-text-primary">{s.value}</p>
                     </div>
                   ))}
                 </div>
