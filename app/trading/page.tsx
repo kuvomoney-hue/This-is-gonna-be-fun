@@ -61,13 +61,22 @@ const trendVariant = (t: "BULLISH" | "BEARISH" | "NEUTRAL") =>
 
 export default function TradingPage() {
   const [live, setLive] = useState<LiveData>({});
+  const [rhData, setRhData] = useState<any>(null);
 
   useEffect(() => {
     // Add timestamp to bust CDN cache
     const timestamp = Date.now();
+    
+    // Fetch trading data
     fetch(`/data/trading.json?t=${timestamp}`, { cache: "no-store" })
       .then(r => r.json())
       .then(setLive)
+      .catch(() => {});
+    
+    // Fetch Robinhood data
+    fetch(`/api/robinhood?t=${timestamp}`, { cache: "no-store" })
+      .then(r => r.json())
+      .then(setRhData)
       .catch(() => {});
   }, []);
 
@@ -318,10 +327,10 @@ export default function TradingPage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5">
           {[
-            { label: "Equity",       value: `$${robinhoodStatus.equity.toFixed(0)}` },
-            { label: "Buying Power", value: `$${robinhoodStatus.buyingPower.toFixed(0)}` },
-            { label: "Trades",       value: String(robinhoodStatus.totalTrades) },
-            { label: "Win Rate",     value: `${robinhoodStatus.winRate}%` },
+            { label: "Equity",       value: rhData ? `$${rhData.equity.toFixed(2)}` : `$${robinhoodStatus.equity.toFixed(0)}` },
+            { label: "Buying Power", value: rhData ? `$${rhData.buyingPower.toFixed(2)}` : `$${robinhoodStatus.buyingPower.toFixed(0)}` },
+            { label: "Positions",    value: rhData ? `${rhData.positions?.length || 0}/2` : "0/2" },
+            { label: "Status",       value: rhData?.connected ? "✅ Live" : "⚠️ Mock" },
           ].map((s) => (
             <div key={s.label} className="bg-surface border border-border rounded-xl p-4 text-center">
               <p className="text-xs text-text-secondary uppercase tracking-wider mb-1">{s.label}</p>
@@ -358,9 +367,9 @@ export default function TradingPage() {
 
                 <div className="grid grid-cols-3 gap-3">
                   {[
-                    { label: "Equity",       value: `$${rh.equity.toFixed(2)}` },
-                    { label: "Buying Power", value: `$${rh.buyingPower.toFixed(2)}` },
-                    { label: "Today P&L",    value: `${pnlPos ? "+" : ""}$${rh.todayPnl.toFixed(2)}`, color: pnlPos ? "text-primary-bright" : "text-danger" },
+                    { label: "Equity",       value: rhData ? `$${rhData.equity.toFixed(2)}` : `$${rh.equity.toFixed(2)}` },
+                    { label: "Buying Power", value: rhData ? `$${rhData.buyingPower.toFixed(2)}` : `$${rh.buyingPower.toFixed(2)}` },
+                    { label: "Positions",    value: rhData ? `${rhData.positions?.length || 0}/2` : "0/2" },
                   ].map(s => (
                     <div key={s.label} className="bg-surface2 rounded-lg p-3">
                       <p className="text-xs text-text-secondary mb-1">{s.label}</p>
