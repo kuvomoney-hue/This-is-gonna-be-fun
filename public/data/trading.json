@@ -1,5 +1,5 @@
 {
-  "btc_price": 64249.04,
+  "btc_price": 63714.58,
   "account_total": 483.06,
   "usdt_balance": 482.96,
   "btc_balance": 1.56e-06,
@@ -77,16 +77,8 @@
   },
   "signals_today": {
     "approved": 0,
-    "rejected": 4,
+    "rejected": 5,
     "signals": [
-      {
-        "time": "10:24",
-        "action": "LONG",
-        "symbol": "SPY",
-        "price": 683.71,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "10:36",
         "action": "LONG",
@@ -172,7 +164,7 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 64672.0,
-        "score": 10,
+        "score": 50,
         "verdict": "REJECTED"
       },
       {
@@ -180,7 +172,7 @@
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 64856.0,
-        "score": 45,
+        "score": 10,
         "verdict": "REJECTED"
       },
       {
@@ -188,7 +180,7 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 64731.0,
-        "score": 15,
+        "score": 45,
         "verdict": "REJECTED"
       },
       {
@@ -196,11 +188,19 @@
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 64467.0,
+        "score": 15,
+        "verdict": "REJECTED"
+      },
+      {
+        "time": "19:01",
+        "action": "SHORT",
+        "symbol": "BTCUSDT",
+        "price": 63944.0,
         "score": 45,
         "verdict": "REJECTED"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-02-24T02:41:54.309280Z"
+  "_updated": "2026-02-24T03:12:06.039090Z"
 }
