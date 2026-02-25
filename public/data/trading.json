@@ -1,5 +1,5 @@
 {
-  "btc_price": 68500.0,
+  "btc_price": 68569.22,
   "account_total": 483.07,
   "usdt_balance": 482.96,
   "btc_balance": 1.56e-06,
@@ -68,11 +68,11 @@
   ],
   "has_position": false,
   "spy": {
-    "price": 692.2,
-    "change_pct": 0.68
+    "price": 692.24,
+    "change_pct": 0.69
   },
   "qqq": {
-    "price": 615.22,
+    "price": 615.18,
     "change_pct": 1.15
   },
   "signals_today": {
@@ -146,5 +146,5 @@
     ],
     "total": 8
   },
-  "_updated": "2026-02-25T17:10:58.078487Z"
+  "_updated": "2026-02-25T17:41:14.125521Z"
 }
