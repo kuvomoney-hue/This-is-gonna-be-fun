@@ -48,16 +48,36 @@ const CHANNEL_COLORS: Record<string, string> = {
 
 const COMPANIES = [
   "All",
+  // Tier 1: AI Avatar & Video Generation
+  "HeyGen",
+  "Synthesia",
+  "D-ID",
+  "Colossyan",
+  "Elai.io",
+  "DeepBrain AI",
+  "Hour One",
+  // Tier 2: AI Video Editing & Tools
+  "Descript",
+  "VEED.io",
+  "InVideo",
+  "CapCut",
+  "Captions.ai",
+  "Submagic",
+  // Tier 3: AI Ad & Marketing
+  "Creatify",
+  "AdCreative AI",
+  "Vidnoz",
+  // Tier 4: Broader AI
   "Runway",
+  "ElevenLabs",
+  "Canva",
+  // Original (keeping for now)
   "OpenAI",
   "Google DeepMind",
   "Stability AI",
   "Anthropic",
-  "Synthesia",
   "Luma AI",
   "Pika",
-  "Descript",
-  "HeyGen",
 ];
 
 function relativeTime(iso: string): string {

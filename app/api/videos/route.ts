@@ -30,22 +30,33 @@ interface XVideoEntry {
 }
 
 const CHANNELS: { id: string; name: string }[] = [
-  // Original
+  // Tier 1: AI Avatar & Video Generation
+  { id: "UCkZMx7V1CRaRSvpfD7fGVcA", name: "HeyGen" },
+  { id: "UCvD6XFr3BPRrXAAIldJVe-w", name: "Synthesia" },
+  // TODO: Research channel IDs for: D-ID, Colossyan, Elai.io, DeepBrain AI, Hour One
+  
+  // Tier 2: AI Video Editing & Tools
+  { id: "UC95hKgASVo5ZR6HJ3Qi_E4g", name: "Descript" },
+  { id: "UCcuXKLzFxwEPFDEtvjzMSDg", name: "VEED.io" },
+  { id: "UCJsXKiz-6VrZVYFMUqPY8wQ", name: "InVideo" },
+  { id: "UCHXa1e9vcONbg9vXWCyh-Hw", name: "CapCut" },
+  // TODO: Research channel IDs for: Pictory, Opus Clip, Captions.ai, Submagic
+  
+  // Tier 3: AI Ad & Marketing Video
+  // TODO: Research channel IDs for: Creatify, AdCreative AI, Vidnoz
+  
+  // Tier 4: Broader AI Video/Audio
   { id: "UCn9Q4lQJKi14BzCNg-8VVCA", name: "Runway" },
+  { id: "UCZDRwcv5usS-DDud-aq-XiQ", name: "ElevenLabs" },
+  // TODO: Research Canva Video channel ID
+  
+  // Original broad AI companies (keeping for context)
   { id: "UCXZCJLdBC09xxGZ6gcdrc6A", name: "OpenAI" },
   { id: "UCP4bf6IHJJQehibu6ai__cg",  name: "Google DeepMind" },
   { id: "UCGklKLKMDMIx7YR5BqreR8A", name: "Stability AI" },
-  
-  // New additions
   { id: "UCLB7AzTwc6VFZrBsO2ucBMg", name: "Anthropic" },
-  { id: "UCvD6XFr3BPRrXAAIldJVe-w", name: "Synthesia" },
   { id: "UC4T7fm0Cxoi8HjCB5y3HBIQ", name: "Luma AI" },
   { id: "UCRx3KJNgH38R3BJUBY2q8Dg", name: "Pika" },
-  { id: "UC95hKgASVo5ZR6HJ3Qi_E4g", name: "Descript" },
-  { id: "UCcuXKLzFxwEPFDEtvjzMSDg", name: "Veed.io" },
-  { id: "UCHXa1e9vcONbg9vXWCyh-Hw", name: "CapCut" },
-  { id: "UCJsXKiz-6VrZVYFMUqPY8wQ", name: "InVideo" },
-  { id: "UCkZMx7V1CRaRSvpfD7fGVcA", name: "HeyGen" },
 ];
 
 function extractTag(xml: string, tag: string): string {
