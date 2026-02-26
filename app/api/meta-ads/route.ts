@@ -9,6 +9,7 @@ interface MetaAd {
   text: string;
   impressions: number;
   impression_range: string;
+  media_type: "video" | "image";
   scraped_at: string;
   ad_url: string;
   thumbnail: string;
