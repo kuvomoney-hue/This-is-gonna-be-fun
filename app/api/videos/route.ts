@@ -145,6 +145,11 @@ async function fetchYouTubeVideos(): Promise<VideoEntry[]> {
 }
 
 async function fetchXVideos(): Promise<VideoEntry[]> {
+  // TODO: X scraper needs fixing - currently captures junk UI elements
+  // Hiding X videos until scraper is improved
+  return [];
+  
+  /* DISABLED UNTIL SCRAPER IS FIXED
   try {
     const dataPath = join(process.cwd(), "public", "data", "x_videos.json");
     const fileContent = await readFile(dataPath, "utf-8");
@@ -169,6 +174,7 @@ async function fetchXVideos(): Promise<VideoEntry[]> {
     console.log("[videos] No X video data available:", err);
     return [];
   }
+  */
 }
 
 export async function GET() {
