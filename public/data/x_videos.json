@@ -1,4 +1,152 @@
 {
-  "videos": [],
-  "lastUpdated": "2026-02-23T15:45:00.000Z"
+  "updated": "2026-02-26T09:23:39.497486",
+  "videos": [
+    {
+      "source": "x",
+      "brand": "Runway",
+      "handle": "@runwayml",
+      "text": "- link \"Joined May 2018\" [ref=e13]",
+      "postUrl": "https://x.com/runwayml",
+      "timestamp": "2026-02-26T09:21:36.313182",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Google DeepMind",
+      "handle": "@GoogleDeepMind",
+      "text": "- link \"Joined January 2016\" [ref=e13]",
+      "postUrl": "https://x.com/GoogleDeepMind",
+      "timestamp": "2026-02-26T09:22:04.828204",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Google DeepMind",
+      "handle": "@GoogleDeepMind",
+      "text": "- link \"280 Following\" [ref=e14]",
+      "postUrl": "https://x.com/GoogleDeepMind",
+      "timestamp": "2026-02-26T09:22:04.828222",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Google DeepMind",
+      "handle": "@GoogleDeepMind",
+      "text": "- button \"More\" [ref=e55] [nth=2]",
+      "postUrl": "https://x.com/GoogleDeepMind",
+      "timestamp": "2026-02-26T09:22:04.828227",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Stability AI",
+      "handle": "@StabilityAI",
+      "text": "- button \"More\" [ref=e50] [nth=2]",
+      "postUrl": "https://x.com/StabilityAI",
+      "timestamp": "2026-02-26T09:22:20.670265",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Synthesia",
+      "handle": "@synthesiaIO",
+      "text": "- link \"synthesia.io\" [ref=e13]",
+      "postUrl": "https://x.com/synthesiaIO",
+      "timestamp": "2026-02-26T09:22:47.579486",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Synthesia",
+      "handle": "@synthesiaIO",
+      "text": "- link \"@vriparbelli\" [ref=e40]",
+      "postUrl": "https://x.com/synthesiaIO",
+      "timestamp": "2026-02-26T09:22:47.579504",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Luma AI",
+      "handle": "@LumaLabsAI",
+      "text": "- link \"Joined October 2021\" [ref=e14]",
+      "postUrl": "https://x.com/LumaLabsAI",
+      "timestamp": "2026-02-26T09:23:07.537251",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Luma AI",
+      "handle": "@LumaLabsAI",
+      "text": "- link \"@LumaLabsAI\" [ref=e26]",
+      "postUrl": "https://x.com/LumaLabsAI",
+      "timestamp": "2026-02-26T09:23:07.537280",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Luma AI",
+      "handle": "@LumaLabsAI",
+      "text": "- link \"@LumaLabsAI\" [ref=e38] [nth=1]",
+      "postUrl": "https://x.com/LumaLabsAI",
+      "timestamp": "2026-02-26T09:23:07.537286",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Pika",
+      "handle": "@pika_labs",
+      "text": "- link \"92 Following\" [ref=e15]",
+      "postUrl": "https://x.com/pika_labs",
+      "timestamp": "2026-02-26T09:23:24.084891",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Pika",
+      "handle": "@pika_labs",
+      "text": "- button \"More\" [ref=e28]",
+      "postUrl": "https://x.com/pika_labs",
+      "timestamp": "2026-02-26T09:23:24.084919",
+      "engagement": {
+        "views": 0
+      }
+    },
+    {
+      "source": "x",
+      "brand": "Pika",
+      "handle": "@pika_labs",
+      "text": "- button \"Play Video\" [ref=e43] [nth=1]",
+      "postUrl": "https://x.com/pika_labs",
+      "timestamp": "2026-02-26T09:23:24.084925",
+      "engagement": {
+        "views": 0
+      }
+    }
+  ],
+  "stats": {
+    "brands_scraped": 9,
+    "total_found": 13
+  }
 }
