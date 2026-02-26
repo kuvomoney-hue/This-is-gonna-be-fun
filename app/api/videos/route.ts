@@ -54,7 +54,7 @@ const CHANNELS: { id: string; name: string }[] = [
   { id: "UCXZCJLdBC09xxGZ6gcdrc6A", name: "OpenAI" },
   { id: "UCP4bf6IHJJQehibu6ai__cg",  name: "Google DeepMind" },
   { id: "UCGklKLKMDMIx7YR5BqreR8A", name: "Stability AI" },
-  { id: "UCLB7AzTwc6VFZrBsO2ucBMg", name: "Anthropic" },
+  { id: "UCrDwWp7EBBv4NwvScIpBDOA", name: "Anthropic" }, // Fixed Feb 26, 2026
   { id: "UC4T7fm0Cxoi8HjCB5y3HBIQ", name: "Luma AI" },
   { id: "UCRx3KJNgH38R3BJUBY2q8Dg", name: "Pika" },
 ];

@@ -1,9 +1,11 @@
-{
-  "updated": "2026-02-26T12:56:39.076436",
-  "ads": [],
-  "stats": {
-    "companies_scraped": 10,
-    "total_ads": 0,
-    "top_impression_count": 0
+[
+  {
+    "id": "1559016341987687",
+    "company": "HeyGen",
+    "advertiser": "Canva",
+    "text": "AI Vision is back and kicking off in NYC, March 11th! Mentions Rong Yan, CTO, HeyGen",
+    "thumbnail": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/634716639_1414539043474580_5911096068777769607_n.jpg",
+    "startDate": "Feb 18, 2026",
+    "hasVideo": true
   }
-}
+]
