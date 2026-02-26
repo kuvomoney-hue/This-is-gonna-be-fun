@@ -1,6 +1,6 @@
 {
   "equity": 424.69,
-  "buying_power": 320.79,
+  "buying_power": 391.69,
   "positions": [
     {
       "symbol": "SPY",
@@ -30,5 +30,5 @@
     }
   ],
   "has_positions": true,
-  "_updated": "2026-02-26T05:46:17.209785Z"
+  "_updated": "2026-02-26T06:16:31.864972Z"
 }
