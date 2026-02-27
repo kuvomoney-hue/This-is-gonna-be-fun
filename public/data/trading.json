@@ -1,22 +1,10 @@
 {
-  "btc_price": 65515.57,
-  "account_total": 459.8,
-  "usdt_balance": 150.36,
-  "btc_balance": 0.00472306,
-  "open_orders": [
-    {
-      "side": "sell",
-      "amount": 0.00356,
-      "price": 72046.44
-    }
-  ],
+  "btc_price": 65335.05,
+  "account_total": 456.59,
+  "usdt_balance": 456.39,
+  "btc_balance": 3.06e-06,
+  "open_orders": [],
   "recent_trades": [
-    {
-      "time": "2026-02-15T19:32:33.242Z",
-      "side": "buy",
-      "price": 68440.09,
-      "amount": 0.00486
-    },
     {
       "time": "2026-02-15T20:02:24.047Z",
       "side": "sell",
@@ -70,29 +58,27 @@
       "side": "buy",
       "price": 70020.69,
       "amount": 0.00475
+    },
+    {
+      "time": "2026-02-27T18:55:03.595Z",
+      "side": "sell",
+      "price": 65226.86,
+      "amount": 0.00472
     }
   ],
-  "has_position": true,
+  "has_position": false,
   "spy": {
-    "price": 683.74,
-    "change_pct": -0.39
+    "price": 683.62,
+    "change_pct": -0.41
   },
   "qqq": {
-    "price": 605.3,
-    "change_pct": -0.29
+    "price": 605.1,
+    "change_pct": -0.33
   },
   "signals_today": {
-    "approved": 4,
+    "approved": 5,
     "rejected": 9,
     "signals": [
-      {
-        "time": " \u2014 \ud83d\udcc8 ",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 616.11,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": " \u2014 \ud83d\udd34 ",
         "action": "SHORT",
@@ -106,15 +92,15 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 67695.0,
-        "score": 15,
-        "verdict": "REJECTED"
+        "score": 60,
+        "verdict": "APPROVED"
       },
       {
         "time": "05:04",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 66113.0,
-        "score": 43,
+        "score": 15,
         "verdict": "REJECTED"
       },
       {
@@ -122,15 +108,15 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 65786.0,
-        "score": 47,
-        "verdict": "APPROVED"
+        "score": 43,
+        "verdict": "REJECTED"
       },
       {
         "time": "05:51",
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 66288.0,
-        "score": 57,
+        "score": 47,
         "verdict": "APPROVED"
       },
       {
@@ -138,15 +124,15 @@
         "action": "SHORT",
         "symbol": "SPY",
         "price": 683.92,
-        "score": 30,
-        "verdict": "REJECTED"
+        "score": 57,
+        "verdict": "APPROVED"
       },
       {
         "time": " \u2014 \u2705 ",
         "action": "SHORT",
         "symbol": "QQQ",
         "price": 604.57,
-        "score": 20,
+        "score": 30,
         "verdict": "REJECTED"
       },
       {
@@ -154,7 +140,7 @@
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 65714.0,
-        "score": 30,
+        "score": 20,
         "verdict": "REJECTED"
       },
       {
@@ -162,15 +148,15 @@
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 66280.0,
-        "score": 71,
-        "verdict": "APPROVED"
+        "score": 30,
+        "verdict": "REJECTED"
       },
       {
         "time": "08:07",
         "action": "SHORT",
         "symbol": "BTCUSDT",
         "price": 65924.0,
-        "score": 73,
+        "score": 71,
         "verdict": "APPROVED"
       },
       {
@@ -178,15 +164,15 @@
         "action": "LONG",
         "symbol": "QQQ",
         "price": 608.22,
-        "score": 15,
-        "verdict": "REJECTED"
+        "score": 73,
+        "verdict": "APPROVED"
       },
       {
         "time": "09:24",
         "action": "SHORT",
         "symbol": "QQQ",
         "price": 605.61,
-        "score": 40,
+        "score": 15,
         "verdict": "REJECTED"
       },
       {
@@ -194,7 +180,7 @@
         "action": "SHORT",
         "symbol": "SPY",
         "price": 684.3,
-        "score": 20,
+        "score": 40,
         "verdict": "REJECTED"
       },
       {
@@ -202,11 +188,19 @@
         "action": "LONG",
         "symbol": "BTCUSDT",
         "price": 65674.0,
+        "score": 20,
+        "verdict": "REJECTED"
+      },
+      {
+        "time": "10:55",
+        "action": "SHORT",
+        "symbol": "BTCUSDT",
+        "price": 65235.0,
         "score": 10,
         "verdict": "REJECTED"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-02-27T18:29:27.006903Z"
+  "_updated": "2026-02-27T19:26:33.009146Z"
 }
