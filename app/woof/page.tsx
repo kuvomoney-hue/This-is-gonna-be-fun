@@ -88,6 +88,29 @@ export default function WoofPage() {
     try { localStorage.setItem(CHECKLIST_KEY, JSON.stringify(next)); } catch {}
   };
 
+  const toggleMilestone = async (key: string) => {
+    // Update local state immediately for responsiveness
+    const newMilestones = {
+      ...data.milestones,
+      [key]: !data.milestones[key as keyof typeof data.milestones],
+    };
+    
+    setData({ ...data, milestones: newMilestones });
+
+    // Persist to woof.json via API
+    try {
+      await fetch("/api/woof/update-milestone", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ milestone: key, value: newMilestones[key as keyof typeof newMilestones] }),
+      });
+    } catch (error) {
+      console.error("Failed to update milestone:", error);
+      // Revert on error
+      setData(data);
+    }
+  };
+
   const milestonesDone = milestoneList.filter(m =>
     data.milestones[m.key as keyof typeof data.milestones]
   ).length;
@@ -142,14 +165,15 @@ export default function WoofPage() {
           {milestoneList.map((m, i) => {
             const done = data.milestones[m.key as keyof typeof data.milestones];
             return (
-              <div
+              <button
                 key={m.key}
-                className={`flex flex-col items-center gap-2 p-3 rounded-xl border text-center transition-all ${
+                onClick={() => toggleMilestone(m.key)}
+                className={`flex flex-col items-center gap-2 p-3 rounded-xl border text-center transition-all cursor-pointer hover:scale-105 active:scale-95 ${
                   done
-                    ? "bg-wow-navy/20 border-wow-navy/50"
+                    ? "bg-wow-navy/20 border-wow-navy/50 hover:bg-wow-navy/30"
                     : m.inProgress
-                    ? "bg-wow-amber/5 border-wow-amber/30"
-                    : "bg-surface2 border-border"
+                    ? "bg-wow-amber/5 border-wow-amber/30 hover:bg-wow-amber/10"
+                    : "bg-surface2 border-border hover:bg-surface"
                 }`}
               >
                 <span className="text-xl">{m.icon}</span>
@@ -167,7 +191,7 @@ export default function WoofPage() {
                 }`}>
                   {done ? "Done" : m.inProgress ? "In Progress" : "Pending"}
                 </span>
-              </div>
+              </button>
             );
           })}
         </div>
