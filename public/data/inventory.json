@@ -2,7 +2,7 @@
   "inventory": [
     {
       "ingredient": "Goat Milk",
-      "stock": 5000.0,
+      "stock": 5100.0,
       "unit": "g",
       "threshold": 1000.0,
       "supplier": "Hoosier Hill Farm",
@@ -174,8 +174,18 @@
       "active": true
     }
   ],
-  "batches": [],
+  "batches": [
+    {
+      "id": "BATCH-002",
+      "date": "2026-02-28",
+      "product": "Peanut Butter (10oz)",
+      "quantity": 5,
+      "notes": "Web UI test batch",
+      "by": "Big Papa",
+      "cost": 14.45
+    }
+  ],
   "alerts": [],
   "last_sync": null,
-  "_updated": "2026-02-28T09:30:20.221211Z"
+  "_updated": "2026-02-28T09:44:47.464290Z"
 }
