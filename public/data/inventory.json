@@ -1,0 +1,180 @@
+{
+  "inventory": [
+    {
+      "ingredient": "Goat Milk",
+      "stock": 5000.0,
+      "unit": "g",
+      "threshold": 1000.0,
+      "supplier": "Hoosier Hill Farm",
+      "cost_per_unit": 10.8,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Honey",
+      "stock": 800.0,
+      "unit": "g",
+      "threshold": 200.0,
+      "supplier": "Uncommon Bees",
+      "cost_per_unit": 15.0,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Blue Spirulina",
+      "stock": 50.0,
+      "unit": "g",
+      "threshold": 20.0,
+      "supplier": "Pure Herb Extract",
+      "cost_per_unit": 61.0,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Blueberry Powder",
+      "stock": 300.0,
+      "unit": "g",
+      "threshold": 100.0,
+      "supplier": "Greenjeeva",
+      "cost_per_unit": 25.8,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Purple Sweet Potato",
+      "stock": 150.0,
+      "unit": "g",
+      "threshold": 50.0,
+      "supplier": "NPNutra",
+      "cost_per_unit": 25.75,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Strawberry Powder",
+      "stock": 400.0,
+      "unit": "g",
+      "threshold": 100.0,
+      "supplier": "Greenjeeva",
+      "cost_per_unit": 29.5,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Beet Root Powder",
+      "stock": 200.0,
+      "unit": "g",
+      "threshold": 50.0,
+      "supplier": "Azure Standard",
+      "cost_per_unit": 10.0,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Carob",
+      "stock": 250.0,
+      "unit": "g",
+      "threshold": 100.0,
+      "supplier": "Azure Standard",
+      "cost_per_unit": 6.67,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Barley Grass",
+      "stock": 300.0,
+      "unit": "g",
+      "threshold": 100.0,
+      "supplier": "Greenjeeva",
+      "cost_per_unit": 16.0,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Peanuts (Dry Roasted)",
+      "stock": 20000.0,
+      "unit": "g",
+      "threshold": 5000.0,
+      "supplier": "Azure Standard",
+      "cost_per_unit": 3.2,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Pumpkin Powder",
+      "stock": 1000.0,
+      "unit": "g",
+      "threshold": 250.0,
+      "supplier": "Greenjeeva",
+      "cost_per_unit": 17.8,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Inulin Powder",
+      "stock": 500.0,
+      "unit": "g",
+      "threshold": 100.0,
+      "supplier": "NPNutra",
+      "cost_per_unit": 12.25,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Honey Powder",
+      "stock": 300.0,
+      "unit": "g",
+      "threshold": 100.0,
+      "supplier": "Uncommon Bees",
+      "cost_per_unit": 15.0,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Turkey Tail Extract",
+      "stock": 200.0,
+      "unit": "g",
+      "threshold": 50.0,
+      "supplier": "Greenjeeva",
+      "cost_per_unit": 15.5,
+      "status": "ok"
+    },
+    {
+      "ingredient": "Bacillus Coagulans",
+      "stock": 150.0,
+      "unit": "g",
+      "threshold": 30.0,
+      "supplier": "Greenjeeva",
+      "cost_per_unit": 28.0,
+      "status": "ok"
+    }
+  ],
+  "products": [
+    {
+      "name": "Coastal Cloud",
+      "batch_size": 20,
+      "unit_cost": 3.49,
+      "active": true
+    },
+    {
+      "name": "Blueberry Ube Haze",
+      "batch_size": 20,
+      "unit_cost": 3.26,
+      "active": true
+    },
+    {
+      "name": "Strawberry Fields Furever",
+      "batch_size": 20,
+      "unit_cost": 2.82,
+      "active": true
+    },
+    {
+      "name": "Carob Cowboy",
+      "batch_size": 20,
+      "unit_cost": 2.79,
+      "active": true
+    },
+    {
+      "name": "Matcha Cr\u00e8me",
+      "batch_size": 20,
+      "unit_cost": 2.87,
+      "active": true
+    },
+    {
+      "name": "Peanut Butter (10oz)",
+      "batch_size": 12,
+      "unit_cost": 2.89,
+      "active": true
+    }
+  ],
+  "batches": [],
+  "alerts": [],
+  "last_sync": null
+}
