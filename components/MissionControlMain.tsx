@@ -56,13 +56,25 @@ export default function MissionControlMain() {
 
   const loadAllData = async () => {
     try {
-      const [tradingRes, woofRes, rendyrRes] = await Promise.all([
+      const [tradingRes, robinhoodRes, woofRes, rendyrRes] = await Promise.all([
         fetch("/data/trading.json", { cache: "no-store" }),
+        fetch("/api/robinhood", { cache: "no-store" }),
         fetch("/data/woof.json", { cache: "no-store" }),
         fetch("/data/rendyr.json", { cache: "no-store" }),
       ]);
 
-      if (tradingRes.ok) setTrading(await tradingRes.json());
+      if (tradingRes.ok) {
+        const tradingData = await tradingRes.json();
+        // Map trading.json fields to what component expects
+        tradingData.binance_balance = tradingData.account_total || 0;
+        setTrading(tradingData);
+      }
+      
+      if (robinhoodRes.ok) {
+        const rhData = await robinhoodRes.json();
+        setTrading(prev => ({ ...prev, robinhood_equity: rhData.equity || 0 }));
+      }
+      
       if (woofRes.ok) setWoof(await woofRes.json());
       if (rendyrRes.ok) setRendyr(await rendyrRes.json());
 
