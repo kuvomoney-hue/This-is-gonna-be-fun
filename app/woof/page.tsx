@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import InventoryTracker from "@/components/InventoryTracker";
 
 // ── Types ──────────────────────────────────────────────────
@@ -97,11 +98,20 @@ export default function WoofPage() {
     <div className="p-4 md:p-6 space-y-8 max-w-6xl mx-auto">
 
       {/* ── Header ──────────────────────────────────────────── */}
-      <div>
-        <h1 className="text-4xl md:text-5xl font-bold text-text-primary tracking-tight">
-          way of woof
-        </h1>
-        <p className="text-text-secondary mt-1 text-sm">the new generation dog wellness house</p>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary tracking-tight">
+            way of woof
+          </h1>
+          <p className="text-text-secondary mt-1 text-sm">the new generation dog wellness house</p>
+        </div>
+        <Link
+          href="/woof/update"
+          className="shrink-0 bg-primary-bright hover:bg-primary-bright/90 text-bg font-bold px-4 py-2 rounded-xl transition-all flex items-center gap-2"
+        >
+          <span>📝</span>
+          <span className="hidden sm:inline">Quick Update</span>
+        </Link>
       </div>
 
       {/* ── Launch Status Card (full width) ─────────────────── */}
