@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import InventoryTracker from "@/components/InventoryTracker";
 
 // ── Types ──────────────────────────────────────────────────
 interface WoofData {
@@ -368,6 +369,9 @@ export default function WoofPage() {
           </div>
         </div>
       </div>
+
+      {/* ── Inventory Tracker ────────────────────────────────── */}
+      <InventoryTracker />
 
     </div>
   );

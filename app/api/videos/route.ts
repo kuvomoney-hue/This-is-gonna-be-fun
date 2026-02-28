@@ -132,27 +132,47 @@ function parseEntries(xml: string, channelName: string): VideoEntry[] {
 }
 
 async function fetchYouTubeVideos(): Promise<VideoEntry[]> {
-  const results = await Promise.allSettled(
-    CHANNELS.map(({ id, name }) =>
-      fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, {
-        next: { revalidate: 1800 },
-      })
-        .then((r) => {
-          if (!r.ok) throw new Error(`HTTP ${r.status} for ${name}`);
-          return r.text();
+  // Use YouTube API data (scraped via youtube_video_scraper.py)
+  try {
+    const dataPath = join(process.cwd(), "public", "data", "youtube_videos.json");
+    const fileContent = await readFile(dataPath, "utf-8");
+    const videos = JSON.parse(fileContent);
+    
+    // Convert to VideoEntry format
+    return videos.map((v: any) => ({
+      title: v.title,
+      videoId: v.videoId,
+      published: v.published,
+      channelName: v.channelName,
+      thumbnail: v.thumbnail,
+      source: "youtube" as const,
+    }));
+  } catch (err) {
+    console.log("[videos] No YouTube API data available, falling back to RSS");
+    
+    // Fallback to RSS if API data not available
+    const results = await Promise.allSettled(
+      CHANNELS.map(({ id, name }) =>
+        fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, {
+          next: { revalidate: 1800 },
         })
-        .then((xml) => parseEntries(xml, name))
-    )
-  );
+          .then((r) => {
+            if (!r.ok) throw new Error(`HTTP ${r.status} for ${name}`);
+            return r.text();
+          })
+          .then((xml) => parseEntries(xml, name))
+      )
+    );
 
-  const allVideos: VideoEntry[] = [];
-  for (const result of results) {
-    if (result.status === "fulfilled") {
-      allVideos.push(...result.value);
+    const allVideos: VideoEntry[] = [];
+    for (const result of results) {
+      if (result.status === "fulfilled") {
+        allVideos.push(...result.value);
+      }
     }
-  }
 
-  return allVideos;
+    return allVideos;
+  }
 }
 
 async function fetchXVideos(): Promise<VideoEntry[]> {
