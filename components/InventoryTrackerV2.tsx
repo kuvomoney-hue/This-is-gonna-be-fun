@@ -68,13 +68,16 @@ export default function InventoryTrackerV2() {
 
   const loadData = () => {
     setLoading(true);
-    fetch("/data/inventory.json", { cache: "no-store" })
+    fetch("/api/inventory/data", { cache: "no-store" })
       .then(r => r.json())
       .then(d => {
         setData(d);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch((err) => {
+        console.error("Failed to load inventory:", err);
+        setLoading(false);
+      });
   };
 
   const okCount = data.inventory.filter(i => i.status === "ok").length;
