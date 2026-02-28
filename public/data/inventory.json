@@ -92,7 +92,7 @@
     },
     {
       "ingredient": "Pumpkin Powder",
-      "stock": 1000.0,
+      "stock": 360.0,
       "unit": "g",
       "threshold": 250.0,
       "supplier": "Greenjeeva",
@@ -187,5 +187,5 @@
   ],
   "alerts": [],
   "last_sync": null,
-  "_updated": "2026-02-28T11:23:28.102556Z"
+  "_updated": "2026-02-28T23:06:59.474974Z"
 }
