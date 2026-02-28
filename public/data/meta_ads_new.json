@@ -1,0 +1,112 @@
+{
+  "companies": [
+    {
+      "name": "HeyGen",
+      "search_term": "HeyGen",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:34.311277"
+    },
+    {
+      "name": "Runway",
+      "search_term": "Runway ML",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:36.319514"
+    },
+    {
+      "name": "Midjourney",
+      "search_term": "Midjourney",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:38.329112"
+    },
+    {
+      "name": "OpenAI",
+      "search_term": "OpenAI",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:40.336930"
+    },
+    {
+      "name": "Anthropic",
+      "search_term": "Anthropic",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:42.346980"
+    },
+    {
+      "name": "Stability AI",
+      "search_term": "Stability AI",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:44.355003"
+    },
+    {
+      "name": "Pika",
+      "search_term": "Pika",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:46.355500"
+    },
+    {
+      "name": "Synthesia",
+      "search_term": "Synthesia",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:48.362518"
+    },
+    {
+      "name": "D-ID",
+      "search_term": "D-ID",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:50.370605"
+    },
+    {
+      "name": "ElevenLabs",
+      "search_term": "ElevenLabs",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:52.371794"
+    },
+    {
+      "name": "Jasper",
+      "search_term": "Jasper AI",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:54.380569"
+    },
+    {
+      "name": "Copy.ai",
+      "search_term": "Copy.ai",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:56.387169"
+    },
+    {
+      "name": "Descript",
+      "search_term": "Descript",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:37:58.395452"
+    },
+    {
+      "name": "Luma AI",
+      "search_term": "Luma AI",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:38:00.403147"
+    },
+    {
+      "name": "Character.AI",
+      "search_term": "Character.AI",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-02-28T03:38:02.408589"
+    }
+  ],
+  "_updated": "2026-02-28T03:37:34.311253",
+  "_scraper_version": "v2.0",
+  "_note": "Advertiser-based scraping (not keyword search)"
+}
