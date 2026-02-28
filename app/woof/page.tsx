@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import InventoryTracker from "@/components/InventoryTracker";
+import InventoryTrackerV2 from "@/components/InventoryTrackerV2";
 
 // ── Types ──────────────────────────────────────────────────
 interface WoofData {
@@ -381,7 +381,7 @@ export default function WoofPage() {
       </div>
 
       {/* ── Inventory Tracker ────────────────────────────────── */}
-      <InventoryTracker />
+      <InventoryTrackerV2 />
 
     </div>
   );
