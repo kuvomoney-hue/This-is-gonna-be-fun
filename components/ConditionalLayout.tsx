@@ -9,7 +9,10 @@ export default function ConditionalLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const isShareRoute = pathname?.startsWith("/share");
+  
+  // Shareable portal routes (no sidebar/navigation)
+  const shareableRoutes = ["/rendyr", "/woof", "/ads", "/videos", "/hq"];
+  const isShareRoute = shareableRoutes.some(route => pathname?.startsWith(route));
 
   if (isShareRoute) {
     // Shareable routes: no sidebar, full width

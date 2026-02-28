@@ -3,5 +3,6 @@ export default function ShareLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  // Clean minimal wrapper - no sidebar, no navigation
+  return <div className="min-h-screen">{children}</div>;
 }
