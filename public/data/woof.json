@@ -9,13 +9,26 @@
     "launched": false
   },
   "inventory": {
-    "peanutButter": {"capacity": 280, "inProduction": true, "firstBatch": 9, "sold": 0},
-    "hotMilk": {"capacity": 500, "inProduction": true, "firstBatch": 100, "flavors": 5, "perFlavor": 20, "sold": 0}
+    "peanutButter": {
+      "capacity": 280,
+      "inProduction": true,
+      "firstBatch": 9,
+      "sold": 0
+    },
+    "hotMilk": {
+      "capacity": 500,
+      "inProduction": true,
+      "firstBatch": 100,
+      "flavors": 5,
+      "perFlavor": 20,
+      "sold": 0
+    }
   },
   "social": {
-    "instagramFollowers": 1047,
+    "instagramFollowers": 1079,
     "instagramHandle": "@wayofwoof",
-    "viralVideos": true
+    "viralVideos": true,
+    "lastUpdated": "2026-02-28"
   },
   "lastUpdated": "2026-02-18"
 }

@@ -6,10 +6,27 @@
   "mrr": 0,
   "paywalled": false,
   "academyProgress": {
-    "world1": {"complete": 13, "total": 20},
-    "world2": {"complete": 0, "total": 10},
-    "world3": {"complete": 0, "total": 18},
-    "world4": {"complete": 0, "total": null}
+    "world1": {
+      "complete": 13,
+      "total": 20
+    },
+    "world2": {
+      "complete": 0,
+      "total": 10
+    },
+    "world3": {
+      "complete": 0,
+      "total": 18
+    },
+    "world4": {
+      "complete": 0,
+      "total": null
+    }
   },
-  "lastUpdated": "2026-02-18"
+  "lastUpdated": "2026-02-18",
+  "social": {
+    "instagramFollowers": 13757,
+    "instagramHandle": "@rendyr.video",
+    "lastUpdated": "2026-02-28"
+  }
 }
