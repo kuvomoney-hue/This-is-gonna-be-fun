@@ -2,12 +2,12 @@
   "inventory": [
     {
       "ingredient": "Goat Milk",
-      "stock": 5100.0,
+      "stock": 0.0,
       "unit": "g",
       "threshold": 1000.0,
       "supplier": "Hoosier Hill Farm",
       "cost_per_unit": 10.8,
-      "status": "ok"
+      "status": "out"
     },
     {
       "ingredient": "Honey",
@@ -185,7 +185,9 @@
       "cost": 14.45
     }
   ],
-  "alerts": [],
+  "alerts": [
+    "\ud83d\udea8 OUT OF STOCK: Goat Milk"
+  ],
   "last_sync": null,
-  "_updated": "2026-02-28T23:06:59.474974Z"
+  "_updated": "2026-03-01T01:13:44.127704Z"
 }
