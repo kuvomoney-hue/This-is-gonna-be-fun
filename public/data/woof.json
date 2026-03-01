@@ -80,5 +80,126 @@
     "totalValue": 200.64,
     "itemsTracked": 15,
     "lowStockAlerts": 0
-  }
+  },
+  "emailFlows": {
+    "prePurchase": {
+      "welcomeSeries": {
+        "email1": {
+          "name": "Welcome to the Pack",
+          "complete": false
+        },
+        "email2": {
+          "name": "Why We Do Things Differently",
+          "complete": false
+        },
+        "email3": {
+          "name": "Your Dog Deserves This",
+          "complete": false
+        }
+      },
+      "abandonedCart": {
+        "email1": {
+          "name": "You Left Something Behind",
+          "complete": false
+        },
+        "email2": {
+          "name": "Still Thinking It Over?",
+          "complete": false
+        },
+        "email3": {
+          "name": "Last Chance - 10% Off",
+          "complete": false
+        }
+      },
+      "browseAbandonment": {
+        "email1": {
+          "name": "We Noticed You Checking Out [Product]",
+          "complete": false
+        },
+        "email2": {
+          "name": "What You Should Know",
+          "complete": false
+        }
+      }
+    },
+    "postPurchase": {
+      "hotMilk": {
+        "email1": {
+          "name": "Your Hot Milk Has Arrived!",
+          "complete": false
+        },
+        "email2": {
+          "name": "Hot Milk Rituals",
+          "complete": false
+        },
+        "email3": {
+          "name": "The Science Behind the Sip",
+          "complete": false
+        },
+        "email4": {
+          "name": "Running Low? Restock",
+          "complete": false
+        }
+      },
+      "peanutButter": {
+        "email1": {
+          "name": "Your Peanut Butter is Here!",
+          "complete": false
+        },
+        "email2": {
+          "name": "Beyond the Spoon",
+          "complete": false
+        },
+        "email3": {
+          "name": "Inside Every Jar",
+          "complete": false
+        },
+        "email4": {
+          "name": "Time to Restock!",
+          "complete": false
+        }
+      },
+      "bundle": {
+        "email1": {
+          "name": "Welcome to the Full Experience",
+          "complete": false
+        },
+        "email2": {
+          "name": "Morning Ritual: Hot Milk Magic",
+          "complete": false
+        },
+        "email3": {
+          "name": "Anytime Enrichment: PB Power",
+          "complete": false
+        },
+        "email4": {
+          "name": "The Complete Wellness Routine",
+          "complete": false
+        },
+        "email5": {
+          "name": "VIP Restock Offer",
+          "complete": false
+        }
+      }
+    },
+    "engagement": {
+      "reviewRequest": {
+        "name": "How's It Going?",
+        "complete": false
+      },
+      "winback30": {
+        "name": "We Miss You! (30 days)",
+        "complete": false
+      },
+      "winback60": {
+        "name": "Is Everything Okay? (60 days)",
+        "complete": false
+      },
+      "winback90": {
+        "name": "One More Try (90 days)",
+        "complete": false
+      }
+    }
+  },
+  "_updated": "2026-03-01T07:01:18.131686Z"
 }

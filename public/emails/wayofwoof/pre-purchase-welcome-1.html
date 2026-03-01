@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Pack - WayofWoof Email</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #f5f5f5; }
+        .container { background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 24px; font-weight: 700; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; font-size: 14px; }
+        .meta { background: #f8f9fa; padding: 20px 30px; border-bottom: 1px solid #e5e5e5; }
+        .meta-row { display: flex; justify-content: space-between; margin: 8px 0; flex-wrap: wrap; }
+        .meta-label { font-weight: 600; color: #555; }
+        .meta-value { color: #333; }
+        .copy-section { background: #fff3cd; padding: 20px 30px; border-bottom: 3px solid #ffc107; }
+        .copy-btn { background: #ffc107; color: #000; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 16px; width: 100%; transition: all 0.3s; }
+        .copy-btn:hover { background: #ffb300; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,193,7,0.4); }
+        .copied { background: #28a745 !important; color: white !important; }
+        .email-body { padding: 40px; font-size: 15px; line-height: 1.8; color: #333; }
+        .email-body p { margin: 16px 0; }
+        .email-body ul { margin: 16px 0; padding-left: 25px; }
+        .email-body li { margin: 8px 0; }
+        .cta-button { display: inline-block; background: #667eea; color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px; margin: 24px 0; font-weight: 600; text-align: center; }
+        .cta-button:hover { background: #764ba2; }
+        .signature { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-style: italic; color: #666; }
+        .back-link { text-align: center; padding: 20px; background: #f8f9fa; }
+        .back-link a { color: #667eea; text-decoration: none; font-weight: 600; }
+        @media (max-width: 600px) {
+            body { margin: 20px auto; padding: 10px; }
+            .email-body { padding: 25px; }
+            .meta-row { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐾 Welcome to the Pack</h1>
+            <p>Pre-Purchase → Welcome Series (Email 1)</p>
+        </div>
+        
+        <div class="meta">
+            <div class="meta-row">
+                <span class="meta-label">📧 Subject:</span>
+                <span class="meta-value">🐾 Welcome to Way of Woof (here's 15% off)</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">👁️ Preheader:</span>
+                <span class="meta-value">Dog wellness, reimagined. Your journey starts here.</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">⏰ Timing:</span>
+                <span class="meta-value">Immediate</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">🎯 Goal:</span>
+                <span class="meta-value">Introduce brand + offer discount</span>
+            </div>
+            <div class="meta-row">
+                <span class="meta-label">🔘 CTA:</span>
+                <span class="meta-value">Shop Collection</span>
+            </div>
+        </div>
+        
+        <div class="copy-section">
+            <button class="copy-btn" onclick="copyEmail()">📋 COPY EMAIL FOR OMNISEND</button>
+        </div>
+        
+        <div class="email-body" id="emailContent">
+            <p>Hi [First Name],</p>
+
+            <p>Welcome to Way of Woof. We're so glad you're here.</p>
+
+            <p>You just joined a community that believes dogs deserve more than mediocre wellness products with vague ingredients and uninspired design.</p>
+
+            <p><strong>Here's what makes us different:</strong></p>
+
+            <ul>
+                <li>Human-grade ingredients (if it's not good enough for us, it's not good enough for them)</li>
+                <li>Radical transparency (every ingredient has a story and a purpose)</li>
+                <li>Science-backed formulations (probiotics, prebiotics, adaptogens that actually work)</li>
+                <li>Design that honors the ritual (because everyday moments deserve beauty)</li>
+            </ul>
+
+            <p>We started Way of Woof because we were tired of choosing between efficacy and aesthetics, between wellness and taste, between "good enough" and exceptional.</p>
+
+            <p>Our first products are here: <strong>Hot Milk Collection</strong> (5 flavors of Netherlands goat milk superfood lattes) and <strong>Dogs Love Peanut Butter</strong> (gut-supporting, adaptogen-rich, irresistibly delicious).</p>
+
+            <p><strong>As a welcome gift, here's 15% off your first order:</strong><br>
+            Code: <strong>WELCOME15</strong></p>
+
+            <p style="text-align: center; margin: 30px 0;">
+                <a href="#" class="cta-button">SHOP COLLECTION</a>
+            </p>
+
+            <p>Small batch. Real ingredients. Big love.</p>
+
+            <div class="signature">
+                <p>Amanda, John & Simba 🐾<br>
+                Founders, Way of Woof</p>
+
+                <p>P.S. We're a small team in LA making every batch by hand. If you have questions, just reply to this email—we read every single one.</p>
+            </div>
+        </div>
+        
+        <div class="back-link">
+            <a href="index.html">← Back to Email Library</a>
+        </div>
+    </div>
+
+    <script>
+        function copyEmail() {
+            const content = document.getElementById('emailContent').innerText;
+            navigator.clipboard.writeText(content).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = '✅ COPIED! Ready to paste into OmniSend';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = '📋 COPY EMAIL FOR OMNISEND';
+                    btn.classList.remove('copied');
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
