@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { logBatchWithCommit } from "@/lib/obsidianInventory";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -6,14 +7,14 @@ export const dynamic = "force-dynamic";
 interface LogBatchRequest {
   product: string;
   quantity: number;
-  notes: string;
-  by: string;
+  notes?: string;
+  by?: string;
 }
 
 export async function POST(req: NextRequest) {
   try {
     const body: LogBatchRequest = await req.json();
-    const { product, quantity, notes, by } = body;
+    const { product, quantity, notes = "", by = "Big Papa" } = body;
 
     if (!product || !quantity || quantity <= 0) {
       return NextResponse.json(
@@ -22,18 +23,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Call the Python batch logging script
-    const { execSync } = require("child_process");
-    
-    const result = execSync(
-      `python3 /Users/koovican/.openclaw/workspace/bot/log_batch.py "${product}" ${quantity} "${notes || ''}" "${by || 'Big Papa'}"`,
-      { encoding: "utf-8" }
-    );
+    // Log batch to Obsidian → Git commit
+    const batchId = await logBatchWithCommit(product, quantity, notes, by);
 
     return NextResponse.json({
       success: true,
-      message: `Logged batch: ${quantity} units of ${product}`,
-      result,
+      batchId,
+      message: `Logged ${quantity}x ${product}`,
+      note: "Batch logged to Obsidian vault. Syncs to Google Sheet within 30 min.",
     });
   } catch (error: any) {
     console.error("Error logging batch:", error);

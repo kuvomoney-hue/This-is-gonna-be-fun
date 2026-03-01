@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { updateStockWithCommit } from "@/lib/obsidianInventory";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -20,18 +21,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Call the Python update script
-    const { execSync } = require("child_process");
-    
-    const result = execSync(
-      `python3 /Users/koovican/.openclaw/workspace/bot/update_stock.py "${ingredient}" ${stock}`,
-      { encoding: "utf-8" }
-    );
+    // Update Obsidian markdown → Git commit
+    await updateStockWithCommit(ingredient, stock);
 
     return NextResponse.json({
       success: true,
-      message: `Updated ${ingredient} to ${stock}`,
-      result,
+      message: `Updated ${ingredient} to ${stock}g`,
+      note: "Obsidian vault updated. Syncs to Google Sheet within 30 min.",
     });
   } catch (error: any) {
     console.error("Error updating stock:", error);
