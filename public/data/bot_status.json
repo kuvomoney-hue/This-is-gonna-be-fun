@@ -2,11 +2,11 @@
   "webhook_running": true,
   "last_signal": {
     "direction": "SHORT",
-    "symbol": "QQQ",
-    "price": 602.17
+    "symbol": "SPY",
+    "price": 682.69
   },
-  "last_score": 71,
+  "last_score": 67,
   "last_decision": "APPROVED",
   "filter_threshold": 60,
-  "_updated": "2026-03-02T15:13:15.668215Z"
+  "_updated": "2026-03-02T15:43:30.265716Z"
 }
