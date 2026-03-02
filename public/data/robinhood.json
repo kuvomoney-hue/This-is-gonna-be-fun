@@ -1,34 +1,21 @@
 {
-  "equity": 319.2,
-  "buying_power": 120.21,
+  "equity": 315.06,
+  "buying_power": 102.17,
   "positions": [
-    {
-      "symbol": "SPY",
-      "direction": "call",
-      "strike": 698.0,
-      "entry_premium": 0.08,
-      "current_premium": null,
-      "pnl_pct": null,
-      "entry_time": "2026-03-02T11:42:06.246210-05:00",
-      "expiry": "2026-03-04",
-      "tp_premium": 0.1,
-      "stop_premium": 0.07,
-      "status": "open"
-    },
     {
       "symbol": "QQQ",
       "direction": "call",
-      "strike": 620.0,
-      "entry_premium": 0.26,
+      "strike": 621.0,
+      "entry_premium": 0.18,
       "current_premium": null,
       "pnl_pct": null,
-      "entry_time": "2026-03-02T11:42:06.753180-05:00",
+      "entry_time": null,
       "expiry": "2026-03-04",
-      "tp_premium": 0.34,
-      "stop_premium": 0.22,
+      "tp_premium": 0.22,
+      "stop_premium": 0.15,
       "status": "open"
     }
   ],
   "has_positions": true,
-  "_updated": "2026-03-02T18:44:46.904918Z"
+  "_updated": "2026-03-02T19:15:02.047939Z"
 }
