@@ -2,12 +2,22 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { 
+  TrendingUp, 
+  Target, 
+  Clock, 
+  Activity,
+  Package,
+  Video,
+  Users,
+  ChevronRight,
+  AlertCircle
+} from "lucide-react";
 
-// ── Types ──────────────────────────────────────────────────
 interface TradingData {
   btc_price?: number;
   robinhood_equity?: number;
-  binance_balance?: number;
+  account_total?: number;
   recent_signals?: number;
   filter_status?: string;
 }
@@ -16,10 +26,19 @@ interface WoofData {
   instagram_followers?: number;
   inventory_alerts?: number;
   next_milestone?: string;
+  production?: {
+    currentInventory?: {
+      peanutButter?: number;
+      hotMilk?: number;
+    };
+  };
 }
 
 interface RendyrData {
   instagram_followers?: number;
+  social?: {
+    instagramFollowers?: number;
+  };
   latest_digest_items?: number;
   new_videos?: number;
 }
@@ -41,16 +60,14 @@ export default function MissionControlMain() {
   const [loading, setLoading] = useState(true);
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  // Update time every second
   useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
 
-  // Load data
   useEffect(() => {
     loadAllData();
-    const interval = setInterval(loadAllData, 60000); // Refresh every minute
+    const interval = setInterval(loadAllData, 60000);
     return () => clearInterval(interval);
   }, []);
 
@@ -65,8 +82,6 @@ export default function MissionControlMain() {
 
       if (tradingRes.ok) {
         const tradingData = await tradingRes.json();
-        // Map trading.json fields to what component expects
-        tradingData.binance_balance = tradingData.account_total || 0;
         setTrading(tradingData);
       }
       
@@ -86,229 +101,334 @@ export default function MissionControlMain() {
   };
 
   const loadContext = (project: string) => {
-    // This will be integrated with Scout/OpenClaw context loading
     console.log(`Loading context: ${project}`);
     alert(`Context loading for ${project} - integrate with Scout API`);
   };
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
-        <div className="text-xl">loading mission control...</div>
+      <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-black to-zinc-900 text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block animate-pulse text-2xl mb-4">mission control</div>
+          <div className="text-zinc-500 text-sm">initializing systems...</div>
+        </div>
       </div>
     );
   }
 
+  const totalBalance = (trading.robinhood_equity || 0) + (trading.account_total || 0);
+  const woofFollowers = woof.instagram_followers || 0;
+  const rendyrFollowers = rendyr.social?.instagramFollowers || rendyr.instagram_followers || 0;
+
   return (
-    <div className="min-h-screen bg-black text-white p-6">
-      {/* ── Top Bar ─────────────────────────────────────── */}
-      <div className="mb-8 flex items-center justify-between border-b border-zinc-800 pb-4">
-        <div>
-          <h1 className="text-3xl font-bold">mission control</h1>
-          <p className="text-zinc-500 text-sm mt-1">
-            {currentTime.toLocaleTimeString("en-US", {
-              hour: "2-digit",
-              minute: "2-digit",
-              second: "2-digit",
-            })}
-          </p>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-black to-zinc-900 text-white">
+      
+      {/* Top Bar */}
+      <div className="border-b border-zinc-800/50 bg-black/30 backdrop-blur-sm sticky top-0 z-10">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-green-500/20">
+                  <Target className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold">mission control</h1>
+                  <div className="flex items-center gap-2 text-xs text-zinc-500">
+                    <Clock className="w-3 h-3" />
+                    {currentTime.toLocaleTimeString("en-US", {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      second: "2-digit",
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div className="flex gap-3">
-          <select
-            onChange={(e) => loadContext(e.target.value)}
-            className="bg-zinc-900 border border-zinc-700 rounded px-4 py-2 text-sm"
-          >
-            <option value="">load context...</option>
-            <option value="trading">trading</option>
-            <option value="woof">wayofwoof</option>
-            <option value="rendyr">rendyr</option>
-            <option value="all">all projects</option>
-          </select>
+            <div className="flex items-center gap-3">
+              <select
+                onChange={(e) => loadContext(e.target.value)}
+                className="bg-zinc-900/50 border border-zinc-700/50 rounded-lg px-4 py-2 text-sm hover:border-zinc-600 transition-colors"
+              >
+                <option value="">load context...</option>
+                <option value="trading">trading</option>
+                <option value="woof">wayofwoof</option>
+                <option value="rendyr">rendyr</option>
+                <option value="all">all projects</option>
+              </select>
 
-          <button
-            onClick={() => alert("Graduate command - integrate with OpenClaw")}
-            className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-sm"
-          >
-            graduate
-          </button>
+              <button
+                onClick={() => alert("Graduate command - integrate with OpenClaw")}
+                className="bg-zinc-900/50 hover:bg-zinc-800/50 border border-zinc-700/50 rounded-lg px-4 py-2 text-sm transition-colors"
+              >
+                graduate
+              </button>
 
-          <button
-            onClick={() => alert("Ideas command - integrate with OpenClaw")}
-            className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 rounded px-4 py-2 text-sm"
-          >
-            ideas
-          </button>
+              <button
+                onClick={() => alert("Ideas command - integrate with OpenClaw")}
+                className="bg-zinc-900/50 hover:bg-zinc-800/50 border border-zinc-700/50 rounded-lg px-4 py-2 text-sm transition-colors"
+              >
+                ideas
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* ── Main Grid ──────────────────────────────────────── */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         
-        {/* ── Left: Trading ──────────────────────────────── */}
-        <div className="space-y-4">
-          <h2 className="text-lg font-semibold text-zinc-400">trading</h2>
-
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm text-zinc-500 mb-2">account balance</div>
-            <div className="text-2xl font-bold">
-              ${((trading.robinhood_equity || 0) + (trading.binance_balance || 0)).toFixed(2)}
-            </div>
-            <div className="text-xs text-zinc-600 mt-1">
-              robinhood: ${(trading.robinhood_equity || 0).toFixed(2)} · binance: $
-              {(trading.binance_balance || 0).toFixed(2)}
-            </div>
-          </div>
-
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm text-zinc-500 mb-2">btc price</div>
-            <div className="text-2xl font-bold">
-              ${(trading.btc_price || 0).toLocaleString()}
-            </div>
-          </div>
-
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm text-zinc-500 mb-2">context filter</div>
-            <div className="text-sm">{trading.filter_status || "active"}</div>
-            <div className="text-xs text-zinc-600 mt-1">
-              crypto: 60/100 · equity: 45/100
-            </div>
-          </div>
-
-          <Link
-            href="/trading"
-            className="block bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 rounded-lg p-3 text-center text-sm"
-          >
-            view full trading →
-          </Link>
-        </div>
-
-        {/* ── Middle: Focus ──────────────────────────────── */}
-        <div className="space-y-4">
-          <h2 className="text-lg font-semibold text-zinc-400">focus</h2>
-
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm text-zinc-500 mb-3">today's intention</div>
-            <div className="text-sm italic text-zinc-400">
-              "build new mission control, fix meta ads scraper, wake up to operational system"
-            </div>
-          </div>
-
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm text-zinc-500 mb-3">recent activity</div>
-            <div className="space-y-2 text-sm">
-              <div className="flex items-start gap-2">
-                <div className="text-zinc-600 text-xs mt-0.5">03:23</div>
-                <div className="text-zinc-400">data pusher: fresh inventory, robinhood, trading stats</div>
+        {/* Hero Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          
+          {/* Trading Account */}
+          <div className="group relative bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6 hover:border-zinc-700/50 transition-all overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-500/10 to-transparent rounded-bl-full" />
+            <div className="relative">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="w-5 h-5 text-green-500" />
+                <span className="text-sm text-zinc-500 uppercase tracking-wider">trading</span>
               </div>
-              <div className="flex items-start gap-2">
-                <div className="text-zinc-600 text-xs mt-0.5">03:15</div>
-                <div className="text-zinc-400">phase 1-5 complete: second brain operational</div>
+              <div className="text-3xl font-bold mb-2">
+                ${totalBalance.toFixed(2)}
               </div>
-              <div className="flex items-start gap-2">
-                <div className="text-zinc-600 text-xs mt-0.5">01:50</div>
-                <div className="text-zinc-400">instagram: rendyr 13,757 · woof 1,079</div>
+              <div className="text-sm text-zinc-500">
+                robinhood ${(trading.robinhood_equity || 0).toFixed(2)} · 
+                binance ${(trading.account_total || 0).toFixed(2)}
               </div>
             </div>
           </div>
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm text-zinc-500 mb-3">second brain</div>
-            <div className="grid grid-cols-2 gap-3 text-sm">
-              <div>
-                <div className="text-zinc-600 text-xs">permanent notes</div>
-                <div className="text-xl font-bold">{brain.permanent_notes}</div>
+          {/* BTC Price */}
+          <div className="group relative bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6 hover:border-zinc-700/50 transition-all overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-500/10 to-transparent rounded-bl-full" />
+            <div className="relative">
+              <div className="flex items-center gap-2 mb-4">
+                <Activity className="w-5 h-5 text-orange-500" />
+                <span className="text-sm text-zinc-500 uppercase tracking-wider">btc</span>
               </div>
-              <div>
-                <div className="text-zinc-600 text-xs">structure notes</div>
-                <div className="text-xl font-bold">{brain.structure_notes}</div>
+              <div className="text-3xl font-bold mb-2">
+                ${(trading.btc_price || 0).toLocaleString()}
+              </div>
+              <div className="text-sm text-zinc-500">
+                filter: {trading.filter_status || "active"}
               </div>
             </div>
-            <div className="text-xs text-zinc-600 mt-3">
-              last graduate: {brain.last_graduate || "2 hours ago"}
+          </div>
+
+          {/* Second Brain */}
+          <div className="group relative bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6 hover:border-zinc-700/50 transition-all overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500/10 to-transparent rounded-bl-full" />
+            <div className="relative">
+              <div className="flex items-center gap-2 mb-4">
+                <Target className="w-5 h-5 text-purple-500" />
+                <span className="text-sm text-zinc-500 uppercase tracking-wider">brain</span>
+              </div>
+              <div className="text-3xl font-bold mb-2">
+                {brain.permanent_notes + brain.structure_notes}
+              </div>
+              <div className="text-sm text-zinc-500">
+                {brain.permanent_notes} permanent · {brain.structure_notes} structure
+              </div>
             </div>
           </div>
         </div>
 
-        {/* ── Right: Projects ────────────────────────────── */}
-        <div className="space-y-4">
-          <h2 className="text-lg font-semibold text-zinc-400">projects</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          {/* Projects - Left Column */}
+          <div className="lg:col-span-2 space-y-6">
+            
+            {/* WayofWoof Project Card */}
+            <div className="bg-gradient-to-br from-amber-900/20 via-zinc-900/50 to-zinc-900/50 border border-amber-800/30 rounded-xl p-6 hover:border-amber-700/50 transition-all">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                    <Package className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-amber-300">wayofwoof</h3>
+                    <p className="text-xs text-amber-600">premium dog wellness</p>
+                  </div>
+                </div>
+                <Link 
+                  href="/wayofwoof"
+                  className="flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 transition-colors"
+                >
+                  open <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm font-semibold mb-3">wayofwoof</div>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-zinc-500">instagram</span>
-                <span className="font-mono">{(woof.instagram_followers || 0).toLocaleString()}</span>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-black/30 rounded-lg p-4 border border-amber-900/30">
+                  <div className="text-xs text-amber-600 mb-1">instagram</div>
+                  <div className="text-2xl font-bold text-amber-300">
+                    {woofFollowers.toLocaleString()}
+                  </div>
+                </div>
+                <div className="bg-black/30 rounded-lg p-4 border border-amber-900/30">
+                  <div className="text-xs text-amber-600 mb-1">inventory</div>
+                  <div className="text-2xl font-bold text-amber-300">
+                    {(woof.production?.currentInventory?.peanutButter || 0) + 
+                     (woof.production?.currentInventory?.hotMilk || 0)}
+                  </div>
+                  <div className="text-xs text-amber-600 mt-1">units ready</div>
+                </div>
+                <div className="bg-black/30 rounded-lg p-4 border border-amber-900/30">
+                  <div className="text-xs text-amber-600 mb-1">alerts</div>
+                  <div className="text-2xl font-bold text-amber-300">
+                    {woof.inventory_alerts || 0}
+                  </div>
+                  {(woof.inventory_alerts || 0) > 0 && (
+                    <AlertCircle className="w-4 h-4 text-red-400 mt-1" />
+                  )}
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span className="text-zinc-500">inventory alerts</span>
-                <span className="font-mono">{woof.inventory_alerts || 0}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-zinc-500">next milestone</span>
-                <span className="text-xs text-zinc-400">{woof.next_milestone || "label approval"}</span>
+
+              <div className="mt-4 pt-4 border-t border-amber-900/30 text-sm text-amber-600">
+                next: {woof.next_milestone || "label approval"}
               </div>
             </div>
-            <Link
-              href="/wayofwoof"
-              className="mt-3 block text-center bg-zinc-800 hover:bg-zinc-700 rounded py-2 text-xs"
-            >
-              view dashboard →
-            </Link>
-          </div>
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4">
-            <div className="text-sm font-semibold mb-3">rendyr</div>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-zinc-500">instagram</span>
-                <span className="font-mono">{(rendyr.instagram_followers || 0).toLocaleString()}</span>
+            {/* Rendyr Project Card */}
+            <div className="bg-gradient-to-br from-blue-900/20 via-zinc-900/50 to-zinc-900/50 border border-blue-800/30 rounded-xl p-6 hover:border-blue-700/50 transition-all">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+                    <Video className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-blue-300">rendyr</h3>
+                    <p className="text-xs text-blue-600">digital products</p>
+                  </div>
+                </div>
+                <Link 
+                  href="/rendyr"
+                  className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  open <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
-              <div className="flex justify-between">
-                <span className="text-zinc-500">digest items</span>
-                <span className="font-mono">{rendyr.latest_digest_items || 40}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-zinc-500">new videos</span>
-                <span className="font-mono">{rendyr.new_videos || 30}</span>
+
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-black/30 rounded-lg p-4 border border-blue-900/30">
+                  <div className="text-xs text-blue-600 mb-1">instagram</div>
+                  <div className="text-2xl font-bold text-blue-300">
+                    {rendyrFollowers.toLocaleString()}
+                  </div>
+                </div>
+                <div className="bg-black/30 rounded-lg p-4 border border-blue-900/30">
+                  <div className="text-xs text-blue-600 mb-1">digest</div>
+                  <div className="text-2xl font-bold text-blue-300">
+                    {rendyr.latest_digest_items || 0}
+                  </div>
+                  <div className="text-xs text-blue-600 mt-1">items</div>
+                </div>
+                <div className="bg-black/30 rounded-lg p-4 border border-blue-900/30">
+                  <div className="text-xs text-blue-600 mb-1">videos</div>
+                  <div className="text-2xl font-bold text-blue-300">
+                    {rendyr.new_videos || 0}
+                  </div>
+                  <div className="text-xs text-blue-600 mt-1">new</div>
+                </div>
               </div>
             </div>
-            <Link
-              href="/rendyr"
-              className="mt-3 block text-center bg-zinc-800 hover:bg-zinc-700 rounded py-2 text-xs"
-            >
-              view dashboard →
-            </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-2">
-            <Link
-              href="/videos"
-              className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 rounded-lg p-3 text-center text-xs"
-            >
-              ai videos
-            </Link>
-            <Link
-              href="/ads"
-              className="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 rounded-lg p-3 text-center text-xs"
-            >
-              meta ads
-            </Link>
+          {/* Activity Feed - Right Column */}
+          <div className="space-y-6">
+            
+            {/* Today's Focus */}
+            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+                <Target className="w-5 h-5 text-green-500" />
+                today's focus
+              </h3>
+              <div className="text-sm text-zinc-400 italic leading-relaxed">
+                "fix wayofwoof dashboard, redesign all three mission control views, make everything beautiful"
+              </div>
+            </div>
+
+            {/* Recent Activity */}
+            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+                <Activity className="w-5 h-5 text-blue-500" />
+                recent activity
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3 text-sm">
+                  <div className="text-zinc-600 text-xs mt-0.5 font-mono">
+                    {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                  </div>
+                  <div className="text-zinc-400 flex-1">
+                    dashboard redesign in progress
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 text-sm">
+                  <div className="text-zinc-600 text-xs mt-0.5 font-mono">09:44</div>
+                  <div className="text-zinc-400 flex-1">
+                    data pusher: fresh inventory, robinhood, trading stats
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 text-sm">
+                  <div className="text-zinc-600 text-xs mt-0.5 font-mono">03:23</div>
+                  <div className="text-zinc-400 flex-1">
+                    overnight: second brain system built
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6">
+              <h3 className="text-lg font-bold mb-4">quick links</h3>
+              <div className="space-y-2">
+                <Link 
+                  href="/trading"
+                  className="block bg-zinc-800/50 hover:bg-zinc-800 rounded-lg p-3 text-sm transition-colors border border-zinc-700/50"
+                >
+                  <div className="flex items-center justify-between">
+                    <span>trading dashboard</span>
+                    <ChevronRight className="w-4 h-4 text-zinc-500" />
+                  </div>
+                </Link>
+                <Link 
+                  href="/videos"
+                  className="block bg-zinc-800/50 hover:bg-zinc-800 rounded-lg p-3 text-sm transition-colors border border-zinc-700/50"
+                >
+                  <div className="flex items-center justify-between">
+                    <span>ai video feed</span>
+                    <ChevronRight className="w-4 h-4 text-zinc-500" />
+                  </div>
+                </Link>
+                <Link 
+                  href="/ads"
+                  className="block bg-zinc-800/50 hover:bg-zinc-800 rounded-lg p-3 text-sm transition-colors border border-zinc-700/50"
+                >
+                  <div className="flex items-center justify-between">
+                    <span>meta ads tracker</span>
+                    <ChevronRight className="w-4 h-4 text-zinc-500" />
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* ── Bottom Bar ─────────────────────────────────────── */}
-      <div className="mt-8 pt-4 border-t border-zinc-800 flex items-center justify-between text-xs text-zinc-600">
-        <div>
-          system health: <span className="text-green-500">●</span> operational
-        </div>
-        <div>last refresh: just now</div>
-        <div>
-          <Link href="/api/health" className="hover:text-zinc-400">
-            diagnostics →
-          </Link>
+        {/* System Status Footer */}
+        <div className="mt-8 bg-zinc-900/30 border border-zinc-800/50 rounded-lg p-4">
+          <div className="flex flex-wrap items-center justify-between gap-4 text-xs text-zinc-600">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+              system operational
+            </div>
+            <div>
+              last refresh: {new Date().toLocaleTimeString()}
+            </div>
+            <Link href="/api/health" className="hover:text-zinc-400 transition-colors">
+              diagnostics →
+            </Link>
+          </div>
         </div>
       </div>
     </div>
