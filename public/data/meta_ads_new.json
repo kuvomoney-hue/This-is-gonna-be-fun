@@ -3,110 +3,186 @@
     {
       "name": "HeyGen",
       "search_term": "HeyGen",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:34.311277"
+      "ads": [
+        {
+          "advertiser": "HeyGen",
+          "text": "Create studio-quality videos with AI avatars. No camera, no crew needed.",
+          "media": [
+            "video"
+          ],
+          "status": "active",
+          "started": "February 15, 2026",
+          "cta": "Try HeyGen Free"
+        },
+        {
+          "advertiser": "HeyGen",
+          "text": "Turn text into engaging videos in minutes. Perfect for creators and marketers.",
+          "media": [
+            "image"
+          ],
+          "status": "active",
+          "started": "January 28, 2026",
+          "cta": "Get Started"
+        }
+      ],
+      "total_active": 2,
+      "last_checked": "2026-03-02T10:53:05.467106"
     },
     {
       "name": "Runway",
-      "search_term": "Runway ML",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:36.319514"
+      "search_term": "Runway",
+      "ads": [
+        {
+          "advertiser": "Runway",
+          "text": "AI-powered video editing. Transform your content with Gen-2.",
+          "media": [
+            "video"
+          ],
+          "status": "active",
+          "started": "February 20, 2026",
+          "cta": "Start Creating"
+        }
+      ],
+      "total_active": 1,
+      "last_checked": "2026-03-02T10:53:05.467113"
     },
     {
       "name": "Midjourney",
       "search_term": "Midjourney",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:37:38.329112"
+      "last_checked": "2026-03-02T10:53:05.467118"
     },
     {
       "name": "OpenAI",
       "search_term": "OpenAI",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:40.336930"
+      "ads": [
+        {
+          "advertiser": "OpenAI",
+          "text": "ChatGPT Enterprise - AI assistance for your entire organization.",
+          "media": [
+            "image"
+          ],
+          "status": "active",
+          "started": "February 10, 2026",
+          "cta": "Contact Sales"
+        }
+      ],
+      "total_active": 1,
+      "last_checked": "2026-03-02T10:53:05.467121"
     },
     {
       "name": "Anthropic",
       "search_term": "Anthropic",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:42.346980"
+      "ads": [
+        {
+          "advertiser": "Anthropic",
+          "text": "Claude - AI assistant that's helpful, harmless, and honest.",
+          "media": [
+            "image"
+          ],
+          "status": "active",
+          "started": "February 5, 2026",
+          "cta": "Try Claude"
+        }
+      ],
+      "total_active": 1,
+      "last_checked": "2026-03-02T10:53:05.467125"
     },
     {
       "name": "Stability AI",
       "search_term": "Stability AI",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:37:44.355003"
+      "last_checked": "2026-03-02T10:53:05.467129"
     },
     {
       "name": "Pika",
       "search_term": "Pika",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:37:46.355500"
+      "last_checked": "2026-03-02T10:53:05.467132"
     },
     {
       "name": "Synthesia",
       "search_term": "Synthesia",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:48.362518"
-    },
-    {
-      "name": "D-ID",
-      "search_term": "D-ID",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:50.370605"
+      "ads": [
+        {
+          "advertiser": "Synthesia",
+          "text": "Create professional videos with AI avatars in 120+ languages.",
+          "media": [
+            "video"
+          ],
+          "status": "active",
+          "started": "January 15, 2026",
+          "cta": "Book Demo"
+        }
+      ],
+      "total_active": 1,
+      "last_checked": "2026-03-02T10:53:05.467135"
     },
     {
       "name": "ElevenLabs",
       "search_term": "ElevenLabs",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:37:52.371794"
+      "last_checked": "2026-03-02T10:53:05.467139"
     },
     {
       "name": "Jasper",
-      "search_term": "Jasper AI",
+      "search_term": "Jasper",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:37:54.380569"
+      "last_checked": "2026-03-02T10:53:05.467142"
     },
     {
       "name": "Copy.ai",
       "search_term": "Copy.ai",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:37:56.387169"
+      "last_checked": "2026-03-02T10:53:05.467145"
     },
     {
       "name": "Descript",
       "search_term": "Descript",
-      "ads": [],
-      "total_active": 0,
-      "last_checked": "2026-02-28T03:37:58.395452"
+      "ads": [
+        {
+          "advertiser": "Descript",
+          "text": "Edit video as easily as editing a document. AI-powered workflow.",
+          "media": [
+            "video"
+          ],
+          "status": "active",
+          "started": "February 1, 2026",
+          "cta": "Try Descript"
+        }
+      ],
+      "total_active": 1,
+      "last_checked": "2026-03-02T10:53:05.467148"
     },
     {
       "name": "Luma AI",
       "search_term": "Luma AI",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:38:00.403147"
+      "last_checked": "2026-03-02T10:53:05.467151"
     },
     {
       "name": "Character.AI",
       "search_term": "Character.AI",
       "ads": [],
       "total_active": 0,
-      "last_checked": "2026-02-28T03:38:02.408589"
+      "last_checked": "2026-03-02T10:53:05.467171"
+    },
+    {
+      "name": "Replika",
+      "search_term": "Replika",
+      "ads": [],
+      "total_active": 0,
+      "last_checked": "2026-03-02T10:53:05.467175"
     }
   ],
-  "_updated": "2026-02-28T03:37:34.311253",
-  "_scraper_version": "v2.0",
-  "_note": "Advertiser-based scraping (not keyword search)"
+  "_updated": "2026-03-02T10:53:05.467089",
+  "_scraper_version": "v3.1-simple",
+  "_note": "Sample data structure. Integrate with Meta Ad Library API for live ads."
 }
