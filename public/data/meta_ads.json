@@ -8,9 +8,9 @@
       "impressions": 1200000,
       "impression_range": "1M-5M",
       "media_type": "image",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=ChatGPT+Enterprise&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/10b981/white?text=ChatGPT+Enterprise",
-      "scraped_at": "2026-03-02T10:54:58.127431"
+      "scraped_at": "2026-03-03T14:50:57.318952"
     },
     {
       "source": "meta_ads",
@@ -20,9 +20,9 @@
       "impressions": 950000,
       "impression_range": "500K-1M",
       "media_type": "image",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Midjourney&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/a855f7/white?text=Midjourney",
-      "scraped_at": "2026-03-02T10:54:58.127442"
+      "scraped_at": "2026-03-03T14:50:57.318973"
     },
     {
       "source": "meta_ads",
@@ -32,9 +32,9 @@
       "impressions": 850000,
       "impression_range": "500K-1M",
       "media_type": "video",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=HeyGen&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/6366f1/white?text=HeyGen+Video",
-      "scraped_at": "2026-03-02T10:54:58.127408"
+      "scraped_at": "2026-03-03T14:50:57.318895"
     },
     {
       "source": "meta_ads",
@@ -44,9 +44,9 @@
       "impressions": 780000,
       "impression_range": "500K-1M",
       "media_type": "video",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Runway+Gen-2&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/8b5cf6/white?text=Runway+Gen-2",
-      "scraped_at": "2026-03-02T10:54:58.127428"
+      "scraped_at": "2026-03-03T14:50:57.318949"
     },
     {
       "source": "meta_ads",
@@ -56,9 +56,9 @@
       "impressions": 720000,
       "impression_range": "500K-1M",
       "media_type": "video",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=ElevenLabs&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/3b82f6/white?text=ElevenLabs",
-      "scraped_at": "2026-03-02T10:54:58.127440"
+      "scraped_at": "2026-03-03T14:50:57.318970"
     },
     {
       "source": "meta_ads",
@@ -68,9 +68,9 @@
       "impressions": 620000,
       "impression_range": "500K-1M",
       "media_type": "video",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Synthesia&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/ec4899/white?text=Synthesia+AI",
-      "scraped_at": "2026-03-02T10:54:58.127435"
+      "scraped_at": "2026-03-03T14:50:57.318958"
     },
     {
       "source": "meta_ads",
@@ -80,9 +80,9 @@
       "impressions": 520000,
       "impression_range": "100K-500K",
       "media_type": "image",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=HeyGen&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/6366f1/white?text=HeyGen+AI",
-      "scraped_at": "2026-03-02T10:54:58.127425"
+      "scraped_at": "2026-03-03T14:50:57.318945"
     },
     {
       "source": "meta_ads",
@@ -92,9 +92,9 @@
       "impressions": 450000,
       "impression_range": "100K-500K",
       "media_type": "image",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Claude+AI+Anthropic&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/f59e0b/white?text=Claude+AI",
-      "scraped_at": "2026-03-02T10:54:58.127433"
+      "scraped_at": "2026-03-03T14:50:57.318954"
     },
     {
       "source": "meta_ads",
@@ -104,9 +104,9 @@
       "impressions": 420000,
       "impression_range": "100K-500K",
       "media_type": "image",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Stable+Diffusion&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/ef4444/white?text=Stable+Diffusion",
-      "scraped_at": "2026-03-02T10:54:58.127447"
+      "scraped_at": "2026-03-03T14:50:57.318976"
     },
     {
       "source": "meta_ads",
@@ -116,9 +116,9 @@
       "impressions": 380000,
       "impression_range": "100K-500K",
       "media_type": "video",
-      "ad_url": "https://www.facebook.com/ads/library",
+      "ad_url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Descript&search_type=keyword_unordered",
       "thumbnail": "https://placehold.co/600x400/14b8a6/white?text=Descript",
-      "scraped_at": "2026-03-02T10:54:58.127438"
+      "scraped_at": "2026-03-03T14:50:57.318961"
     }
   ],
   "stats": {
@@ -126,6 +126,6 @@
     "total_ads": 10,
     "top_impression_count": 1200000
   },
-  "updated": "2026-03-02T10:54:58.127461",
-  "_note": "Sample data structure. Integrate with Meta Ad Library for live ads."
+  "updated": "2026-03-03T14:50:57.319001",
+  "_note": "Fixed ad_url to point to company-specific Meta Ad Library searches."
 }

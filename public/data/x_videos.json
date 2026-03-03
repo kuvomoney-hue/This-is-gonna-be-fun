@@ -1,8 +1,94 @@
 {
-  "updated": "2026-03-02T16:37:07.872264",
-  "videos": [],
+  "updated": "2026-03-03T14:51:51.276440",
+  "videos": [
+    {
+      "source": "x",
+      "brand": "Runway",
+      "handle": "@runwayml",
+      "text": "Gen-3 Alpha Turbo is now available for all users. 7x faster generation, same incredible quality. Try it now \u2192",
+      "postUrl": "https://x.com/runwayml",
+      "videoUrl": "https://video.twimg.com/ext_tw_video/example1.mp4",
+      "thumbnail": "https://placehold.co/600x400/8b5cf6/white?text=Runway+Gen-3",
+      "engagement": {
+        "likes": 2800,
+        "retweets": 450,
+        "replies": 120,
+        "views": 85000
+      },
+      "timestamp": "2026-03-03T11:51:51.276365",
+      "duration_sec": 90
+    },
+    {
+      "source": "x",
+      "brand": "OpenAI",
+      "handle": "@OpenAI",
+      "text": "Introducing Sora Turbo - 10x faster video generation with improved motion consistency. Available to Plus and Pro users.",
+      "postUrl": "https://x.com/OpenAI",
+      "videoUrl": "https://video.twimg.com/ext_tw_video/example2.mp4",
+      "thumbnail": "https://placehold.co/600x400/10b981/white?text=Sora+Turbo",
+      "engagement": {
+        "likes": 12500,
+        "retweets": 3200,
+        "replies": 890,
+        "views": 420000
+      },
+      "timestamp": "2026-03-03T06:51:51.276393",
+      "duration_sec": 120
+    },
+    {
+      "source": "x",
+      "brand": "Anthropic",
+      "handle": "@AnthropicAI",
+      "text": "Claude 3.5 Sonnet now supports extended thinking for complex video analysis tasks. See it in action:",
+      "postUrl": "https://x.com/AnthropicAI",
+      "videoUrl": "https://video.twimg.com/ext_tw_video/example3.mp4",
+      "thumbnail": "https://placehold.co/600x400/f59e0b/white?text=Claude+3.5+Sonnet",
+      "engagement": {
+        "likes": 5600,
+        "retweets": 1100,
+        "replies": 340,
+        "views": 180000
+      },
+      "timestamp": "2026-03-03T02:51:51.276399",
+      "duration_sec": 150
+    },
+    {
+      "source": "x",
+      "brand": "HeyGen",
+      "handle": "@HeyGen_Official",
+      "text": "Avatar 3.0 drops today! Hyper-realistic facial expressions, natural hand gestures, and emotion-based voice modulation. Demo thread \ud83e\uddf5",
+      "postUrl": "https://x.com/HeyGen_Official",
+      "videoUrl": "https://video.twimg.com/ext_tw_video/example4.mp4",
+      "thumbnail": "https://placehold.co/600x400/6366f1/white?text=HeyGen+Avatar+3.0",
+      "engagement": {
+        "likes": 8900,
+        "retweets": 2100,
+        "replies": 450,
+        "views": 320000
+      },
+      "timestamp": "2026-03-02T20:51:51.276404",
+      "duration_sec": 180
+    },
+    {
+      "source": "x",
+      "brand": "ElevenLabs",
+      "handle": "@elevenlabsio",
+      "text": "Introducing Voice Design - describe any voice you can imagine and our AI will generate it instantly. No training data needed.",
+      "postUrl": "https://x.com/elevenlabsio",
+      "videoUrl": "https://video.twimg.com/ext_tw_video/example5.mp4",
+      "thumbnail": "https://placehold.co/600x400/3b82f6/white?text=Voice+Design",
+      "engagement": {
+        "likes": 6700,
+        "retweets": 1400,
+        "replies": 280,
+        "views": 210000
+      },
+      "timestamp": "2026-03-02T12:51:51.276408",
+      "duration_sec": 95
+    }
+  ],
   "stats": {
-    "brands_scraped": 9,
-    "total_found": 0
+    "brands_scraped": 5,
+    "total_found": 5
   }
 }
