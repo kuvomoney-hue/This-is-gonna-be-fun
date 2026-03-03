@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./win98.css";
 
 interface Launch {
@@ -17,63 +17,56 @@ interface Launch {
   };
 }
 
-const SAMPLE_LAUNCHES: Launch[] = [
-  {
-    id: "1",
-    company: "OpenAI",
-    title: "Sora Turbo - 10x Faster Video Generation",
-    thumbnail: "https://placehold.co/240x135/10b981/white?text=Sora+Turbo",
-    views: "420K",
-    timeAgo: "3h ago",
-    intel: {
-      ahaMoment: "10x faster generation with improved motion consistency. First to ship real-time previews.",
-      friction: [
-        "No Android app available",
-        "Pricing too high for indie creators",
-        "Export resolution limited to 1080p"
-      ],
-      sentiment: 87
-    }
-  },
-  {
-    id: "2",
-    company: "Runway",
-    title: "Gen-3 Alpha Turbo Launch",
-    thumbnail: "https://placehold.co/240x135/8b5cf6/white?text=Gen-3+Turbo",
-    views: "85K",
-    timeAgo: "8h ago",
-    intel: {
-      ahaMoment: "7x faster than Gen-2, same incredible quality. Real-time feedback during generation.",
-      friction: [
-        "Still no audio generation",
-        "Credit system is confusing",
-        "Can't extend clips beyond 5 seconds"
-      ],
-      sentiment: 74
-    }
-  },
-  {
-    id: "3",
-    company: "HeyGen",
-    title: "Avatar 3.0 - Hyper-Realistic Expressions",
-    thumbnail: "https://placehold.co/240x135/6366f1/white?text=Avatar+3.0",
-    views: "320K",
-    timeAgo: "12h ago",
-    intel: {
-      ahaMoment: "Emotion-based voice modulation + natural hand gestures. First to nail micro-expressions.",
-      friction: [
-        "Voice cloning requires 30min of audio",
-        "Background removal is janky",
-        "No batch export option"
-      ],
-      sentiment: 92
-    }
-  }
-];
+// Launch data loaded from API
+interface LaunchIntelData {
+  video_id: string;
+  company: string;
+  title: string;
+  sentiment_score: number;
+  aha_moment: string;
+  top_complaints: string[];
+  marketing: {
+    positioning: string;
+    target_audience: string;
+    distribution_strategy: string;
+  };
+}
 
 export default function Y2KDemo() {
+  const [launches, setLaunches] = useState<Launch[]>([]);
+  const [loading, setLoading] = useState(true);
   const [selectedLaunch, setSelectedLaunch] = useState<Launch | null>(null);
   const [showAnalysis, setShowAnalysis] = useState(false);
+
+  // Load intel data from API
+  useEffect(() => {
+    fetch("/api/launch-intel")
+      .then(res => res.json())
+      .then(data => {
+        if (data.launches) {
+          // Convert to Launch format
+          const launchData: Launch[] = data.launches.map((intel: LaunchIntelData, idx: number) => ({
+            id: intel.video_id,
+            company: intel.company,
+            title: intel.title,
+            thumbnail: `https://i.ytimg.com/vi/${intel.video_id}/hqdefault.jpg`,
+            views: "N/A",
+            timeAgo: "Recent",
+            intel: {
+              ahaMoment: intel.aha_moment,
+              friction: intel.top_complaints,
+              sentiment: intel.sentiment_score
+            }
+          }));
+          setLaunches(launchData);
+        }
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Failed to load intel:", err);
+        setLoading(false);
+      });
+  }, []);
 
   const handleCardClick = (launch: Launch) => {
     setSelectedLaunch(launch);
@@ -169,8 +162,13 @@ export default function Y2KDemo() {
             <div className="win98-panel">
               <div className="win98-panel-title">📺 Launch Feed</div>
               <div className="win98-scrollable-content">
-                <div className="launch-grid">
-                  {SAMPLE_LAUNCHES.map(launch => (
+                {loading ? (
+                  <div style={{ padding: "20px", textAlign: "center" }}>
+                    Loading Launch Intel...
+                  </div>
+                ) : (
+                  <div className="launch-grid">
+                    {launches.map(launch => (
                     <div 
                       key={launch.id} 
                       className="launch-card"
@@ -197,7 +195,8 @@ export default function Y2KDemo() {
                       </div>
                     </div>
                   ))}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -274,10 +273,10 @@ export default function Y2KDemo() {
         {/* Status Bar */}
         <div className="win98-status-bar">
           <div className="win98-status-item">
-            Ready
+            {loading ? "Loading..." : "Ready"}
           </div>
           <div className="win98-status-item">
-            {SAMPLE_LAUNCHES.length} launches loaded
+            {launches.length} launches loaded
           </div>
           <div className="win98-status-item">
             Analysis cache: 1.2s avg

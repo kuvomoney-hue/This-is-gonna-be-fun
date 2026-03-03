@@ -1,0 +1,474 @@
+{
+  "updated": "2026-03-03T15:19:22.509121",
+  "total_analyzed": 15,
+  "note": "Sample data generated with heuristic analysis. Set OPENAI_API_KEY + YOUTUBE_API_KEY for real analysis.",
+  "launches": [
+    {
+      "video_id": "OzZnMVkwil0",
+      "company": "VEED",
+      "title": "I Made the Same UGC Ad in Every AI Video Generator - FULL Comparison",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508387",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 77,
+        "positive": 242,
+        "negative": 43,
+        "neutral": 30,
+        "top_complaints": [
+          "Customer support is slow",
+          "API rate limits are frustrating"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "VEED continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "AI-powered tools for professionals. Competing on speed and quality in the VEED category.",
+        "target_audience": "Broad horizontal appeal - creators, businesses, and enthusiasts.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 77,
+      "aha_moment": "VEED continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Customer support is slow",
+        "API rate limits are frustrating"
+      ]
+    },
+    {
+      "video_id": "6jImWJRZX_k",
+      "company": "Google DeepMind",
+      "title": "To-Do: 1. Fix the Android Crash. 2. Build Lists. 3. Profit? | Code, Commit, Deploy, Repeat (S1E3)",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508442",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 92,
+        "positive": 204,
+        "negative": 10,
+        "neutral": 8,
+        "top_complaints": [
+          "Documentation is incomplete"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Google DeepMind continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Research-backed AI with Google scale and infrastructure. Emphasizing scientific rigor and breakthrough innovation.",
+        "target_audience": "Enterprises, developers, and power users. B2B focus with API-first approach.",
+        "distribution_strategy": "Twitter/X announcement \u2192 Tech press coverage \u2192 API docs. Earned media-first approach."
+      },
+      "sentiment_score": 92,
+      "aha_moment": "Google DeepMind continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Documentation is incomplete"
+      ]
+    },
+    {
+      "video_id": "cIoRFwz21KA",
+      "company": "ElevenLabs",
+      "title": "Nano Banana 2 Is Here \u2014 Everything You NEED to Know",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508496",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 68,
+        "positive": 229,
+        "negative": 64,
+        "neutral": 45,
+        "top_complaints": [
+          "No mobile app available",
+          "Onboarding is confusing",
+          "Still missing key features"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "ElevenLabs continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Voice AI for creators and developers. Best-in-class voice cloning with simple API.",
+        "target_audience": "Broad horizontal appeal - creators, businesses, and enthusiasts.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 68,
+      "aha_moment": "ElevenLabs continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "No mobile app available",
+        "Onboarding is confusing",
+        "Still missing key features"
+      ]
+    },
+    {
+      "video_id": "bY3yvp-cP7A",
+      "company": "ElevenLabs",
+      "title": "Seedream 5.0 Lite Is Here \u2014 Smarter AI Image Generation with Real Reasoning",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508544",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 67,
+        "positive": 115,
+        "negative": 34,
+        "neutral": 24,
+        "top_complaints": [
+          "Pricing is too high for ElevenLabs",
+          "Onboarding is confusing",
+          "Documentation is incomplete"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "ElevenLabs continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Voice AI for creators and developers. Best-in-class voice cloning with simple API.",
+        "target_audience": "Broad horizontal appeal - creators, businesses, and enthusiasts.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 67,
+      "aha_moment": "ElevenLabs continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Pricing is too high for ElevenLabs",
+        "Onboarding is confusing",
+        "Documentation is incomplete"
+      ]
+    },
+    {
+      "video_id": "8O-3-2dqPNI",
+      "company": "Synthesia",
+      "title": "AI Avatar Videos in 5 Minutes with Synthesia (Full Tutorial)",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508571",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 74,
+        "positive": 292,
+        "negative": 61,
+        "neutral": 42,
+        "top_complaints": [
+          "Customer support is slow",
+          "Pricing is too high for Synthesia"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Synthesia continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Enterprise video platform with AI avatars. Competing on multilingual support and compliance features.",
+        "target_audience": "Marketing teams, sales enablement, HR/training departments. Clear B2B SaaS positioning.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 74,
+      "aha_moment": "Synthesia continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Customer support is slow",
+        "Pricing is too high for Synthesia"
+      ]
+    },
+    {
+      "video_id": "QF_fiDxK1-Y",
+      "company": "Descript",
+      "title": "How to Generate Pro-Quality AI B-Roll in Descript (Step-by-Step Workflow)",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508596",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 71,
+        "positive": 330,
+        "negative": 80,
+        "neutral": 55,
+        "top_complaints": [
+          "No mobile app available",
+          "Pricing is too high for Descript"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Breakthrough in output quality - hyper-realistic results that previously required expensive studios. Game-changer for Descript's target market.",
+        "positioning": "AI-powered tools for professionals. Competing on speed and quality in the Descript category.",
+        "target_audience": "Marketing teams, sales enablement, HR/training departments. Clear B2B SaaS positioning.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 71,
+      "aha_moment": "Breakthrough in output quality - hyper-realistic results that previously required expensive studios. Game-changer for Descript's target market.",
+      "top_complaints": [
+        "No mobile app available",
+        "Pricing is too high for Descript"
+      ]
+    },
+    {
+      "video_id": "HH_eXHodIL0",
+      "company": "CapCut",
+      "title": "Which of these 3 techniques are you adding to your next edit?",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508621",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 75,
+        "positive": 88,
+        "negative": 17,
+        "neutral": 13,
+        "top_complaints": [
+          "Onboarding is confusing",
+          "Still missing key features"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "CapCut continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "AI-powered tools for professionals. Competing on speed and quality in the CapCut category.",
+        "target_audience": "Broad horizontal appeal - creators, businesses, and enthusiasts.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 75,
+      "aha_moment": "CapCut continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Onboarding is confusing",
+        "Still missing key features"
+      ]
+    },
+    {
+      "video_id": "x0kfpuncJhY",
+      "company": "CapCut",
+      "title": "7 Editing Hacks to Turn Basic into Cinematic| CapCut Creator Studio",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508644",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 81,
+        "positive": 174,
+        "negative": 24,
+        "neutral": 18,
+        "top_complaints": [
+          "Pricing is too high for CapCut",
+          "Still missing key features"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "CapCut continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "AI-powered tools for professionals. Competing on speed and quality in the CapCut category.",
+        "target_audience": "Broad horizontal appeal - creators, businesses, and enthusiasts.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 81,
+      "aha_moment": "CapCut continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Pricing is too high for CapCut",
+        "Still missing key features"
+      ]
+    },
+    {
+      "video_id": "y6I3uNJx_aY",
+      "company": "Descript",
+      "title": "Descript Support: Q&A",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508667",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 67,
+        "positive": 132,
+        "negative": 39,
+        "neutral": 27,
+        "top_complaints": [
+          "Export quality could be better",
+          "No mobile app available",
+          "API rate limits are frustrating"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Descript continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "AI-powered tools for professionals. Competing on speed and quality in the Descript category.",
+        "target_audience": "Marketing teams, sales enablement, HR/training departments. Clear B2B SaaS positioning.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 67,
+      "aha_moment": "Descript continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Export quality could be better",
+        "No mobile app available",
+        "API rate limits are frustrating"
+      ]
+    },
+    {
+      "video_id": "VX4crhDAaL4",
+      "company": "Descript",
+      "title": "Filming Your First Video I Creator Bootcamp Ep. 4",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508691",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 71,
+        "positive": 78,
+        "negative": 19,
+        "neutral": 13,
+        "top_complaints": [
+          "API rate limits are frustrating",
+          "No mobile app available"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Descript continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "AI-powered tools for professionals. Competing on speed and quality in the Descript category.",
+        "target_audience": "Marketing teams, sales enablement, HR/training departments. Clear B2B SaaS positioning.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 71,
+      "aha_moment": "Descript continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "API rate limits are frustrating",
+        "No mobile app available"
+      ]
+    },
+    {
+      "video_id": "9jgcT0Fqt7U",
+      "company": "OpenAI",
+      "title": "Builders Unscripted: Ep. 1 - Peter Steinberger, Creator of OpenClaw",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508714",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 81,
+        "positive": 341,
+        "negative": 47,
+        "neutral": 33,
+        "top_complaints": [
+          "Customer support is slow",
+          "Pricing is too high for OpenAI"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "OpenAI continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Enterprise-grade AI with safety and reliability at the core. Premium positioning with broad horizontal appeal.",
+        "target_audience": "Enterprises, developers, and power users. B2B focus with API-first approach.",
+        "distribution_strategy": "Twitter/X announcement \u2192 Tech press coverage \u2192 API docs. Earned media-first approach."
+      },
+      "sentiment_score": 81,
+      "aha_moment": "OpenAI continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Customer support is slow",
+        "Pricing is too high for OpenAI"
+      ]
+    },
+    {
+      "video_id": "ukKO07SvkR0",
+      "company": "ElevenLabs",
+      "title": "Radio Presenter Shows How to Build Ads with ElevenLabs",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508738",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 82,
+        "positive": 199,
+        "negative": 26,
+        "neutral": 18,
+        "top_complaints": [
+          "Pricing is too high for ElevenLabs",
+          "Customer support is slow"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "ElevenLabs continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Voice AI for creators and developers. Best-in-class voice cloning with simple API.",
+        "target_audience": "Broad horizontal appeal - creators, businesses, and enthusiasts.",
+        "distribution_strategy": "Product Hunt \u2192 LinkedIn \u2192 Email nurture sequences. Traditional B2B SaaS playbook."
+      },
+      "sentiment_score": 82,
+      "aha_moment": "ElevenLabs continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Pricing is too high for ElevenLabs",
+        "Customer support is slow"
+      ]
+    },
+    {
+      "video_id": "q1sPYUHJt-I",
+      "company": "Pika",
+      "title": "What Happens When AI Selves Run a Company?",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508766",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 74,
+        "positive": 183,
+        "negative": 38,
+        "neutral": 27,
+        "top_complaints": [
+          "Customer support is slow",
+          "Export quality could be better"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Pika continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Consumer-friendly AI video generation. Emphasizing ease of use and creative exploration.",
+        "target_audience": "Content creators, filmmakers, and creative professionals. Prosumer market with freemium entry.",
+        "distribution_strategy": "Twitter/X teaser \u2192 YouTube demo \u2192 Reddit/Discord communities. Creator-led evangelism."
+      },
+      "sentiment_score": 74,
+      "aha_moment": "Pika continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Customer support is slow",
+        "Export quality could be better"
+      ]
+    },
+    {
+      "video_id": "BwoCznxxMBw",
+      "company": "Runway",
+      "title": "Morningstar: An AI short film | Runway",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508793",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 84,
+        "positive": 350,
+        "negative": 40,
+        "neutral": 27,
+        "top_complaints": [
+          "Onboarding is confusing",
+          "Pricing is too high for Runway"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Runway continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Creative tools for next-gen filmmakers and content creators. Democratizing professional video production.",
+        "target_audience": "Content creators, filmmakers, and creative professionals. Prosumer market with freemium entry.",
+        "distribution_strategy": "Twitter/X teaser \u2192 YouTube demo \u2192 Reddit/Discord communities. Creator-led evangelism."
+      },
+      "sentiment_score": 84,
+      "aha_moment": "Runway continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Onboarding is confusing",
+        "Pricing is too high for Runway"
+      ]
+    },
+    {
+      "video_id": "7myGtzOa9hs",
+      "company": "Runway",
+      "title": "All the best models. All inside Runway. | Runway",
+      "source": "youtube",
+      "analyzed_at": "2026-03-03T15:19:22.508817",
+      "transcript": "[Transcript not available in demo mode. Run with YOUTUBE_API_KEY to extract real transcripts.]",
+      "transcript_length": 0,
+      "sentiment": {
+        "score": 93,
+        "positive": 236,
+        "negative": 10,
+        "neutral": 8,
+        "top_complaints": [
+          "Still missing key features"
+        ]
+      },
+      "marketing": {
+        "aha_moment": "Runway continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+        "positioning": "Creative tools for next-gen filmmakers and content creators. Democratizing professional video production.",
+        "target_audience": "Content creators, filmmakers, and creative professionals. Prosumer market with freemium entry.",
+        "distribution_strategy": "Twitter/X teaser \u2192 YouTube demo \u2192 Reddit/Discord communities. Creator-led evangelism."
+      },
+      "sentiment_score": 93,
+      "aha_moment": "Runway continues to iterate on core product with meaningful improvements. Incremental but valuable upgrade for existing users.",
+      "top_complaints": [
+        "Still missing key features"
+      ]
+    }
+  ]
+}

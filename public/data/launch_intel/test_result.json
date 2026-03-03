@@ -1,0 +1,25 @@
+{
+  "video_id": "OzZnMVkwil0",
+  "company": "VEED",
+  "title": "I Made the Same UGC Ad in Every AI Video Generator",
+  "source": "youtube",
+  "analyzed_at": "2026-03-03T15:18:13.238922",
+  "transcript": null,
+  "transcript_length": 0,
+  "sentiment": {
+    "score": 0,
+    "positive": 0,
+    "negative": 0,
+    "neutral": 0,
+    "top_complaints": []
+  },
+  "marketing": {
+    "aha_moment": "No transcript available",
+    "positioning": "Unknown",
+    "target_audience": "Unknown",
+    "distribution_strategy": "Unknown"
+  },
+  "sentiment_score": 0,
+  "aha_moment": "No transcript available",
+  "top_complaints": []
+}
