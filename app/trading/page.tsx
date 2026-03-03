@@ -3,11 +3,9 @@
 import { useEffect, useState } from "react";
 import Card from "@/components/Card";
 import Badge from "@/components/Badge";
-import SignalRow from "@/components/SignalRow";
 import {
   accountHistory,
   tradingStats,
-  signals,
   contextFilter,
   activePosition,
   robinhoodStatus,
@@ -429,12 +427,13 @@ export default function TradingPage() {
       <div className="bg-surface border border-border rounded-xl overflow-hidden">
         <div className="px-5 pt-5 pb-4 border-b border-border">
           <h2 className="text-text-primary font-bold text-sm uppercase tracking-wider">Signal Log</h2>
+          <p className="text-xs text-text-secondary mt-1">Last 15 signals from today</p>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-border">
-                {["Time", "Signal", "Price", "Score", "Decision", "Reasons"].map((h) => (
+                {["Time", "Symbol", "Signal", "Price", "Score", "Decision"].map((h) => (
                   <th
                     key={h}
                     className="px-4 py-3 text-left text-xs font-semibold text-text-secondary uppercase tracking-wider"
@@ -445,18 +444,71 @@ export default function TradingPage() {
               </tr>
             </thead>
             <tbody>
-              {signals.map((signal, i) => (
-                <SignalRow
-                  key={signal.id}
-                  signal={signal}
-                  isLast={i === signals.length - 1}
-                />
-              ))}
+              {live.signals_today?.signals && live.signals_today.signals.length > 0 ? (
+                live.signals_today.signals.map((signal: any, i: number) => {
+                  const isLast = i === (live.signals_today?.signals?.length || 0) - 1;
+                  const isApproved = signal.verdict === "APPROVED";
+                  
+                  return (
+                    <tr
+                      key={`${signal.time}-${signal.symbol}`}
+                      className={`${!isLast ? "border-b border-border" : ""} hover:bg-surface2 transition-colors`}
+                    >
+                      <td className="px-4 py-3 text-text-secondary font-mono text-xs">
+                        {signal.time}
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className="font-mono font-bold text-text-primary">
+                          {signal.symbol}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className={`inline-block px-2 py-0.5 rounded text-xs font-bold ${
+                          signal.action === "LONG"
+                            ? "bg-primary-bright/10 text-primary-bright"
+                            : "bg-danger/10 text-danger"
+                        }`}>
+                          {signal.action}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 font-mono text-text-primary">
+                        ${typeof signal.price === 'number' ? signal.price.toFixed(2) : signal.price}
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className={`font-mono font-bold ${
+                          (signal.score || 0) >= 60 ? "text-primary-bright" : "text-text-secondary"
+                        }`}>
+                          {signal.score ?? "—"}/100
+                        </span>
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className={`inline-block px-2 py-0.5 rounded text-xs font-bold ${
+                          isApproved
+                            ? "bg-primary-bright/10 text-primary-bright"
+                            : "bg-danger/10 text-danger"
+                        }`}>
+                          {signal.verdict || "UNKNOWN"}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })
+              ) : (
+                <tr>
+                  <td colSpan={6} className="px-4 py-8 text-center text-text-secondary">
+                    No signals today yet. Waiting for TradingView alerts...
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
         <div className="px-5 py-3 border-t border-border">
-          <p className="text-xs text-text-secondary">{signals.length} signals recorded</p>
+          <p className="text-xs text-text-secondary">
+            {live.signals_today?.total || 0} signals today · 
+            <span className="text-primary-bright ml-2">{live.signals_today?.approved || 0} approved</span> · 
+            <span className="text-danger ml-2">{live.signals_today?.rejected || 0} rejected</span>
+          </p>
         </div>
       </div>
     </div>
