@@ -21,15 +21,32 @@ export async function GET() {
     const fileContent = await readFile(dataPath, "utf-8");
     const data = JSON.parse(fileContent);
     
-    // Return ads sorted by impressions (already sorted in scraper, but re-sort for safety)
-    const ads = (data.ads || []).sort(
-      (a: MetaAd, b: MetaAd) => b.impressions - a.impressions
-    );
+    // Transform ads to match expected format
+    const transformedAds = (data.ads || []).map((ad: MetaAd, idx: number) => ({
+      id: `${ad.company}-${idx}`,
+      advertiser: ad.advertiser,
+      text: ad.text,
+      thumbnail: ad.thumbnail,
+      startDate: new Date(ad.scraped_at).toLocaleDateString(),
+      link: ad.ad_url,
+      impressions: ad.impressions,
+      keyword: ad.company,
+      scrapedAt: ad.scraped_at,
+      hasVideo: ad.media_type === "video"
+    }));
+    
+    // Sort by impressions
+    transformedAds.sort((a, b) => b.impressions - a.impressions);
     
     return NextResponse.json({
-      ads,
-      stats: data.stats,
-      updated: data.updated,
+      ads: transformedAds,
+      stats: {
+        keywords_searched: data.stats?.companies_scraped || 0,
+        total_unique_ads: data.stats?.total_ads || 0,
+        total_impressions: transformedAds.reduce((sum, ad) => sum + ad.impressions, 0),
+        top_impression_count: data.stats?.top_impression_count || 0,
+      },
+      updated: data.updated || new Date().toISOString(),
     });
   } catch (err) {
     console.error("[meta-ads route]", err);
@@ -37,8 +54,9 @@ export async function GET() {
     return NextResponse.json({
       ads: [],
       stats: {
-        companies_scraped: 0,
-        total_ads: 0,
+        keywords_searched: 0,
+        total_unique_ads: 0,
+        total_impressions: 0,
         top_impression_count: 0,
       },
       updated: new Date().toISOString(),

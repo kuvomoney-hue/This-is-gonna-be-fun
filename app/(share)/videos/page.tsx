@@ -22,15 +22,16 @@ interface VideoEntry {
 }
 
 interface MetaAd {
-  source: "meta_ads";
-  company: string;
+  id: string;
   advertiser: string;
   text: string;
+  thumbnail: string | null;
+  startDate: string;
+  link: string | null;
   impressions: number;
-  impression_range: string;
-  scraped_at: string;
-  ad_url: string;
-  thumbnail: string;
+  keyword: string;
+  scrapedAt: string;
+  hasVideo: boolean;
 }
 
 const CHANNEL_COLORS: Record<string, string> = {
@@ -172,7 +173,7 @@ export default function VideosPage() {
   
   const filteredAds = selectedCompany === "All"
     ? metaAds
-    : metaAds.filter(ad => ad.company === selectedCompany);
+    : metaAds.filter(ad => ad.keyword === selectedCompany);
 
   return (
     <div className="p-6 space-y-6">
@@ -310,12 +311,12 @@ export default function VideosPage() {
             {adsLoading
               ? Array.from({ length: 6 }).map((_, i) => <VideoSkeleton key={i} />)
               : filteredAds.map((ad, idx) => {
-                  const badgeClass = CHANNEL_COLORS[ad.company] ?? "bg-[#1e3320] text-[#81c784]";
+                  const badgeClass = CHANNEL_COLORS[ad.keyword] ?? "bg-[#1e3320] text-[#81c784]";
                   
                   return (
                     <a
-                      key={`ad-${idx}`}
-                      href={ad.ad_url}
+                      key={ad.id}
+                      href={ad.link || "#"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group block rounded-xl overflow-hidden bg-[#111811] border border-[#1e3320] hover:border-[#4caf50]/50 transition-all duration-200 hover:shadow-[0_0_16px_rgba(76,175,80,0.15)]"
@@ -339,13 +340,13 @@ export default function VideosPage() {
                         </p>
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${badgeClass}`}>
-                            {ad.company}
+                            {ad.keyword}
                           </span>
                           <span className="text-xs text-[#81c784]">
-                            {ad.impression_range} views
+                            {formatImpressions(ad.impressions)} views
                           </span>
                           <span className="text-xs text-[#81c784]/70">
-                            {relativeTime(ad.scraped_at)}
+                            {ad.startDate}
                           </span>
                         </div>
                       </div>
