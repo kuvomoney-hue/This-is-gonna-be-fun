@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "./win98.css";
+import "./vaporwave.css";
 
 interface Launch {
   id: string;
@@ -32,7 +32,7 @@ interface LaunchIntelData {
   };
 }
 
-export default function Y2KDemo() {
+export default function LaunchIntelPage() {
   const [launches, setLaunches] = useState<Launch[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedLaunch, setSelectedLaunch] = useState<Launch | null>(null);
@@ -45,7 +45,7 @@ export default function Y2KDemo() {
       .then(data => {
         if (data.launches) {
           // Convert to Launch format
-          const launchData: Launch[] = data.launches.map((intel: LaunchIntelData, idx: number) => ({
+          const launchData: Launch[] = data.launches.map((intel: LaunchIntelData) => ({
             id: intel.video_id,
             company: intel.company,
             title: intel.title,
@@ -74,215 +74,150 @@ export default function Y2KDemo() {
   };
 
   return (
-    <div className="win98-desktop">
-      {/* Main Window */}
-      <div className="win98-window">
-        {/* Title Bar */}
-        <div className="win98-title-bar">
-          <div className="win98-title-bar-text">
-            <img src="/icons/ie-icon.png" alt="" className="win98-title-icon" />
-            Launch Intel - Microsoft Internet Explorer
-          </div>
-          <div className="win98-title-bar-controls">
-            <button className="win98-title-button">_</button>
-            <button className="win98-title-button">□</button>
-            <button className="win98-title-button">✕</button>
-          </div>
-        </div>
+    <div className="vaporwave-container">
+      {/* Tracking Line VHS Effect */}
+      <div className="tracking-line" style={{ top: '20%' }}></div>
+      
+      {/* Control Panel Header */}
+      <div className="control-panel-header">
+        <h1 className="control-panel-title">LAUNCH INTEL</h1>
+        <p className="control-panel-subtitle">
+          AI Competitive Intelligence • Real-Time Monitoring System
+        </p>
+      </div>
 
-        {/* Menu Bar */}
-        <div className="win98-menu-bar">
-          <span className="win98-menu-item">File</span>
-          <span className="win98-menu-item">View</span>
-          <span className="win98-menu-item">Favorites</span>
-          <span className="win98-menu-item">Tools</span>
-          <span className="win98-menu-item">Help</span>
+      {/* Status Bar */}
+      <div className="status-bar">
+        <div className="status-item">
+          ◉ SYSTEM STATUS: {loading ? "SCANNING..." : "ONLINE"}
         </div>
+        <div className="status-item active">
+          ▸ LAUNCHES TRACKED: {launches.length}
+        </div>
+        <div className="status-item">
+          ⚡ ANALYSIS ENGINE: ACTIVE
+        </div>
+      </div>
 
-        {/* Toolbar */}
-        <div className="win98-toolbar">
-          <button className="win98-button win98-toolbar-button">◄</button>
-          <button className="win98-button win98-toolbar-button">►</button>
-          <button className="win98-button win98-toolbar-button">⟳</button>
-          <button className="win98-button win98-toolbar-button">🏠</button>
-          <div className="win98-address-bar">
-            <span className="win98-address-label">Address</span>
-            <input 
-              type="text" 
-              className="win98-text-input win98-address-input" 
-              value="https://launch-intel.rendyr.com"
-              readOnly
-            />
-            <button className="win98-button">Go</button>
+      {/* Loading State */}
+      {loading ? (
+        <div className="loading-screen">
+          <div className="loading-text">
+            INITIALIZING NEURAL NETWORK<span className="loading-dots">...</span>
           </div>
         </div>
-
-        {/* Content Area */}
-        <div className="win98-content">
-          {/* Sidebar */}
-          <div className="win98-sidebar">
-            <div className="win98-panel">
-              <div className="win98-panel-title">🔍 Filters</div>
-              <div className="win98-panel-content">
-                <div className="win98-checkbox-group">
-                  <label className="win98-checkbox">
-                    <input type="checkbox" defaultChecked />
-                    YouTube
-                  </label>
-                  <label className="win98-checkbox">
-                    <input type="checkbox" defaultChecked />
-                    Twitter/X
-                  </label>
-                  <label className="win98-checkbox">
-                    <input type="checkbox" />
-                    LinkedIn
-                  </label>
-                </div>
-                
-                <div className="win98-form-group">
-                  <label>Company:</label>
-                  <select className="win98-select">
-                    <option>All Companies</option>
-                    <option>OpenAI</option>
-                    <option>Runway</option>
-                    <option>HeyGen</option>
-                    <option>Anthropic</option>
-                  </select>
-                </div>
-
-                <button className="win98-button win98-button-primary">
-                  Apply Filter
-                </button>
+      ) : (
+        /* Launch Grid */
+        <div className="crt-grid">
+          {launches.map(launch => (
+            <div 
+              key={launch.id}
+              className="crt-monitor"
+              onClick={() => handleCardClick(launch)}
+            >
+              {/* CRT Screen */}
+              <div className="crt-screen">
+                <img 
+                  src={launch.thumbnail} 
+                  alt={launch.title}
+                />
               </div>
+
+              {/* Monitor Info */}
+              <div className="crt-info">
+                <div className="crt-company">{launch.company}</div>
+                <div className="crt-title">{launch.title}</div>
+                <div className="crt-meta">
+                  <span>
+                    {launch.intel && (
+                      <span className="sentiment-badge">
+                        {launch.intel.sentiment}% POSITIVE
+                      </span>
+                    )}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Analysis Panel (slides in when card clicked) */}
+      {showAnalysis && selectedLaunch?.intel && (
+        <div className="analysis-panel">
+          <div className="analysis-header">
+            <div className="analysis-title">INTEL ANALYSIS</div>
+            <button 
+              className="close-button"
+              onClick={() => setShowAnalysis(false)}
+            >
+              ×
+            </button>
+          </div>
+
+          {/* Company Name */}
+          <div className="intel-section">
+            <div className="intel-section-title">◉ TARGET</div>
+            <div className="intel-section-content">
+              {selectedLaunch.company}
             </div>
           </div>
 
-          {/* Main Feed */}
-          <div className="win98-main">
-            <div className="win98-panel">
-              <div className="win98-panel-title">📺 Launch Feed</div>
-              <div className="win98-scrollable-content">
-                {loading ? (
-                  <div style={{ padding: "20px", textAlign: "center" }}>
-                    Loading Launch Intel...
-                  </div>
-                ) : (
-                  <div className="launch-grid">
-                    {launches.map(launch => (
-                    <div 
-                      key={launch.id} 
-                      className="launch-card"
-                      onClick={() => handleCardClick(launch)}
-                    >
-                      <div className="launch-thumbnail">
-                        <img src={launch.thumbnail} alt={launch.title} />
-                        <div className="launch-play-button">▶</div>
-                      </div>
-                      <div className="launch-info">
-                        <div className="launch-company">{launch.company}</div>
-                        <div className="launch-title">{launch.title}</div>
-                        <div className="launch-meta">
-                          {launch.views} views • {launch.timeAgo}
-                        </div>
-                      </div>
-                      <div className="launch-actions">
-                        <button className="win98-button win98-button-small">
-                          Watch 🎬
-                        </button>
-                        <button className="win98-button win98-button-small">
-                          Analyze 🔍
-                        </button>
-                      </div>
-                    </div>
+          {/* Aha Moment */}
+          <div className="intel-section">
+            <div className="intel-section-title">▸ AHA MOMENT</div>
+            <div className="intel-section-content">
+              {selectedLaunch.intel.ahaMoment}
+            </div>
+          </div>
+
+          {/* Friction Points */}
+          {selectedLaunch.intel.friction.length > 0 && (
+            <div className="intel-section">
+              <div className="intel-section-title">⚠ USER FRICTION</div>
+              <div className="intel-section-content">
+                <ul className="intel-list">
+                  {selectedLaunch.intel.friction.map((item, i) => (
+                    <li key={i}>{item}</li>
                   ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Analysis Panel (slides in when card clicked) */}
-          {showAnalysis && selectedLaunch?.intel && (
-            <div className="win98-analysis-panel">
-              <div className="win98-window win98-analysis-window">
-                <div className="win98-title-bar">
-                  <div className="win98-title-bar-text">
-                    Competitive Intel - {selectedLaunch.company}
-                  </div>
-                  <div className="win98-title-bar-controls">
-                    <button 
-                      className="win98-title-button"
-                      onClick={() => setShowAnalysis(false)}
-                    >
-                      ✕
-                    </button>
-                  </div>
-                </div>
-
-                <div className="win98-analysis-content">
-                  {/* Aha Moment */}
-                  <div className="intel-section">
-                    <div className="intel-section-title">📊 Aha Moment</div>
-                    <div className="intel-section-content">
-                      {selectedLaunch.intel.ahaMoment}
-                    </div>
-                  </div>
-
-                  {/* Friction */}
-                  <div className="intel-section">
-                    <div className="intel-section-title">🚨 Friction & Complaints</div>
-                    <div className="intel-section-content">
-                      <ul className="intel-list">
-                        {selectedLaunch.intel.friction.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Sentiment */}
-                  <div className="intel-section">
-                    <div className="intel-section-title">💬 Community Vibe</div>
-                    <div className="intel-section-content">
-                      <div className="sentiment-meter">
-                        <div className="sentiment-label">
-                          Sentiment: {selectedLaunch.intel.sentiment}% Positive
-                        </div>
-                        <div className="sentiment-bar">
-                          <div 
-                            className="sentiment-fill"
-                            style={{ width: `${selectedLaunch.intel.sentiment}%` }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Briefing Generator */}
-                  <div className="intel-section">
-                    <button className="win98-button win98-button-large">
-                      🎥 Generate 60-Sec Brief
-                    </button>
-                  </div>
-                </div>
+                </ul>
               </div>
             </div>
           )}
-        </div>
 
-        {/* Status Bar */}
-        <div className="win98-status-bar">
-          <div className="win98-status-item">
-            {loading ? "Loading..." : "Ready"}
+          {/* Sentiment Analysis */}
+          <div className="intel-section">
+            <div className="intel-section-title">📊 SENTIMENT ANALYSIS</div>
+            <div className="intel-section-content">
+              <div className="sentiment-meter">
+                <div className="sentiment-label">
+                  COMMUNITY RESPONSE: {selectedLaunch.intel.sentiment}% POSITIVE
+                </div>
+                <div className="sentiment-bar">
+                  <div 
+                    className="sentiment-fill"
+                    style={{ width: `${selectedLaunch.intel.sentiment}%` }}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="win98-status-item">
-            {launches.length} launches loaded
-          </div>
-          <div className="win98-status-item">
-            Analysis cache: 1.2s avg
+
+          {/* System Footer */}
+          <div style={{ 
+            marginTop: '40px', 
+            paddingTop: '20px', 
+            borderTop: '1px solid rgba(0, 255, 255, 0.2)',
+            fontSize: '10px',
+            color: 'rgba(0, 255, 255, 0.5)',
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            letterSpacing: '2px'
+          }}>
+            ◉ NEURAL ANALYSIS COMPLETE ◉
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
