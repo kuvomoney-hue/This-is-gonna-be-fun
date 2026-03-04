@@ -1,8 +1,12 @@
 {
   "webhook_running": true,
-  "last_signal": null,
-  "last_score": null,
-  "last_decision": null,
+  "last_signal": {
+    "direction": "SHORT",
+    "symbol": "SPY",
+    "price": 686.21
+  },
+  "last_score": 41,
+  "last_decision": "REJECTED",
   "filter_threshold": 60,
-  "_updated": "2026-03-04T19:57:19.270598Z"
+  "_updated": "2026-03-04T20:27:34.382307Z"
 }
