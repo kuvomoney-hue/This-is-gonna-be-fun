@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "./vaporwave.css";
+import "./vaporwave-v2.css";
 
 interface Launch {
   id: string;
