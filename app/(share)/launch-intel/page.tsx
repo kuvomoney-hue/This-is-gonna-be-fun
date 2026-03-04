@@ -113,18 +113,31 @@ export default function LaunchIntelPage() {
             <div 
               key={launch.id}
               className="crt-monitor"
-              onClick={() => handleCardClick(launch)}
             >
-              {/* CRT Screen */}
-              <div className="crt-screen">
-                <img 
-                  src={launch.thumbnail} 
-                  alt={launch.title}
-                />
-              </div>
+              {/* CRT Screen - Clickable to YouTube */}
+              <a 
+                href={`https://youtube.com/watch?v=${launch.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="crt-screen-link"
+              >
+                <div className="crt-screen">
+                  <img 
+                    src={launch.thumbnail} 
+                    alt={launch.title}
+                  />
+                  {/* Play Button Overlay */}
+                  <div className="play-overlay">
+                    <div className="play-button">▶</div>
+                  </div>
+                </div>
+              </a>
 
-              {/* Monitor Info */}
-              <div className="crt-info">
+              {/* Monitor Info - Clickable for Analysis */}
+              <div 
+                className="crt-info"
+                onClick={() => handleCardClick(launch)}
+              >
                 <div className="crt-company">{launch.company}</div>
                 <div className="crt-title">{launch.title}</div>
                 <div className="crt-meta">
@@ -135,6 +148,7 @@ export default function LaunchIntelPage() {
                       </span>
                     )}
                   </span>
+                  <button className="analyze-button">ANALYZE ▸</button>
                 </div>
               </div>
             </div>
