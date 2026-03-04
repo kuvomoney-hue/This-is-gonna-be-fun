@@ -43,25 +43,25 @@ body {
   overflow-x: hidden;
 }
 
-/* Vaporwave Container with Perspective Grid Floor */
+/* Vaporwave Container with Windows XP Bliss Background */
 .vaporwave-container {
   min-height: 100vh;
   background: 
-    /* Top gradient fade */
-    linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 30%),
-    /* Perspective grid floor */
+    /* VHS overlay - purple/magenta tint */
     linear-gradient(180deg, 
-      #000 0%, 
-      #001020 40%,
-      #002040 70%, 
-      #003060 100%
-    );
+      rgba(138, 43, 226, 0.4) 0%,
+      rgba(75, 0, 130, 0.3) 30%,
+      rgba(255, 0, 255, 0.2) 60%,
+      rgba(0, 255, 255, 0.15) 100%
+    ),
+    /* Windows XP Bliss */
+    url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?w=1920&q=80') center/cover no-repeat fixed;
   position: relative;
   padding: 40px 20px 80px 20px;
   perspective: 1000px;
 }
 
-/* Checkered Floor Grid (Perspective) */
+/* Checkered Floor Grid (Perspective) - Subtle over prairie */
 .vaporwave-container::after {
   content: "";
   position: fixed;
@@ -71,13 +71,14 @@ body {
   width: 200vw;
   height: 40vh;
   background-image: 
-    linear-gradient(var(--grid-cyan) 2px, transparent 2px),
-    linear-gradient(90deg, var(--grid-cyan) 2px, transparent 2px);
+    linear-gradient(var(--neon-magenta) 2px, transparent 2px),
+    linear-gradient(90deg, var(--neon-magenta) 2px, transparent 2px);
   background-size: 80px 80px;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.4;
+  opacity: 0.25;
   mask-image: linear-gradient(to top, transparent 0%, black 20%, black 100%);
+  mix-blend-mode: screen;
 }
 
 /* CRT Scanlines - Subtle */
