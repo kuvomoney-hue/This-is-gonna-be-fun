@@ -22,6 +22,15 @@ import {
   ReferenceLine,
 } from "recharts";
 
+interface Signal {
+  time: string;
+  action: string;
+  symbol: string;
+  price: number;
+  score: number;
+  verdict: string;
+}
+
 interface LiveData {
   btc_price?: number;
   account_total?: number;
@@ -29,7 +38,12 @@ interface LiveData {
   has_position?: boolean;
   spy?: { price: number; change_pct: number };
   qqq?: { price: number; change_pct: number };
-  signals_today?: { approved: number; rejected: number; total: number };
+  signals_today?: { 
+    approved: number; 
+    rejected: number; 
+    total: number;
+    signals?: Signal[];
+  };
 }
 
 const CustomTooltip = ({

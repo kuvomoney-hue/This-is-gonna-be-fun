@@ -22,7 +22,20 @@ export async function GET() {
     const data = JSON.parse(fileContent);
     
     // Transform ads to match expected format
-    const transformedAds = (data.ads || []).map((ad: MetaAd, idx: number) => ({
+    interface TransformedAd {
+      id: string;
+      advertiser: string;
+      text: string;
+      thumbnail: string;
+      startDate: string;
+      link: string;
+      impressions: number;
+      keyword: string;
+      scrapedAt: string;
+      hasVideo: boolean;
+    }
+    
+    const transformedAds: TransformedAd[] = (data.ads || []).map((ad: MetaAd, idx: number) => ({
       id: `${ad.company}-${idx}`,
       advertiser: ad.advertiser,
       text: ad.text,
@@ -36,7 +49,7 @@ export async function GET() {
     }));
     
     // Sort by impressions
-    transformedAds.sort((a, b) => b.impressions - a.impressions);
+    transformedAds.sort((a: TransformedAd, b: TransformedAd) => b.impressions - a.impressions);
     
     return NextResponse.json({
       ads: transformedAds,
