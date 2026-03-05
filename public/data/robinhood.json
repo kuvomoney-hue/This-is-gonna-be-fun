@@ -1,21 +1,7 @@
 {
-  "equity": 286.48,
+  "equity": 282.43,
   "buying_power": 229.48,
-  "positions": [
-    {
-      "symbol": "QQQ",
-      "direction": "call",
-      "strike": 624.0,
-      "entry_premium": 0.65,
-      "current_premium": null,
-      "pnl_pct": null,
-      "entry_time": null,
-      "expiry": "2026-03-09",
-      "tp_premium": 0.78,
-      "stop_premium": 0.55,
-      "status": "open"
-    }
-  ],
-  "has_positions": true,
-  "_updated": "2026-03-05T15:06:01.030083Z"
+  "positions": [],
+  "has_positions": false,
+  "_updated": "2026-03-05T15:36:13.099817Z"
 }
