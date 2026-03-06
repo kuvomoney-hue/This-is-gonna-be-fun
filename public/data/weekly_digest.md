@@ -1,63 +1,63 @@
 # 🎬 Rendyr Weekly Digest
-*Week of February 20, 2026*
+*Week of February 27, 2026*
 
 Your weekly roundup of creative tech news, AI tools, camera gear, plugins, and industry updates.
 
 
 ## 🤖 AI Launches
 
-### [A BETTER way to upscale with Flux 2 Klein 9B (stay with me)](https://www.reddit.com/gallery/1rfwdwy)
-*TLDR: Prompt "high resolution image 1" instead of "upscale image 1" and use a bilinear upscale of your target image as both the reference image* ***and*** *your latent image, with a denoise of 0.7-0....
+### [New Model: LouLou1Demon/GPT2-130M-FineWeb-Edu](https://huggingface.co/LouLou1Demon/GPT2-130M-FineWeb-Edu)
+Model - 121 downloads, 0 likes
+*Source: Hugging Face*
+
+### [LTX-2.3 22B WORKFLOWS 12GB GGUF- i2v, t2v, ta2v, ia2v, v2v..... OF COURSE!](https://v.redd.it/lvotgfhd4cng1)
+[https://civitai.com/models/2443867?modelVersionId=2747788](https://civitai.com/models/2443867?modelVersionId=2747788)
+
+You may remember me from the last set of workflows I posted for LTX-2 GGUF, you ...
 *Source: r/StableDiffusion*
 
-### [Image upscale with Klein 9B](https://www.reddit.com/gallery/1rfm605)
-Prompt: upscale image and remove jpeg compression artifacts.
+### [We just shipped LTX Desktop: a free local video editor built on LTX-2.3](https://www.reddit.com/r/StableDiffusion/comments/1rlpg18/we_just_shipped_ltx_desktop_a_free_local_video/)
+If your engine is strong enough, you should be able to build real products on top of it.
 
-Added few hours later: Please note that nowhere in the text of the post did I say that it works well. The comparison simply shows the curr...
+Introducing [LTX Desktop](https://ltx.io/ltx-desktop). A fully local, open-source video editor powered by LTX-...
 *Source: r/StableDiffusion*
 
-### [🎬 Big Update for Yedp Action Director: Multi-characters setup+camera animation to render Pose, Depth, Normal, and Canny batches from FBX/GLB/BHV animations files (Mixamo)](https://v.redd.it/d0157859ntlg1)
-Hey everyone!
+### [LTX-2.3 is live: rebuilt VAE, improved I2V, new vocoder, native portrait mode, and more](https://www.reddit.com/r/StableDiffusion/comments/1rlm21a/ltx23_is_live_rebuilt_vae_improved_i2v_new/)
+Our web team ships fast. Apparently a little *too* fast. You found the page before we did. So let's do this properly:
 
-I just pushed a big update to my custom node, Yedp Action Director.
-
-For anyone who hasn't seen this before, this node acts like a mini 3D movie set right on your ComfyUI canvas. You ca...
+Nearly five million downloads of LTX-2 since January. The feedback that came with...
 *Source: r/StableDiffusion*
 
-### [CLIP is back on Anima, because CLIP is eternal.](https://www.reddit.com/r/StableDiffusion/comments/1revwgq/clip_is_back_on_anima_because_clip_is_eternal/)
-You thought you can get away from it? Never.
-
-https://preview.redd.it/ucku0gzegqlg1.png?width=743&amp;format=png&amp;auto=webp&amp;s=2f349550205028c6e18e4b72aa9144304d2c1e75
-
-Guys at Yandex and Adobe ...
-*Source: r/StableDiffusion*
-
-### [Anthropic is the leading contributor to open weight models](https://www.reddit.com/r/LocalLLaMA/comments/1re6ifz/anthropic_is_the_leading_contributor_to_open/)
-It just happens to be entirely against their will and TOS. I say: Distill Baby Distill!...
+### [Ran Qwen 3.5 9B on M1 Pro (16GB) as an actual agent, not just a chat demo. Honest results.](https://i.redd.it/8gx9agmiz8ng1.png)
+Quick context: I run a personal automation system built on Claude Code. It's model-agnostic, so switching to Ollama was a one-line config change, nothing else needed to change. I pointed it at Qwen 3....
 *Source: r/LocalLLaMA*
 
 
 ## 📷 Camera & Gear
 
-### [First Look at the Schneider-Kreuznach x Samyang 60-180mm f/2.8 Lens](https://petapixel.com/2026/02/27/first-look-at-the-schneider-kreuznach-x-samyang-60-180mm-f-2-8-lens/)
-Just like it did at last year's CP+ in Japan, Samyang and Schneider-Kreuznach took to the CP+ 2026 show floor in Yokohama this week to tease another f/2.8 zoom lens for full-frame cameras. This time i...
+### [Save Big on Wedding and Portrait Photography Gear](https://petapixel.com/2026/03/06/save-big-on-wedding-and-portrait-photography-gear/)
+To celebrate the annual WPPI 2026 show for wedding and portrait photographers, which wrapped up yesterday in Las Vegas, B&amp;H has a ton of great deals on cameras, lenses, lighting, and accessories f...
 *Source: PetaPixel*
 
-### [Flickr Announces Three-Day Immersive Photo Festival](https://petapixel.com/2026/02/27/flickr-announces-three-day-immersive-photo-festival/)
-Flickr has announced the debut of MODE by Flickr, a three-day photography festival scheduled for September 18–20, 2026, in Minneapolis. Conceived as an immersive, citywide gathering, MODE is designed ...
+### [Samyang Is Developing a 200mm f/1.8](https://petapixel.com/2026/03/06/samyang-is-developing-a-200mm-f-1-8/)
+French photography publication Phototrend chatted with Samyang's head of product planning, Kim Dubin, and Samyang is up to some extremely exciting things, including a flagship 200mm f/1.8 lens that wi...
 *Source: PetaPixel*
 
-### [US ITC Rules Insta360 Did Not Infringe GoPro’s Utility Patents](https://petapixel.com/2026/02/27/us-itc-rules-insta360-did-not-infringe-gopros-utility-patents/)
-Insta360 has won a significant legal victory from the United States International Trade Commission (ITC), meaning that it can continue to import and sell its entire current product lineup inside the U...
-*Source: PetaPixel*
-
-### [This Polaroid Chemist Tested 5,000 Bottles to Invent Instant Color Photography](https://petapixel.com/2026/02/27/this-polaroid-chemist-tested-5000-bottles-to-invent-instant-color-photography/)
-It's a remarkable photo that frequently goes viral online: Polaroid engineer Howard G. Rogers and his team of engineers standing proudly beside an astonishing amount of chemical bottles that had been ...
-*Source: PetaPixel*
-
-### [Heart-Melting Photos of Polar Bear Mother and Cubs Mark International Polar Bear Day](https://petapixel.com/2026/02/27/heart-melting-photos-of-polar-bear-mother-and-cubs-mark-international-polar-bear-day/)
-Today marks the 21st annual International Polar Bear Day and to mark it, PetaPixel spoke to wildlife photographer Daniel Cox.
+### [‘Big-Hearted’ War Photographer Paul Conroy Dies Age 61](https://petapixel.com/2026/03/06/big-hearted-war-photographer-paul-conroy-dies-age-61/)
+Acclaimed war photographer Paul Conroy died this week of a heart attack at age 61.
 [Read More]
+*Source: PetaPixel*
+
+### [Jeff Bridges unboxing the camera he's been developing is pure joy](https://www.dpreview.com/articles/9333091301/jeff-bridges-unboxing-the-camera-he-s-been-developing-is-pure-joy)
+Image: SilverBridges
+
+
+
+Sometimes you just need some joy in your life, and, at least for me, watching other people experience joy can be a way to fulfill that need. A recent video of Jeff and Susan Br...
+*Source: Articles: Digital Photography Review (dpreview.com)*
+
+### [Photographers Recreate 115-Year-Old Panoramic Photo of Their Hometown Using the Same Camera](https://petapixel.com/2026/03/06/photographers-recreate-115-year-old-panoramic-photo-of-their-hometown-using-the-same-camera/)
+Two New Jersey photographers have paid homage to their hometown by going to great lengths to recreate a historic photo using the same rotating panoramic camera the original photographers used all the ...
 *Source: PetaPixel*
 
 
