@@ -1,6 +1,6 @@
 {
-  "btc_price": 68049.3,
-  "account_total": 423.39,
+  "btc_price": 68026.37,
+  "account_total": 423.26,
   "usdt_balance": 37.73,
   "btc_balance": 0.00566738,
   "open_orders": [
@@ -104,5 +104,5 @@
     ],
     "total": 2
   },
-  "_updated": "2026-03-07T09:24:30.745408Z"
+  "_updated": "2026-03-07T09:54:44.402560Z"
 }
