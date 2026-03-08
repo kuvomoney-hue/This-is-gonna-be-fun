@@ -1,6 +1,6 @@
 {
-  "btc_price": 67345.63,
-  "account_total": 419.4,
+  "btc_price": 67276.85,
+  "account_total": 419.01,
   "usdt_balance": 37.73,
   "btc_balance": 0.00566738,
   "open_orders": [
@@ -84,81 +84,8 @@
   "signals_today": {
     "approved": 0,
     "rejected": 0,
-    "signals": [
-      {
-        "time": "00:18",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 67931.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "00:56",
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 67748.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "04:43",
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 67946.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:39",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 68036.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "08:24",
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 67800.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "12:38",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 67391.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "14:33",
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 67241.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "16:22",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 67474.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "21:22",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 67142.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      }
-    ],
-    "total": 9
+    "signals": [],
+    "total": 0
   },
-  "_updated": "2026-03-08T07:34:55.552497Z"
+  "_updated": "2026-03-08T08:05:08.158208Z"
 }
