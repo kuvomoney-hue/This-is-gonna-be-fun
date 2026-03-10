@@ -1,5 +1,5 @@
 {
-  "btc_price": 70977.2,
+  "btc_price": 70759.91,
   "account_total": 437.38,
   "usdt_balance": 436.85,
   "btc_balance": 7.38e-06,
@@ -78,8 +78,17 @@
   "signals_today": {
     "approved": 0,
     "rejected": 0,
-    "signals": [],
-    "total": 0
+    "signals": [
+      {
+        "time": "03:17",
+        "action": "SHORT",
+        "symbol": "BTCUSDT",
+        "price": 70804.0,
+        "score": null,
+        "verdict": "UNKNOWN"
+      }
+    ],
+    "total": 1
   },
-  "_updated": "2026-03-10T09:58:06.531773Z"
+  "_updated": "2026-03-10T10:28:21.563576Z"
 }
