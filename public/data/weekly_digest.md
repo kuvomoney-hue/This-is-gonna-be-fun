@@ -1,63 +1,52 @@
 # 🎬 Rendyr Weekly Digest
-*Week of February 27, 2026*
+*Week of February 17, 2026*
 
 Your weekly roundup of creative tech news, AI tools, camera gear, plugins, and industry updates.
 
 
 ## 🤖 AI Launches
 
-### [New Model: LouLou1Demon/GPT2-130M-FineWeb-Edu](https://huggingface.co/LouLou1Demon/GPT2-130M-FineWeb-Edu)
-Model - 121 downloads, 0 likes
+### [New Model: aws-neuron/optimum-neuron-cache](https://huggingface.co/aws-neuron/optimum-neuron-cache)
+Model - 0 downloads, 30 likes
 *Source: Hugging Face*
 
-### [LTX-2.3 22B WORKFLOWS 12GB GGUF- i2v, t2v, ta2v, ia2v, v2v..... OF COURSE!](https://v.redd.it/lvotgfhd4cng1)
-[https://civitai.com/models/2443867?modelVersionId=2747788](https://civitai.com/models/2443867?modelVersionId=2747788)
+### [New Model: dys-asr/wav2vec2-base](https://huggingface.co/dys-asr/wav2vec2-base)
+Model - 144 downloads, 0 likes
+*Source: Hugging Face*
 
-You may remember me from the last set of workflows I posted for LTX-2 GGUF, you ...
+### [How was this done? I've experimented a lot and nothing comes close to this guys work](https://v.redd.it/duhpwcvcp3og1)
+Stickyspoodge admits to using ai in his work, and the hands and other tells in the full video show that it's clearly ai generated and not hand animated, but as far as I know no tool at the moment can ...
 *Source: r/StableDiffusion*
 
-### [We just shipped LTX Desktop: a free local video editor built on LTX-2.3](https://www.reddit.com/r/StableDiffusion/comments/1rlpg18/we_just_shipped_ltx_desktop_a_free_local_video/)
-If your engine is strong enough, you should be able to build real products on top of it.
-
-Introducing [LTX Desktop](https://ltx.io/ltx-desktop). A fully local, open-source video editor powered by LTX-...
+### [Tony Soprano Unlocked - LTX 2.3 T2V](https://v.redd.it/ar76isjsuzng1)
 *Source: r/StableDiffusion*
 
-### [LTX-2.3 is live: rebuilt VAE, improved I2V, new vocoder, native portrait mode, and more](https://www.reddit.com/r/StableDiffusion/comments/1rlm21a/ltx23_is_live_rebuilt_vae_improved_i2v_new/)
-Our web team ships fast. Apparently a little *too* fast. You found the page before we did. So let's do this properly:
-
-Nearly five million downloads of LTX-2 since January. The feedback that came with...
-*Source: r/StableDiffusion*
-
-### [Ran Qwen 3.5 9B on M1 Pro (16GB) as an actual agent, not just a chat demo. Honest results.](https://i.redd.it/8gx9agmiz8ng1.png)
-Quick context: I run a personal automation system built on Claude Code. It's model-agnostic, so switching to Ollama was a one-line config change, nothing else needed to change. I pointed it at Qwen 3....
+### [Qwen3.5 family comparison on shared benchmarks](https://i.redd.it/krs0xrebcung1.png)
+Main takeaway: 122B, 35B, and especially 27B retain a lot of the flagship’s performance, while 2B/0.8B fall off much harder on long-context and agent categories....
 *Source: r/LocalLLaMA*
 
 
 ## 📷 Camera & Gear
 
-### [Save Big on Wedding and Portrait Photography Gear](https://petapixel.com/2026/03/06/save-big-on-wedding-and-portrait-photography-gear/)
-To celebrate the annual WPPI 2026 show for wedding and portrait photographers, which wrapped up yesterday in Las Vegas, B&amp;H has a ton of great deals on cameras, lenses, lighting, and accessories f...
+### [The 21 Fantastic Winners of the British Wildlife Photography Awards 2026](https://petapixel.com/2026/03/09/the-21-fantastic-winners-of-the-british-wildlife-photography-awards-2026/)
+The British Wildlife Photography Awards (BWPA) winners have been revealed, showcasing Britain's very best nature and wildlife images. Photographers entered more than 12,000 photos of Britain's wonderf...
 *Source: PetaPixel*
 
-### [Samyang Is Developing a 200mm f/1.8](https://petapixel.com/2026/03/06/samyang-is-developing-a-200mm-f-1-8/)
-French photography publication Phototrend chatted with Samyang's head of product planning, Kim Dubin, and Samyang is up to some extremely exciting things, including a flagship 200mm f/1.8 lens that wi...
-*Source: PetaPixel*
-
-### [‘Big-Hearted’ War Photographer Paul Conroy Dies Age 61](https://petapixel.com/2026/03/06/big-hearted-war-photographer-paul-conroy-dies-age-61/)
-Acclaimed war photographer Paul Conroy died this week of a heart attack at age 61.
+### [The RodeCaster Video Core Connects up to Four Cameras into a Production](https://petapixel.com/2026/03/09/the-rodecaster-video-core-connects-up-to-four-cameras-into-a-production/)
+Rode has announced the RodeCaster Video Core, a small desktop device that allows users to connect up to four cameras to create a fully customized video production.
 [Read More]
 *Source: PetaPixel*
 
-### [Jeff Bridges unboxing the camera he's been developing is pure joy](https://www.dpreview.com/articles/9333091301/jeff-bridges-unboxing-the-camera-he-s-been-developing-is-pure-joy)
-Image: SilverBridges
+### [A Camera’s Dynamic Range Is Interesting but Not That Important](https://petapixel.com/2026/03/09/a-cameras-dynamic-range-is-interesting-but-not-that-important/)
+When new cameras are announced, dynamic range is often a significant part of the image quality discussion. When a camera offers particularly fantastic dynamic range, it's big news. Likewise, when a ca...
+*Source: PetaPixel*
 
+### [Michael Bauman Wins Top Cinematography Award for ‘One Battle After Another’](https://petapixel.com/2026/03/09/michael-bauman-wins-top-cinematography-award-for-one-battle-after-another/)
+The American Society of Cinematographers hosted its 40th annual ASC Awards last night, celebrating the best achievements in cinematography over the past year. Oscar-winning cinematographer Michael Bau...
+*Source: PetaPixel*
 
-
-Sometimes you just need some joy in your life, and, at least for me, watching other people experience joy can be a way to fulfill that need. A recent video of Jeff and Susan Br...
-*Source: Articles: Digital Photography Review (dpreview.com)*
-
-### [Photographers Recreate 115-Year-Old Panoramic Photo of Their Hometown Using the Same Camera](https://petapixel.com/2026/03/06/photographers-recreate-115-year-old-panoramic-photo-of-their-hometown-using-the-same-camera/)
-Two New Jersey photographers have paid homage to their hometown by going to great lengths to recreate a historic photo using the same rotating panoramic camera the original photographers used all the ...
+### [Apple Studio Display XDR Review: You Get What You Pay For](https://petapixel.com/2026/03/09/apple-studio-display-xdr-review-you-get-what-you-pay-for/)
+It has been seven years since Apple released its last XDR Display and in that time, monitors and what to expect from them have changed a lot. Now that we finally have a new option in the Studio Displa...
 *Source: PetaPixel*
 
 

@@ -1,31 +1,135 @@
 {
-  "generated_at": "2026-03-06T09:00:11.315632-08:00",
-  "period_start": "2026-02-27T17:00:00.471826+00:00",
-  "period_end": "2026-03-06T17:00:11.315686+00:00",
+  "generated_at": "2026-03-09T20:42:30.382578-07:00",
+  "period_start": "2026-02-17T03:42:26.438836+00:00",
+  "period_end": "2026-03-10T03:42:30.382615+00:00",
   "categories": {
     "camera_gear": [
       {
-        "title": "Save Big on Wedding and Portrait Photography Gear",
-        "link": "https://petapixel.com/2026/03/06/save-big-on-wedding-and-portrait-photography-gear/",
-        "description": "To celebrate the annual WPPI 2026 show for wedding and portrait photographers, which wrapped up yesterday in Las Vegas, B&amp;H has a ton of great deals on cameras, lenses, lighting, and accessories f...",
-        "published": "2026-03-06T16:15:34+00:00",
+        "title": "The 21 Fantastic Winners of the British Wildlife Photography Awards 2026",
+        "link": "https://petapixel.com/2026/03/09/the-21-fantastic-winners-of-the-british-wildlife-photography-awards-2026/",
+        "description": "The British Wildlife Photography Awards (BWPA) winners have been revealed, showcasing Britain's very best nature and wildlife images. Photographers entered more than 12,000 photos of Britain's wonderf...",
+        "published": "2026-03-10T00:01:12+00:00",
         "source": "PetaPixel",
         "category": "camera_gear"
       },
       {
-        "title": "Samyang Is Developing a 200mm f/1.8",
-        "link": "https://petapixel.com/2026/03/06/samyang-is-developing-a-200mm-f-1-8/",
-        "description": "French photography publication Phototrend chatted with Samyang's head of product planning, Kim Dubin, and Samyang is up to some extremely exciting things, including a flagship 200mm f/1.8 lens that wi...",
-        "published": "2026-03-06T15:47:48+00:00",
+        "title": "The RodeCaster Video Core Connects up to Four Cameras into a Production",
+        "link": "https://petapixel.com/2026/03/09/the-rodecaster-video-core-connects-up-to-four-cameras-into-a-production/",
+        "description": "Rode has announced the RodeCaster Video Core, a small desktop device that allows users to connect up to four cameras to create a fully customized video production.\n[Read More]",
+        "published": "2026-03-09T23:00:04+00:00",
         "source": "PetaPixel",
         "category": "camera_gear"
       },
       {
-        "title": "\u2018Big-Hearted\u2019 War Photographer Paul Conroy Dies Age 61",
-        "link": "https://petapixel.com/2026/03/06/big-hearted-war-photographer-paul-conroy-dies-age-61/",
-        "description": "Acclaimed war photographer Paul Conroy died this week of a heart attack at age 61.\n[Read More]",
-        "published": "2026-03-06T15:14:26+00:00",
+        "title": "A Camera\u2019s Dynamic Range Is Interesting but Not That Important",
+        "link": "https://petapixel.com/2026/03/09/a-cameras-dynamic-range-is-interesting-but-not-that-important/",
+        "description": "When new cameras are announced, dynamic range is often a significant part of the image quality discussion. When a camera offers particularly fantastic dynamic range, it's big news. Likewise, when a ca...",
+        "published": "2026-03-09T21:11:09+00:00",
         "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Michael Bauman Wins Top Cinematography Award for \u2018One Battle After Another\u2019",
+        "link": "https://petapixel.com/2026/03/09/michael-bauman-wins-top-cinematography-award-for-one-battle-after-another/",
+        "description": "The American Society of Cinematographers hosted its 40th annual ASC Awards last night, celebrating the best achievements in cinematography over the past year. Oscar-winning cinematographer Michael Bau...",
+        "published": "2026-03-09T20:20:45+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Apple Studio Display XDR Review: You Get What You Pay For",
+        "link": "https://petapixel.com/2026/03/09/apple-studio-display-xdr-review-you-get-what-you-pay-for/",
+        "description": "It has been seven years since Apple released its last XDR Display and in that time, monitors and what to expect from them have changed a lot. Now that we finally have a new option in the Studio Displa...",
+        "published": "2026-03-09T20:00:09+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Join our DPReview team AMA: Japanese used camera store diamonds in the rough",
+        "link": "https://www.dpreview.com/articles/6120099029/join-our-dpreview-team-ama-japanese-used-camera-store-diamonds-in-the-rough",
+        "description": "Dale Baskin shopping for that perfect camera.\nPhoto: Mitchell Clark\n\n\n\n\nGet ready for another AMA (Ask 'Me' Anything) with the DPReview editorial team!\nThe CP+ Japan trip team\n\nDale Baskin (Managing E...",
+        "published": "2026-03-09T19:44:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Greece Purchases Photos Taken by Nazi Soldier Who Documented Athens Atrocity",
+        "link": "https://petapixel.com/2026/03/09/greece-purchases-photos-taken-by-nazi-soldier-who-documented-athens-atrocity/",
+        "description": "Greece has acquired a photo archive that documents the execution of 200 communist prisoners at the hands of the Nazis in Athens.\n[Read More]",
+        "published": "2026-03-09T19:17:45+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Ricoh GR IV Monochrome studio scene: looking sharp",
+        "link": "https://www.dpreview.com/articles/7203846231/ricoh-gr-iv-monochrome-studio-scene",
+        "description": "When you use DPReview links to buy products, the site may earn a commission.\n\n\n\n\n\nPhoto: Richard Butler\n\n\n\nAs we're working on reviewing the Ricoh GR IV Monochrome, we've put it in front of our studio...",
+        "published": "2026-03-09T16:30:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Meta Sued After Workers Watched Private Moments Recorded on AI Smart Glasses",
+        "link": "https://petapixel.com/2026/03/09/meta-sued-after-workers-watched-private-moments-recorded-on-ai-smart-glasses/",
+        "description": "Meta is facing a class action lawsuit over its AI smart glasses, with plaintiffs alleging that the company misled consumers about how footage captured by the devices may be reviewed.\n[Read More]",
+        "published": "2026-03-09T16:12:15+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "The Re8mil Reusable Cartridge Makes Super 8 Way Less Wasteful",
+        "link": "https://petapixel.com/2026/03/09/the-re8mil-reusable-cartridge-makes-super-8-way-less-wasteful/",
+        "description": "British motion picture lab On8mil is bringing Super 8 film to the 21st century with a new daylight-loading, reusable Super 8 cartridge system called Re8mil, a first of its kind that promises to make S...",
+        "published": "2026-03-09T14:36:50+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "AI Photos Are Causing Havoc in South Korea\u2019s Job Market",
+        "link": "https://petapixel.com/2026/03/09/ai-photos-are-causing-havoc-in-south-koreas-job-market/",
+        "description": "There are now hundreds, if not thousands, of AI apps that can create \"professional\" images from just a single photo of a person. The only problem? They're not real.\n[Read More]",
+        "published": "2026-03-09T13:41:54+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "This Hotshoe Camera Provides a Digital Twin to Film Photos",
+        "link": "https://petapixel.com/2026/03/09/ligar-escura-hotshoe-camera-digital-twin-film-photos/",
+        "description": "An innovative cube camera could provide a fallback option for photographers shooting film.\n[Read More]",
+        "published": "2026-03-09T12:21:40+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "What I learned from my first trip to CP+ in Japan",
+        "link": "https://www.dpreview.com/opinion/1994113292/what-i-learned-from-my-first-trip-to-cp-in-japan",
+        "description": "Photo: Abby Ferguson\n\n\n\nIt\u2019s been less than a week since I returned from Japan and my first time at the CP+ Expo, and I\u2019m still processing all that I experienced there. We\u2019ve already shared our team d...",
+        "published": "2026-03-08T13:00:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Announcing our March photo challenge: \"Night Lights\"",
+        "link": "https://www.dpreview.com/articles/9624679342/march-2026-editors-photo-challenge-announced",
+        "description": "I captured this photo in the Shinjuku neighborhood of Tokyo, Japan, a couple of years ago while visiting used camera stores in the area. In addition to the used camera stores, however, Shinjuku lights...",
+        "published": "2026-03-08T13:00:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Viltrox 35mm F1.2 Lab for Z mount: sample gallery and impressions",
+        "link": "https://www.dpreview.com/samples/8682231212/viltrox-35mm-f1p2-lab-z-mount-sample-gallery-impressions",
+        "description": "When you use DPReview links to buy products, the site may earn a commission.\n\n\n\n\n\nNikon Z8 | Viltrox AF 35mm F1.2 Lab | F5.6 | 1/800 sec | ISO 64Photo: Mitchell Clark\n\n\n\nLate last year, Viltrox announ...",
+        "published": "2026-03-07T14:00:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Harman\u2019s Switch Azure film flips colors for experimental photography",
+        "link": "https://www.dpreview.com/news/2086225928/harman-s-switch-azure-film-flips-colors-for-experimental-photography",
+        "description": "Photos: Harman Photo / Miles Marie\n\n\n\nHarman Photo is keeping the ball rolling on new film, releasing a creative color film called Switch Azure. As the name suggests, the company's latest offering \"sw...",
+        "published": "2026-03-06T20:29:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
         "category": "camera_gear"
       },
       {
@@ -37,35 +141,11 @@
         "category": "camera_gear"
       },
       {
-        "title": "Photographers Recreate 115-Year-Old Panoramic Photo of Their Hometown Using the Same Camera",
-        "link": "https://petapixel.com/2026/03/06/photographers-recreate-115-year-old-panoramic-photo-of-their-hometown-using-the-same-camera/",
-        "description": "Two New Jersey photographers have paid homage to their hometown by going to great lengths to recreate a historic photo using the same rotating panoramic camera the original photographers used all the ...",
-        "published": "2026-03-06T13:22:43+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Sensational Photos Show Space Jellyfish Looming Over Florida",
-        "link": "https://petapixel.com/2026/03/06/sensational-photos-show-space-jellyfish-looming-over-florida/",
-        "description": "A lucky few in Florida got to see a spectacular space jellyfish early on Wednesday morning. The phenomenon was caused by a SpaceX rocket and a still hidden Sun.\n[Read More]",
-        "published": "2026-03-06T11:39:35+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
         "title": "The Sony World Photography Award finalists showcase the art of long-form storytelling",
         "link": "https://www.dpreview.com/articles/8992314287/2026-sony-world-photography-awards-professional-competition-finalists",
         "description": "2026 Sony World Photography Awards Professional Finalists\n\n\n\n\n\n\n\nThe World Photography Organization has announced the professional finalists and shortlists for the 2026 Sony World Photography Awards. ...",
         "published": "2026-03-05T22:47:00+00:00",
         "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "iPhone Video Camera App Kino Adds Apple Log 2 Support",
-        "link": "https://petapixel.com/2026/03/05/iphone-video-camera-app-kino-adds-apple-log-2-support/",
-        "description": "Kino, an iPhone video camera app created by Lux, the same people who make the iPhone photo camera app Halide, received a massive update today that adds Apple Log 2 support.\n[Read More]",
-        "published": "2026-03-05T22:36:44+00:00",
-        "source": "PetaPixel",
         "category": "camera_gear"
       },
       {
@@ -77,102 +157,130 @@
         "category": "camera_gear"
       },
       {
-        "title": "CPW Unveils 2026 Winner of its $10,000 Saltzman Prize",
-        "link": "https://petapixel.com/2026/03/05/cpw-unveils-2026-winner-of-its-10000-saltzman-prize/",
-        "description": "The Center for Photography at Woodstock (CPW) has announced that Sridhar Balasubramaniyam is the recipient of the 2026 Saltzman Prize for Emerging Photographer, which includes a $10,000 award.\n[Read M...",
-        "published": "2026-03-05T18:11:02+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Nothing Phone 4a Pro Goes Metal but Keeps its Transparent Camera Module",
-        "link": "https://petapixel.com/2026/03/05/nothing-phone-4a-pro-goes-metal-but-keeps-its-transparent-camera-module/",
-        "description": "Nothing is known for its mostly transparent, ultra-stylish smartphones. However, the company's latest offering, the Nothing Phone 4a Pro, ditches the translucent case everywhere except the large, flas...",
-        "published": "2026-03-05T18:03:30+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
-        "title": "I Tried to Shoot a Soccer Game on Film with Manual Focus",
-        "link": "https://petapixel.com/2026/03/05/i-tried-to-shoot-a-soccer-game-on-film-with-manual-focus/",
-        "description": "When I was sent a new 35mm film to try out called Harman Switch Azure, my brain went: 'It's a blue film, so I'm going to shoot my local soccer team, whose nickname is Blues.' Makes perfect sense? Mayb...",
-        "published": "2026-03-05T17:03:46+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Llano\u2019s New Fast Charging Case Powers Three Action Camera Batteries",
-        "link": "https://petapixel.com/2026/03/05/llanos-new-fast-charging-case-powers-three-action-camera-batteries/",
-        "description": "Llano has introduced the AC3 30W Fast Charging Case, a compact battery charger designed for action camera users who need to manage multiple batteries quickly while traveling or shooting on location. T...",
-        "published": "2026-03-05T16:48:11+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
         "title": "The 9 Best mirrorless cameras in 2026",
         "link": "https://www.dpreview.com/reviews/buying-guide-best-mirrorless-cameras",
         "description": "When you use DPReview links to buy products, the site may earn a commission.\n\n\n\n\n\n\nUpdated March 5th, 2026\nWell over a decade after Panasonic introduced the first mirrorless camera, it's a design that...",
         "published": "2026-03-05T15:44:00+00:00",
         "source": "Articles: Digital Photography Review (dpreview.com)",
         "category": "camera_gear"
-      },
-      {
-        "title": "DPReview readers share their favorite camera brands",
-        "link": "https://www.dpreview.com/articles/4530717540/dpreview-readers-share-their-favorite-camera-brands",
-        "description": "Photo: capanikon\n\n\n\n\nFor last week's Question of the week, we\u2019re turning the spotlight on something photographers love to debate: what\u2019s your favorite camera brand? Some of you swear by one trusted na...",
-        "published": "2026-03-04T17:58:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "The best cameras under $3000 in 2026",
-        "link": "https://www.dpreview.com/reviews/buying-guide-best-cameras-under-3000",
-        "description": "When you use DPReview links to buy products, the site may earn a commission.\n\n\n\n\n\n\nUpdated: March 4, 2026\nThese days, midrange cameras go for around $2500-3000, though in the US tariffs have made grea...",
-        "published": "2026-03-04T17:27:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Apple's latest MacBook Pros are more powerful than ever",
-        "link": "https://www.dpreview.com/news/1827829497/apple-macbook-pro-m5-pro-max-2026-release",
-        "description": "The latest MacBook Pros are familiar on the outside, but have some interesting changes on the inside.Image: Apple\n\n\n\nThis week, Apple announced its latest generation of MacBook Pros, which also marks ...",
-        "published": "2026-03-04T07:16:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Apple\u2019s new monitor looks like a great (but spendy) option for HDR photo editing",
-        "link": "https://www.dpreview.com/news/1441672478/apple-s-new-monitor-looks-like-a-great-but-spendy-option-for-hdr-photo-editing",
-        "description": "Image: Apple\n\n\n\nApple announced the Studio Display XDR, a new pro-level entry in its display lineup aimed at photographers and video editors, thanks to its HDR and wider color gamut support. In additi...",
-        "published": "2026-03-03T20:22:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Honor and Arri announce partnership set to debut with the upcoming Robot Phone",
-        "link": "https://www.dpreview.com/news/3846754893/honor-and-arri-announce-partnership-set-to-debut-with-the-upcoming-robot-phone",
-        "description": "Image: Honor \n\n\n\nHonor and Arri have announced a \"strategic technical collaboration\" to bring Arri's image science and workflow features to Honor phones. The two companies unveiled the partnership at ...",
-        "published": "2026-03-03T16:24:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Reviews can't be objective, and you wouldn't want them to be",
-        "link": "https://www.dpreview.com/opinion/8163866919/reviews-can-t-be-objective-and-you-wouldn-t-want-them-to-be",
-        "description": "Reviewing the a7 V reminded me of the challenges, and the importance, of including subjective assessment in reviews.\nPhoto: Mitchell Clark\n\n\n\n\nReviews are, by most definitions, subjective: ultimately ...",
-        "published": "2026-03-03T15:00:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
       }
     ],
     "ai_launches": [
       {
-        "title": "New Model: LouLou1Demon/GPT2-130M-FineWeb-Edu",
-        "link": "https://huggingface.co/LouLou1Demon/GPT2-130M-FineWeb-Edu",
-        "description": "Model - 121 downloads, 0 likes",
-        "published": "2026-03-06T16:59:43+00:00",
+        "title": "New Model: aws-neuron/optimum-neuron-cache",
+        "link": "https://huggingface.co/aws-neuron/optimum-neuron-cache",
+        "description": "Model - 0 downloads, 30 likes",
+        "published": "2026-03-10T03:42:25+00:00",
         "source": "Hugging Face",
         "category": "ai_launches"
+      },
+      {
+        "title": "New Model: dys-asr/wav2vec2-base",
+        "link": "https://huggingface.co/dys-asr/wav2vec2-base",
+        "description": "Model - 144 downloads, 0 likes",
+        "published": "2026-03-10T03:41:04+00:00",
+        "source": "Hugging Face",
+        "category": "ai_launches"
+      },
+      {
+        "title": "How was this done? I've experimented a lot and nothing comes close to this guys work",
+        "link": "https://v.redd.it/duhpwcvcp3og1",
+        "description": "Stickyspoodge admits to using ai in his work, and the hands and other tells in the full video show that it's clearly ai generated and not hand animated, but as far as I know no tool at the moment can ...",
+        "published": "2026-03-09T23:12:39+00:00",
+        "source": "r/StableDiffusion",
+        "category": "ai_launches",
+        "score": 425,
+        "comments": 37
+      },
+      {
+        "title": "Tony Soprano Unlocked - LTX 2.3 T2V",
+        "link": "https://v.redd.it/ar76isjsuzng1",
+        "description": "",
+        "published": "2026-03-09T10:10:01+00:00",
+        "source": "r/StableDiffusion",
+        "category": "ai_launches",
+        "score": 350,
+        "comments": 78
+      },
+      {
+        "title": "Qwen3.5 family comparison on shared benchmarks",
+        "link": "https://i.redd.it/krs0xrebcung1.png",
+        "description": "Main takeaway:\u00a0122B,\u00a035B, and especially\u00a027B\u00a0retain a lot of the flagship\u2019s performance, while\u00a02B/0.8B\u00a0fall off much harder on long-context and agent categories....",
+        "published": "2026-03-08T15:39:32+00:00",
+        "source": "r/LocalLLaMA",
+        "category": "ai_launches",
+        "score": 1033,
+        "comments": 236
+      },
+      {
+        "title": "Drop distilled lora strength to 0.6, increase steps to 30, enjoy SOTA AI generation at home.",
+        "link": "https://v.redd.it/46ncul9i1sng1",
+        "description": "",
+        "published": "2026-03-08T07:59:50+00:00",
+        "source": "r/StableDiffusion",
+        "category": "ai_launches",
+        "score": 756,
+        "comments": 137
+      },
+      {
+        "title": "I remastered my 7 year old video in ComfyUI",
+        "link": "https://v.redd.it/rglhiktjrong1",
+        "description": "Just for fun, I updated the visuals of an old video I made in BeamNG Drive 7 years ago.\n\nIf anyone's interested, I recently published a series of posts showing what old cutscenes from Mafia 1 and GTA ...",
+        "published": "2026-03-07T21:01:09+00:00",
+        "source": "r/StableDiffusion",
+        "category": "ai_launches",
+        "score": 523,
+        "comments": 26
+      },
+      {
+        "title": "Heretic has FINALLY defeated GPT-OSS with a new experimental decensoring method called ARA",
+        "link": "https://www.reddit.com/r/LocalLLaMA/comments/1rnic0a/heretic_has_finally_defeated_gptoss_with_a_new/",
+        "description": "The creator of heretic p-e-w opened a pull request #211 with a new method called Arbitrary-Rank Ablation (ARA)\n\n[the creator of the project explanation](https://preview.redd.it/oxx4oi0c8ong1.png?width...",
+        "published": "2026-03-07T19:06:02+00:00",
+        "source": "r/LocalLLaMA",
+        "category": "ai_launches",
+        "score": 679,
+        "comments": 139
+      },
+      {
+        "title": "turns out RL isnt the flex",
+        "link": "https://i.redd.it/yo0mhg07amng1.png",
+        "description": "",
+        "published": "2026-03-07T12:31:42+00:00",
+        "source": "r/LocalLLaMA",
+        "category": "ai_launches",
+        "score": 633,
+        "comments": 112
+      },
+      {
+        "title": "For LTX-2 use triple stage sampling.",
+        "link": "https://v.redd.it/lf1t7d67pkng1",
+        "description": "I suggest using LTX with triple stage sampling, the default workflows are terrible. LTX can actually look really good:  \n[https://files.catbox.moe/3mljpp.json](https://files.catbox.moe/3mljpp.json)\n\n[...",
+        "published": "2026-03-07T07:11:31+00:00",
+        "source": "r/StableDiffusion",
+        "category": "ai_launches",
+        "score": 404,
+        "comments": 125
+      },
+      {
+        "title": "Open WebUI\u2019s New Open Terminal + \u201cNative\u201d Tool Calling + Qwen3.5 35b = Holy Sh!t!!!",
+        "link": "https://www.reddit.com/gallery/1rmplvs",
+        "description": "Let me pre-apologize for this long and rambling post but I get excited by stuff like this. \n\nI think a lot of folks here (myself included) have been largely oblivious to what Tim &amp; company over at...",
+        "published": "2026-03-06T20:44:34+00:00",
+        "source": "r/LocalLLaMA",
+        "category": "ai_launches",
+        "score": 882,
+        "comments": 197
+      },
+      {
+        "title": "New workflows fixed stuff! LTX-2 :)",
+        "link": "https://v.redd.it/mhg34vvyheng1",
+        "description": "thanks to this civ user &lt;3  \n[https://civitai.com/models/2443867?modelVersionId=2747788](https://civitai.com/models/2443867?modelVersionId=2747788)...",
+        "published": "2026-03-06T10:20:53+00:00",
+        "source": "r/StableDiffusion",
+        "category": "ai_launches",
+        "score": 345,
+        "comments": 91
       },
       {
         "title": "LTX-2.3 22B WORKFLOWS 12GB GGUF- i2v, t2v, ta2v, ia2v, v2v..... OF COURSE!",
@@ -181,8 +289,8 @@
         "published": "2026-03-06T02:21:39+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 266,
-        "comments": 60
+        "score": 332,
+        "comments": 90
       },
       {
         "title": "We just shipped LTX Desktop: a free local video editor built on LTX-2.3",
@@ -191,8 +299,8 @@
         "published": "2026-03-05T18:30:03+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 351,
-        "comments": 181
+        "score": 371,
+        "comments": 221
       },
       {
         "title": "LTX-2.3 is live: rebuilt VAE, improved I2V, new vocoder, native portrait mode, and more",
@@ -201,8 +309,8 @@
         "published": "2026-03-05T16:27:50+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 663,
-        "comments": 137
+        "score": 712,
+        "comments": 144
       },
       {
         "title": "Ran Qwen 3.5 9B on M1 Pro (16GB) as an actual agent, not just a chat demo. Honest results.",
@@ -211,8 +319,8 @@
         "published": "2026-03-05T15:50:39+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 825,
-        "comments": 216
+        "score": 954,
+        "comments": 245
       },
       {
         "title": "Final Qwen3.5 Unsloth GGUF Update!",
@@ -221,8 +329,8 @@
         "published": "2026-03-05T15:36:18+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1013,
-        "comments": 254
+        "score": 1073,
+        "comments": 279
       },
       {
         "title": "LTX-2.3: Introducing LTX's Latest AI Video Model",
@@ -231,8 +339,8 @@
         "published": "2026-03-05T05:16:28+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 523,
-        "comments": 179
+        "score": 534,
+        "comments": 180
       },
       {
         "title": "Alibaba CEO: Qwen will remain open-source",
@@ -241,8 +349,8 @@
         "published": "2026-03-05T03:23:02+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 989,
-        "comments": 110
+        "score": 1018,
+        "comments": 117
       },
       {
         "title": "PSA: Humans are scary stupid",
@@ -251,18 +359,18 @@
         "published": "2026-03-04T17:38:22+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1193,
-        "comments": 192
+        "score": 1238,
+        "comments": 197
       },
       {
-        "title": "Another test with LTX-2",
-        "link": "https://v.redd.it/mnwpghgv42ng1",
-        "description": "For this I used I2V and FLF2V \\[workflows\\] : https://drive.google.com/drive/folders/1pPtS\\_KErFuARvL\\_LN5NFwOUZj6spVQLp?usp=drive\\_link):  \n\nI did this pretty fast and due to not enough \"vram\" last f...",
-        "published": "2026-03-04T16:55:50+00:00",
-        "source": "r/StableDiffusion",
+        "title": "Qwen3.5-0.8B - Who needs GPUs?",
+        "link": "https://i.redd.it/dnun9n8gq0ng1.jpeg",
+        "description": "I am genuinely surprised at how good the model is and that it can run on 14 years old device: 2nd gen i5 + 4GB DDR3 RAM....",
+        "published": "2026-03-04T12:09:52+00:00",
+        "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 283,
-        "comments": 36
+        "score": 680,
+        "comments": 125
       },
       {
         "title": "Junyang Lin has left Qwen :(",
@@ -271,110 +379,10 @@
         "published": "2026-03-03T16:33:33+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1085,
+        "score": 1106,
         "comments": 225
-      },
-      {
-        "title": "Qwen 2.5 -&gt; 3 -&gt; 3.5, smallest models. Incredible improvement over the generations.",
-        "link": "https://www.reddit.com/gallery/1rjd4pv",
-        "description": "You might argue Qwen 3.5 is the best because it's 0.8B, but I'm pretty sure a significant part of that is the vision encoder and the language model itself is smaller....",
-        "published": "2026-03-03T02:26:58+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 861,
-        "comments": 123
-      },
-      {
-        "title": "Breaking : The small qwen3.5 models have been dropped",
-        "link": "https://i.redd.it/trjsrjbzlmmg1.jpeg",
-        "description": "",
-        "published": "2026-03-02T12:32:32+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 1892,
-        "comments": 306
-      },
-      {
-        "title": "FameGrid Revolution ZIB + ZIT (Lora + Hybrid Workflow)",
-        "link": "https://www.reddit.com/gallery/1rio61i",
-        "description": "",
-        "published": "2026-03-02T09:17:30+00:00",
-        "source": "r/StableDiffusion",
-        "category": "ai_launches",
-        "score": 704,
-        "comments": 108
-      },
-      {
-        "title": "Breaking : Today Qwen 3.5 small",
-        "link": "https://i.redd.it/4hhdbdn8tgmg1.jpeg",
-        "description": "",
-        "published": "2026-03-01T17:02:31+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 1628,
-        "comments": 254
-      },
-      {
-        "title": "I need to buy 5090... for games...",
-        "link": "https://i.redd.it/bxvh10juqfmg1.png",
-        "description": "workflow is in the pic here [https://civitai.com/posts/26947247](https://civitai.com/posts/26947247)...",
-        "published": "2026-03-01T14:35:54+00:00",
-        "source": "r/StableDiffusion",
-        "category": "ai_launches",
-        "score": 452,
-        "comments": 45
-      },
-      {
-        "title": "QR Code ControlNet",
-        "link": "https://i.redd.it/feymu0nnpfmg1.jpeg",
-        "description": "\nWhy has no one created a QR Monster ControlNet for any of the newer models?\n\nI feel like this was the best ControlNet. \n\nCanny and depth are just not the same.\n\n...",
-        "published": "2026-03-01T13:20:39+00:00",
-        "source": "r/StableDiffusion",
-        "category": "ai_launches",
-        "score": 1322,
-        "comments": 134
-      },
-      {
-        "title": "[CVPR 2026] ImageCritic: Correcting Inconsistencies in Generated Images!",
-        "link": "https://www.reddit.com/gallery/1rhvhmc",
-        "description": "We present ImageCritic, a reference-guided post-editing model that corrects fine-grained inconsistencies in generated images while preserving the rest of the image.\n\nCheck our project at\u00a0[https://ouya...",
-        "published": "2026-03-01T11:55:16+00:00",
-        "source": "r/StableDiffusion",
-        "category": "ai_launches",
-        "score": 314,
-        "comments": 41
-      },
-      {
-        "title": "OpenAI pivot investors love",
-        "link": "https://i.redd.it/wfho2ytml8mg1.jpeg",
-        "description": "",
-        "published": "2026-02-28T13:25:38+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 2214,
-        "comments": 102
-      },
-      {
-        "title": "[Final Update] Anima 2B Style Explorer: 20,000+ Danbooru Artists, Swipe Mode, and Uniqueness Rank",
-        "link": "https://www.reddit.com/gallery/1rh2890",
-        "description": "Thanks for the feedback and ideas on my previous posts! This is the final feature-complete release of the Style Explorer.\n\n**What\u2019s new:**\n\n* **20,000+ Danbooru Artist Previews:** Massive library expa...",
-        "published": "2026-02-28T13:08:29+00:00",
-        "source": "r/StableDiffusion",
-        "category": "ai_launches",
-        "score": 515,
-        "comments": 57
-      },
-      {
-        "title": "Back in my day, LocalLLaMa were the pioneers!",
-        "link": "https://i.redd.it/hiz4ukvg04mg1.jpeg",
-        "description": "",
-        "published": "2026-02-27T22:00:57+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 1151,
-        "comments": 202
       }
     ]
   },
-  "total_items": 41
+  "total_items": 42
 }
