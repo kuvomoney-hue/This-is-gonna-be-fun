@@ -217,8 +217,8 @@ export async function GET() {
       (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
     );
 
-    // Return top 30
-    return NextResponse.json(allVideos.slice(0, 30));
+    // Return all videos — frontend handles filtering and display
+    return NextResponse.json(allVideos);
   } catch (err) {
     console.error("[videos route]", err);
     return NextResponse.json({ error: "Failed to fetch videos" }, { status: 500 });
