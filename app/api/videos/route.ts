@@ -176,7 +176,9 @@ async function fetchYouTubeVideos(): Promise<VideoEntry[]> {
 }
 
 async function fetchXVideos(): Promise<VideoEntry[]> {
-  // Using sample X video data (real scraper needs browser automation improvements)
+  // X scraping not yet implemented — placeholder data disabled to avoid fake timestamps
+  return [];
+  // eslint-disable-next-line no-unreachable
   try {
     const dataPath = join(process.cwd(), "public", "data", "x_videos.json");
     const fileContent = await readFile(dataPath, "utf-8");
