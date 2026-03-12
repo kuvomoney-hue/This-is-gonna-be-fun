@@ -1,6 +1,6 @@
 {
-  "btc_price": 69282.79,
-  "account_total": 428.65,
+  "btc_price": 69437.92,
+  "account_total": 429.38,
   "usdt_balance": 104.46,
   "btc_balance": 0.00467918,
   "open_orders": [
@@ -85,14 +85,6 @@
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "08:13",
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 70065.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "09:32",
         "action": "LONG",
@@ -204,9 +196,17 @@
         "price": 69222.0,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": "22:41",
+        "action": "LONG",
+        "symbol": "BTCUSDT",
+        "price": 69529.0,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-12T05:33:26.664749Z"
+  "_updated": "2026-03-12T06:03:36.733981Z"
 }
