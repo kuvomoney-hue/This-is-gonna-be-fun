@@ -1,52 +1,62 @@
 # 🎬 Rendyr Weekly Digest
-*Week of February 17, 2026*
+*Week of March 06, 2026*
 
 Your weekly roundup of creative tech news, AI tools, camera gear, plugins, and industry updates.
 
 
 ## 🤖 AI Launches
 
-### [New Model: aws-neuron/optimum-neuron-cache](https://huggingface.co/aws-neuron/optimum-neuron-cache)
-Model - 0 downloads, 30 likes
-*Source: Hugging Face*
+### [My most useful OpenClaw workflow so far](https://v.redd.it/5ow61hk8lsog1)
+Hi, I just open-sourced an openclaw distro and skill so that you can give your lobster 3D search, edit, control, slice, and print 3D models, all without having to touch the printer.
 
-### [New Model: dys-asr/wav2vec2-base](https://huggingface.co/dys-asr/wav2vec2-base)
-Model - 144 downloads, 0 likes
-*Source: Hugging Face*
+Public Repo: [htt...
+*Source: r/LocalLLaMA*
 
-### [How was this done? I've experimented a lot and nothing comes close to this guys work](https://v.redd.it/duhpwcvcp3og1)
-Stickyspoodge admits to using ai in his work, and the hands and other tells in the full video show that it's clearly ai generated and not hand animated, but as far as I know no tool at the moment can ...
+### [New FLUX.2 Klein 9b models have been released.](https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv-fp8)
 *Source: r/StableDiffusion*
 
-### [Tony Soprano Unlocked - LTX 2.3 T2V](https://v.redd.it/ar76isjsuzng1)
+### [Nvidia super resolution vs seedvr2 (comfy image upscale)](https://www.reddit.com/gallery/1rrk71v)
+1x images from klein 9b fp8, t2i workflow \[1216 x 1664\]
+
+2x render time: real-time (rtx video super resolution) vs 6 secs (seedvr2 video upscaler) \[2432 x 3328\]
+
+Nvidia repo  
+[https://github.com/...
 *Source: r/StableDiffusion*
 
-### [Qwen3.5 family comparison on shared benchmarks](https://i.redd.it/krs0xrebcung1.png)
-Main takeaway: 122B, 35B, and especially 27B retain a lot of the flagship’s performance, while 2B/0.8B fall off much harder on long-context and agent categories....
+### [I was backend lead at Manus. After building agents for 2 years, I stopped using function calling entirely. Here's what I use instead.](https://www.reddit.com/r/LocalLLaMA/comments/1rrisqn/i_was_backend_lead_at_manus_after_building_agents/)
+&gt; English is not my first language. I wrote this in Chinese and translated it with AI help. The writing may have some AI flavor, but the design decisions, the production failures, and the thinking ...
+*Source: r/LocalLLaMA*
+
+### [Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show](https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/)
 *Source: r/LocalLLaMA*
 
 
 ## 📷 Camera & Gear
 
-### [The 21 Fantastic Winners of the British Wildlife Photography Awards 2026](https://petapixel.com/2026/03/09/the-21-fantastic-winners-of-the-british-wildlife-photography-awards-2026/)
-The British Wildlife Photography Awards (BWPA) winners have been revealed, showcasing Britain's very best nature and wildlife images. Photographers entered more than 12,000 photos of Britain's wonderf...
+### [Sony a7 V Tops Map Camera’s Sales Charts for Third Straight Month](https://petapixel.com/2026/03/13/sony-a7-v-tops-map-cameras-sales-charts-for-third-straight-month/)
+The Sony a7 V sits atop Map Camera's monthly digital camera sales rankings for a third straight month. The Ricoh GR IV Monochrome also had a superb debut despite its high price premium, charting just ...
 *Source: PetaPixel*
 
-### [The RodeCaster Video Core Connects up to Four Cameras into a Production](https://petapixel.com/2026/03/09/the-rodecaster-video-core-connects-up-to-four-cameras-into-a-production/)
-Rode has announced the RodeCaster Video Core, a small desktop device that allows users to connect up to four cameras to create a fully customized video production.
+### [When Science Becomes Art: The Story of Harold Edgerton’s Milk Drop Photo](https://petapixel.com/2026/03/13/when-science-becomes-art-the-story-of-harold-edgertons-milk-drop-photo/)
+Yesterday, Wikipedia's Picture of the Day was Harold "Doc" Edgerton's Milk Drop Coronet, making the famous photo an excellent subject for PetaPixel's Historical Friday feature.
 [Read More]
 *Source: PetaPixel*
 
-### [A Camera’s Dynamic Range Is Interesting but Not That Important](https://petapixel.com/2026/03/09/a-cameras-dynamic-range-is-interesting-but-not-that-important/)
-When new cameras are announced, dynamic range is often a significant part of the image quality discussion. When a camera offers particularly fantastic dynamic range, it's big news. Likewise, when a ca...
+### [Rarer than the panda: Photographing China's snub-nosed monkeys (China series: Part 1)](https://www.dpreview.com/articles/5110757326/photographing-snub-nosed-monkeys-china)
+Photo: Erez Marom
+
+
+
+This time I'd like to tell you about a trip I've been planning for over five years, and only managed to realize early this year. Every time I had planned to go, something went wro...
+*Source: Articles: Digital Photography Review (dpreview.com)*
+
+### [Meta’s New AI Image Model Doing Badly in Testing, Report Says](https://petapixel.com/2026/03/13/metas-new-ai-image-model-doing-badly-in-testing-report-says/)
+Meta said in January that it plans to spend somewhere between $115 billion and $135 billion in the pursuit of AI superintelligence, but it's hit a snag after its newest AI model is reportedly behind r...
 *Source: PetaPixel*
 
-### [Michael Bauman Wins Top Cinematography Award for ‘One Battle After Another’](https://petapixel.com/2026/03/09/michael-bauman-wins-top-cinematography-award-for-one-battle-after-another/)
-The American Society of Cinematographers hosted its 40th annual ASC Awards last night, celebrating the best achievements in cinematography over the past year. Oscar-winning cinematographer Michael Bau...
-*Source: PetaPixel*
-
-### [Apple Studio Display XDR Review: You Get What You Pay For](https://petapixel.com/2026/03/09/apple-studio-display-xdr-review-you-get-what-you-pay-for/)
-It has been seven years since Apple released its last XDR Display and in that time, monitors and what to expect from them have changed a lot. Now that we finally have a new option in the Studio Displa...
+### [1,140 Canon 400mm f/2.8 Lenses Will Search Space for Dark Matter](https://petapixel.com/2026/03/13/1140-canon-400mm-f-2-8-lenses-will-search-space-for-dark-matter/)
+The world's largest all-lens telescope, MOTHRA (Massive Optical Telephoto Hyperspectral Robotic Array), is under construction in Chile and features 1,140 Canon EF 400mm f/2.8L IS telephoto lenses arra...
 *Source: PetaPixel*
 
 
