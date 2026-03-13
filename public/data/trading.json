@@ -1,6 +1,6 @@
 {
-  "btc_price": 71834.86,
-  "account_total": 443.07,
+  "btc_price": 72086.28,
+  "account_total": 443.36,
   "usdt_balance": 359.8,
   "btc_balance": 0.00115918,
   "open_orders": [],
@@ -68,12 +68,12 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 663.62,
-    "change_pct": -0.42
+    "price": 664.29,
+    "change_pct": -0.32
   },
   "qqq": {
-    "price": 594.22,
-    "change_pct": -0.43
+    "price": 594.72,
+    "change_pct": -0.35
   },
   "signals_today": {
     "approved": 0,
@@ -114,5 +114,5 @@
     ],
     "total": 4
   },
-  "_updated": "2026-03-13T16:48:41.567953Z"
+  "_updated": "2026-03-13T17:18:53.176512Z"
 }
