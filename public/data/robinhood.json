@@ -1,7 +1,7 @@
 {
-  "equity": null,
-  "buying_power": null,
+  "equity": 250.34,
+  "buying_power": 250.34,
   "positions": [],
   "has_positions": false,
-  "_updated": "2026-03-17T22:52:54.625772Z"
+  "_updated": "2026-03-18T06:47:49.027072Z"
 }
