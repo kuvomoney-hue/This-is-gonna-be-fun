@@ -1,6 +1,6 @@
 {
-  "btc_price": 70979.48,
-  "account_total": 442.07,
+  "btc_price": 71296.04,
+  "account_total": 442.44,
   "usdt_balance": 359.8,
   "btc_balance": 0.00115918,
   "open_orders": [],
@@ -68,49 +68,17 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 663.48,
-    "change_pct": -1.01
+    "price": 663.08,
+    "change_pct": -1.07
   },
   "qqq": {
-    "price": 597.17,
-    "change_pct": -0.99
+    "price": 596.62,
+    "change_pct": -1.09
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "09:36",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 665.88,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "09:59",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 666.69,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "10:26",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 665.69,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "10:30",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 665.55,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "10:33",
         "action": "SHORT",
@@ -198,9 +166,41 @@
         "price": 71290.0,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": " \u2014 \ud83d\udd34 ",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 597.36,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:20",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 663.29,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": " \u2014 \ud83d\udcc8 ",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 596.57,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:27",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 596.32,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-18T18:59:18.470949Z"
+  "_updated": "2026-03-18T19:29:30.067484Z"
 }
