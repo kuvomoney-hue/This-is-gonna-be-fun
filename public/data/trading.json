@@ -1,6 +1,6 @@
 {
-  "btc_price": 71666.12,
-  "account_total": 442.87,
+  "btc_price": 70979.48,
+  "account_total": 442.07,
   "usdt_balance": 359.8,
   "btc_balance": 0.00115918,
   "open_orders": [],
@@ -68,33 +68,17 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 666.03,
-    "change_pct": -0.63
+    "price": 663.48,
+    "change_pct": -1.01
   },
   "qqq": {
-    "price": 599.65,
-    "change_pct": -0.58
+    "price": 597.17,
+    "change_pct": -0.99
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "08:15",
-        "action": "UNKNOWN",
-        "symbol": "SPY",
-        "price": 570.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "09:36",
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 599.17,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "09:36",
         "action": "SHORT",
@@ -166,9 +150,57 @@
         "price": 600.95,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": "11:34",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 664.69,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "11:36",
+        "action": "SHORT",
+        "symbol": "QQQ",
+        "price": 598.63,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "11:36",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 665.04,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "11:39",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 665.18,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "11:46",
+        "action": "SHORT",
+        "symbol": "BTCUSDT",
+        "price": 71407.0,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "11:54",
+        "action": "SHORT",
+        "symbol": "BTCUSDT",
+        "price": 71290.0,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
-    "total": 11
+    "total": 15
   },
-  "_updated": "2026-03-18T18:29:07.311238Z"
+  "_updated": "2026-03-18T18:59:18.470949Z"
 }
