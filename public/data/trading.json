@@ -1,6 +1,6 @@
 {
-  "btc_price": 71296.04,
-  "account_total": 442.44,
+  "btc_price": 71036.01,
+  "account_total": 442.14,
   "usdt_balance": 359.8,
   "btc_balance": 0.00115918,
   "open_orders": [],
@@ -68,89 +68,17 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 663.08,
-    "change_pct": -1.07
+    "price": 661.3,
+    "change_pct": -1.33
   },
   "qqq": {
-    "price": 596.62,
-    "change_pct": -1.09
+    "price": 594.65,
+    "change_pct": -1.41
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "10:33",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 665.8,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "10:38",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 71644.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "11:00",
-        "action": "LONG",
-        "symbol": "SPY",
-        "price": 667.17,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": " \u2014 \ud83d\udcc8 ",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 600.94,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": " \u2014 \ud83d\udd34 ",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 600.95,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "11:34",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 664.69,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "11:36",
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 598.63,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "11:36",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 665.04,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "11:39",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 665.18,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "11:46",
         "action": "SHORT",
@@ -198,9 +126,81 @@
         "price": 596.32,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": " \u2014 \ud83d\udcc8 ",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 596.48,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:32",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 662.74,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:38",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 596.22,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:39",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 596.23,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:39",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 662.47,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": " \u2014 \ud83d\udd34 ",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 595.79,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:45",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 661.86,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": " \u2014 \ud83d\udd34 ",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 595.56,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:51",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 662.13,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-18T19:29:30.067484Z"
+  "_updated": "2026-03-18T19:59:41.295394Z"
 }
