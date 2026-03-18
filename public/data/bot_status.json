@@ -3,10 +3,10 @@
   "last_signal": {
     "direction": "LONG",
     "symbol": "QQQ",
-    "price": 593.86
+    "price": 593.1
   },
-  "last_score": 8,
-  "last_decision": "APPROVED",
+  "last_score": 5,
+  "last_decision": "REJECTED",
   "filter_threshold": 60,
-  "_updated": "2026-03-18T20:29:57.889180Z"
+  "_updated": "2026-03-18T21:00:12.186662Z"
 }
