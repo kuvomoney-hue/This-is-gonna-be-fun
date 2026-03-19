@@ -1,6 +1,6 @@
 {
-  "btc_price": 69886.1,
-  "account_total": 440.81,
+  "btc_price": 69217.87,
+  "account_total": 440.03,
   "usdt_balance": 359.8,
   "btc_balance": 0.00115918,
   "open_orders": [],
@@ -68,41 +68,17 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 659.11,
-    "change_pct": -0.27
+    "price": 656.46,
+    "change_pct": -0.67
   },
   "qqq": {
-    "price": 592.43,
-    "change_pct": -0.27
+    "price": 588.97,
+    "change_pct": -0.85
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "05:02",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 658.81,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "05:03",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 658.78,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "05:19",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 658.5,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "05:21",
         "action": "SHORT",
@@ -192,15 +168,39 @@
         "verdict": "UNKNOWN"
       },
       {
-        "time": " \u2014 \ud83d\udcc8 ",
+        "time": " \u2014 \ud83d\udd34 ",
         "action": "LONG",
         "symbol": "QQQ",
         "price": 592.73,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "08:15",
+        "action": "LONG",
+        "symbol": "QQQ",
+        "price": 592.53,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "08:33",
+        "action": "SHORT",
+        "symbol": "QQQ",
+        "price": 589.96,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "08:36",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 656.81,
         "score": null,
         "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-19T15:07:43.760416Z"
+  "_updated": "2026-03-19T15:37:54.929798Z"
 }
