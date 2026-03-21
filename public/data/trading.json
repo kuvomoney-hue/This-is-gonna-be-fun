@@ -1,6 +1,6 @@
 {
-  "btc_price": 70962.26,
-  "account_total": 442.05,
+  "btc_price": 70634.33,
+  "account_total": 441.67,
   "usdt_balance": 359.8,
   "btc_balance": 0.00115918,
   "open_orders": [],
@@ -102,9 +102,17 @@
         "price": 70657.0,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": "07:49",
+        "action": "SHORT",
+        "symbol": "BTCUSDT",
+        "price": 70767.0,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
-    "total": 3
+    "total": 4
   },
-  "_updated": "2026-03-21T14:27:20.407773Z"
+  "_updated": "2026-03-21T14:57:30.593520Z"
 }
