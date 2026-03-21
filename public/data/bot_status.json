@@ -3,10 +3,10 @@
   "last_signal": {
     "direction": "SHORT",
     "symbol": "BTCUSDT",
-    "price": 70700.0
+    "price": 70649.0
   },
-  "last_score": 4,
+  "last_score": 1,
   "last_decision": "REJECTED",
   "filter_threshold": 60,
-  "_updated": "2026-03-21T07:55:03.737729Z"
+  "_updated": "2026-03-21T08:25:14.235864Z"
 }
