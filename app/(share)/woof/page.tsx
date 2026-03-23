@@ -29,12 +29,13 @@ interface WoofData {
 }
 
 interface Ingredient {
-  name: string;
+  ingredient: string;
   stock: number;
   unit: string;
+  threshold: number;
+  supplier: string;
   cost_per_unit: number;
-  total_value: number;
-  status: "OK" | "LOW" | "OUT";
+  status: "ok" | "low" | "out";
 }
 
 export default function WayofWoofPortal() {
@@ -51,9 +52,9 @@ export default function WayofWoofPortal() {
         setData(woofData);
 
         // Fetch inventory
-        const inventoryRes = await fetch("/data/inventory.json");
+        const inventoryRes = await fetch("/api/inventory/data");
         const inventoryData = await inventoryRes.json();
-        setInventory(inventoryData.ingredients || []);
+        setInventory(inventoryData.inventory || []);
       } catch (err) {
         console.error("Failed to load data:", err);
       } finally {
@@ -84,7 +85,7 @@ export default function WayofWoofPortal() {
 
   const activeMilestones = data.milestones.filter((m) => !m.complete);
   const completedMilestones = data.milestones.filter((m) => m.complete);
-  const lowStockItems = inventory.filter((i) => i.status === "LOW" || i.status === "OUT");
+  const lowStockItems = inventory.filter((i) => i.status === "low" || i.status === "out");
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white p-4 md:p-8">
@@ -213,15 +214,15 @@ export default function WayofWoofPortal() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {lowStockItems.map((item) => (
               <div
-                key={item.name}
+                key={item.ingredient}
                 className="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-4"
               >
-                <div className="text-sm font-medium mb-1">{item.name}</div>
+                <div className="text-sm font-medium mb-1">{item.ingredient}</div>
                 <div className="text-xs text-gray-400">
-                  {item.stock} {item.unit} remaining
+                  {item.stock} {item.unit} remaining (need {item.threshold}+)
                 </div>
                 <div className="text-xs text-yellow-500 mt-2">
-                  ${item.total_value.toFixed(2)} value
+                  {item.supplier}
                 </div>
               </div>
             ))}
@@ -246,25 +247,25 @@ export default function WayofWoofPortal() {
               </thead>
               <tbody className="divide-y divide-gray-800">
                 {inventory
-                  .sort((a, b) => b.total_value - a.total_value)
+                  .sort((a, b) => (b.stock * b.cost_per_unit) - (a.stock * a.cost_per_unit))
                   .map((item) => (
-                    <tr key={item.name} className="hover:bg-gray-800/50">
-                      <td className="px-4 py-3">{item.name}</td>
+                    <tr key={item.ingredient} className="hover:bg-gray-800/50">
+                      <td className="px-4 py-3">{item.ingredient}</td>
                       <td className="px-4 py-3 text-right">
                         {item.stock} {item.unit}
                       </td>
                       <td className="px-4 py-3 text-right">
-                        ${item.cost_per_unit.toFixed(2)}
+                        ${item.cost_per_unit.toFixed(2)}/kg
                       </td>
                       <td className="px-4 py-3 text-right">
-                        ${item.total_value.toFixed(2)}
+                        ${(item.stock * item.cost_per_unit / 1000).toFixed(2)}
                       </td>
                       <td className="px-4 py-3 text-center">
                         <span
                           className={`px-2 py-1 rounded text-xs font-medium ${
-                            item.status === "OK"
+                            item.status === "ok"
                               ? "bg-green-900/30 text-green-400"
-                              : item.status === "LOW"
+                              : item.status === "low"
                               ? "bg-yellow-900/30 text-yellow-400"
                               : "bg-red-900/30 text-red-400"
                           }`}

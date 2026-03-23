@@ -10,7 +10,7 @@
     "status": "ACTIVE",
     "batchesComplete": 2,
     "currentInventory": {
-      "peanutButter": 9,
+      "peanutButter": 19,
       "hotMilk": 100
     }
   },
@@ -201,5 +201,5 @@
       }
     }
   },
-  "_updated": "2026-03-01T07:01:18.131686Z"
+  "_updated": "2026-03-23T22:30:00.000000Z"
 }
