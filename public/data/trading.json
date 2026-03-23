@@ -1,6 +1,6 @@
 {
-  "btc_price": 70989.27,
-  "account_total": 439.64,
+  "btc_price": 70791.3,
+  "account_total": 438.49,
   "usdt_balance": 27.12,
   "btc_balance": 0.0058111,
   "open_orders": [
@@ -74,33 +74,17 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 658.02,
-    "change_pct": 0.69
+    "price": 655.41,
+    "change_pct": 0.29
   },
   "qqq": {
-    "price": 590.68,
-    "change_pct": 0.61
+    "price": 588.0,
+    "change_pct": 0.15
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "08:39",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 659.34,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "08:39",
-        "action": "SHORT",
-        "symbol": "QQQ",
-        "price": 591.58,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "08:43",
         "action": "SHORT",
@@ -204,9 +188,25 @@
         "price": 657.67,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:50",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 657.31,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "12:57",
+        "action": "SHORT",
+        "symbol": "QQQ",
+        "price": 588.78,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-23T19:47:38.368634Z"
+  "_updated": "2026-03-23T20:17:48.711006Z"
 }
