@@ -1,12 +1,12 @@
 {
-  "temp": 68,
-  "feels_like": 68,
+  "temp": 66,
+  "feels_like": 66,
   "condition": "Clear",
   "emoji": "\u2600\ufe0f",
   "high": 80,
   "low": 59,
-  "humidity": 71,
-  "windspeed": 8,
+  "humidity": 73,
+  "windspeed": 6,
   "location": "Los Angeles, CA",
-  "_updated": "2026-03-23T02:11:02.733090Z"
+  "_updated": "2026-03-23T02:41:12.411402Z"
 }
