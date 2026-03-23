@@ -1,16 +1,16 @@
 {
-  "btc_price": 70700.89,
-  "account_total": 441.75,
-  "usdt_balance": 359.8,
-  "btc_balance": 0.00115918,
-  "open_orders": [],
-  "recent_trades": [
+  "btc_price": 71191.96,
+  "account_total": 440.82,
+  "usdt_balance": 27.12,
+  "btc_balance": 0.0058111,
+  "open_orders": [
     {
-      "time": "2026-02-28T21:37:43.670Z",
-      "side": "buy",
-      "price": 66821.11,
-      "amount": 0.00497
-    },
+      "side": "sell",
+      "amount": 0.00468,
+      "price": 73196.95
+    }
+  ],
+  "recent_trades": [
     {
       "time": "2026-03-02T13:41:05.028Z",
       "side": "sell",
@@ -64,45 +64,27 @@
       "side": "sell",
       "price": 72829.24,
       "amount": 0.00305
+    },
+    {
+      "time": "2026-03-23T13:37:34.750Z",
+      "side": "buy",
+      "price": 71085.09,
+      "amount": 0.00468
     }
   ],
   "has_position": true,
   "spy": {
-    "price": 648.57,
-    "change_pct": -0.76
+    "price": 658.06,
+    "change_pct": 0.7
   },
   "qqq": {
-    "price": 582.06,
-    "change_pct": -0.86
+    "price": 591.02,
+    "change_pct": 0.67
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": " \u2014 Ma",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 643.3,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "01:27",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 576.73,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "01:30",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 576.3,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "01:33",
         "action": "LONG",
@@ -198,9 +180,33 @@
         "price": 592.37,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:37",
+        "action": "LONG",
+        "symbol": "BTCUSDT",
+        "price": 71065.0,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:39",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 657.77,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:45",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 657.82,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-23T13:15:12.046427Z"
+  "_updated": "2026-03-23T13:45:22.363323Z"
 }
