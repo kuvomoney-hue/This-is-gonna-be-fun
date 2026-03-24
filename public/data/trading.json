@@ -1,6 +1,6 @@
 {
-  "btc_price": 70664.07,
-  "account_total": 437.75,
+  "btc_price": 70449.76,
+  "account_total": 436.51,
   "usdt_balance": 27.12,
   "btc_balance": 0.0058111,
   "open_orders": [
@@ -74,49 +74,17 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 652.08,
-    "change_pct": -0.71
+    "price": 653.2,
+    "change_pct": -0.54
   },
   "qqq": {
-    "price": 584.54,
-    "change_pct": -0.84
+    "price": 585.03,
+    "change_pct": -0.75
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
     "signals": [
-      {
-        "time": "01:21",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 655.38,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "02:12",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 653.65,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "02:15",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 586.34,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "02:54",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 588.2,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
       {
         "time": "03:04",
         "action": "LONG",
@@ -204,9 +172,41 @@
         "price": 651.37,
         "score": null,
         "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:41",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 650.1,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:48",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 651.0,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:54",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 650.69,
+        "score": null,
+        "verdict": "UNKNOWN"
+      },
+      {
+        "time": "06:57",
+        "action": "SHORT",
+        "symbol": "SPY",
+        "price": 650.77,
+        "score": null,
+        "verdict": "UNKNOWN"
       }
     ],
     "total": 15
   },
-  "_updated": "2026-03-24T13:37:44.441463Z"
+  "_updated": "2026-03-24T14:07:55.372884Z"
 }
