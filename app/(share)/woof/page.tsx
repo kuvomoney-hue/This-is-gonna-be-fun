@@ -96,7 +96,7 @@ export default function WayofWoofPortal() {
   const totalUnits =
     data.production.currentInventory.peanutButter +
     data.production.currentInventory.hotMilk;
-  const totalSamples = Object.values(data.production.samples || {}).reduce((a, b) => a + (b || 0), 0);
+  const totalSamples = Object.values(data.production.samples || {}).reduce((a: number, b) => a + (b || 0), 0);
   const launchProgress = Math.round(
     (completedMilestones.length / data.milestones.length) * 100
   );
