@@ -11,7 +11,7 @@
     "batchesComplete": 2,
     "currentInventory": {
       "peanutButter": 19,
-      "hotMilk": 100
+      "hotMilk": 127
     }
   },
   "milestones": [
@@ -201,5 +201,5 @@
       }
     }
   },
-  "_updated": "2026-03-23T22:30:00.000000Z"
+  "_updated": "2026-03-25T05:25:00.000000Z"
 }
