@@ -1,32 +1,61 @@
 {
-  "lastUpdated": "2026-03-23",
-  "categories": [
+  "quickWins": [
+    { "id": "qw1", "text": "verify DEEL account with passport", "category": "life", "est": "15 min", "done": false },
+    { "id": "qw2", "text": "go to DMV — CA ID application", "category": "life", "est": "2-3 hrs", "done": false },
+    { "id": "qw3", "text": "update Email 1 in Omnisend bundle buyer flow", "category": "rendyr", "est": "20 min", "done": false }
+  ],
+  "activeTasks": [
+    { "id": "at1", "text": "taxes: finish categorizing expenses", "category": "life", "priority": "high", "done": false },
+    { "id": "at2", "text": "taxes: send everything to tax girl once categorized", "category": "life", "priority": "high", "done": false },
+    { "id": "at3", "text": "send Focusee test clip for clipping pipeline", "category": "rendyr", "priority": "medium", "done": false },
+    { "id": "at4", "text": "DNS migration: point rendyr.video to Vercel", "category": "rendyr", "priority": "medium", "done": false },
+    { "id": "at5", "text": "add before/after images to Email 5 (day 16) in Omnisend", "category": "rendyr", "priority": "medium", "done": false }
+  ],
+  "projects": [
     {
-      "id": "personal",
-      "name": "Personal",
-      "accent": "#f43f5e",
-      "tasks": [
-        { "id": "p1", "text": "Verify DEEL account with passport", "priority": "high", "done": false },
-        { "id": "p2", "text": "CA ID application — go to DMV", "priority": "normal", "done": false },
-        { "id": "p3", "text": "Taxes: finish categorizing expenses", "priority": "normal", "done": false },
-        { "id": "p4", "text": "Taxes: contact tax girl once everything is ready", "priority": "normal", "done": false }
+      "id": "proj1",
+      "title": "omnisend email flows",
+      "category": "rendyr",
+      "priority": "high",
+      "progress": 70,
+      "note": "new subscriber flow done. bundle buyer flow done except day 16 before/after. abandoned cart + discount seeker still to build.",
+      "subtasks": [
+        { "id": "ps1", "text": "new subscriber flow (4 emails)", "done": true },
+        { "id": "ps2", "text": "bundle buyer flow — emails 1-5", "done": true },
+        { "id": "ps3", "text": "bundle buyer flow — day 16 before/after images", "done": false },
+        { "id": "ps4", "text": "abandoned cart flow", "done": false },
+        { "id": "ps5", "text": "discount seeker flow", "done": false }
       ]
     },
     {
-      "id": "rendyr",
-      "name": "Rendyr",
-      "accent": "#22c55e",
-      "tasks": [
-        { "id": "r1", "text": "Send Focusee test clip for clipping pipeline calibration", "priority": "normal", "done": false },
-        { "id": "r2", "text": "DNS migration: point rendyr.video to Vercel", "priority": "normal", "done": false },
-        { "id": "r3", "text": "Update Email 1 copy in Omnisend with new bundle breakdown + Skool CTA", "priority": "normal", "done": false }
+      "id": "proj2",
+      "title": "clipping machine pipeline",
+      "category": "rendyr",
+      "priority": "medium",
+      "progress": 10,
+      "note": "plan is solid. waiting on Focusee test clip to calibrate crop coords and build first version.",
+      "subtasks": [
+        { "id": "ps6", "text": "send Focusee 30s test clip", "done": false },
+        { "id": "ps7", "text": "measure facecam crop coordinates", "done": false },
+        { "id": "ps8", "text": "build ffmpeg filter_complex for 9:16 stacked layout", "done": false },
+        { "id": "ps9", "text": "wire whisper transcription + claude scoring", "done": false },
+        { "id": "ps10", "text": "review dashboard in Next.js", "done": false }
       ]
     },
     {
-      "id": "woof",
-      "name": "WayofWoof",
-      "accent": "#f59e0b",
-      "tasks": []
+      "id": "proj3",
+      "title": "rendyr.video landing page",
+      "category": "rendyr",
+      "priority": "medium",
+      "progress": 90,
+      "note": "all media live on Vercel. DNS migration is the final step.",
+      "subtasks": [
+        { "id": "ps11", "text": "wire real Shopify CDN media", "done": true },
+        { "id": "ps12", "text": "creator headshots", "done": true },
+        { "id": "ps13", "text": "replace GIFs with MP4s", "done": true },
+        { "id": "ps14", "text": "tutorials GIF (4 frames)", "done": true },
+        { "id": "ps15", "text": "DNS migration: point rendyr.video to Vercel", "done": false }
+      ]
     }
   ]
 }
