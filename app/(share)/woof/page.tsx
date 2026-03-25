@@ -14,6 +14,10 @@ interface WoofData {
       peanutButter: number;
       hotMilk: number;
     };
+    samples?: {
+      malibuBlues?: number;
+      [key: string]: number | undefined;
+    };
   };
   milestones: Array<{
     id: string;
@@ -92,6 +96,7 @@ export default function WayofWoofPortal() {
   const totalUnits =
     data.production.currentInventory.peanutButter +
     data.production.currentInventory.hotMilk;
+  const totalSamples = Object.values(data.production.samples || {}).reduce((a, b) => a + (b || 0), 0);
   const launchProgress = Math.round(
     (completedMilestones.length / data.milestones.length) * 100
   );
@@ -203,16 +208,37 @@ export default function WayofWoofPortal() {
             </div>
           </div>
 
-          {/* Total Units */}
+          {/* Total Sellable */}
           <div className="rounded-2xl p-6 shadow-sm border" style={{ background: "#1a3a24", borderColor: "#1a3a24" }}>
             <div className="text-2xl mb-3">📦</div>
             <div className="text-3xl font-bold mb-1 text-white">
               {totalUnits}
             </div>
             <div className="text-xs font-medium tracking-wide uppercase" style={{ color: "#6ee7b7" }}>
-              total units ready
+              sellable units
             </div>
           </div>
+
+          {/* Samples */}
+          {totalSamples > 0 && (
+            <div className="rounded-2xl p-6 bg-white shadow-sm border col-span-2 md:col-span-1" style={{ borderColor: "#e7e5e4" }}>
+              <div className="text-2xl mb-3">🧪</div>
+              <div className="text-3xl font-bold mb-1" style={{ color: "#1c1917" }}>
+                {totalSamples}
+              </div>
+              <div className="text-xs font-medium tracking-wide uppercase mb-2" style={{ color: "#a8a29e" }}>
+                samples (not for sale)
+              </div>
+              <div className="space-y-1">
+                {Object.entries(data.production.samples || {}).map(([key, val]) => (
+                  <div key={key} className="flex justify-between text-xs" style={{ color: "#78716c" }}>
+                    <span>{key.replace(/([A-Z])/g, " $1").toLowerCase()}</span>
+                    <span className="font-medium">{val}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">

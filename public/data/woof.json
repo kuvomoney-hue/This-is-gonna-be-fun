@@ -11,7 +11,10 @@
     "batchesComplete": 2,
     "currentInventory": {
       "peanutButter": 19,
-      "hotMilk": 127
+      "hotMilk": 100
+    },
+    "samples": {
+      "malibuBlues": 27
     }
   },
   "milestones": [
