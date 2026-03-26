@@ -3,10 +3,10 @@
   "last_signal": {
     "direction": "SHORT",
     "symbol": "SPY",
-    "price": 646.0
+    "price": 645.27
   },
   "last_score": 0,
   "last_decision": "REJECTED",
   "filter_threshold": 60,
-  "_updated": "2026-03-26T19:28:00.255761Z"
+  "_updated": "2026-03-26T19:58:49.847203Z"
 }
