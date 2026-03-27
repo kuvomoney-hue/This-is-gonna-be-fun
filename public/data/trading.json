@@ -1,6 +1,6 @@
 {
-  "btc_price": 68510.38,
-  "account_total": 425.24,
+  "btc_price": 66571.59,
+  "account_total": 413.97,
   "usdt_balance": 27.12,
   "btc_balance": 0.0058111,
   "open_orders": [
@@ -74,139 +74,18 @@
   ],
   "has_position": true,
   "spy": {
-    "price": 645.09,
-    "change_pct": -1.57
+    "price": 641.57,
+    "change_pct": -0.97
   },
   "qqq": {
-    "price": 573.79,
-    "change_pct": -2.18
+    "price": 570.17,
+    "change_pct": -0.98
   },
   "signals_today": {
     "approved": 0,
     "rejected": 0,
-    "signals": [
-      {
-        "time": "03:12",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 583.25,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "04:18",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 652.06,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "04:22",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 652.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "04:36",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 651.4,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "05:04",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 581.26,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "05:49",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 650.86,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "05:51",
-        "action": "SHORT",
-        "symbol": "SPY",
-        "price": 651.09,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:08",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 69488.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:13",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 582.36,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:17",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 582.35,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:33",
-        "action": "SHORT",
-        "symbol": "BTCUSDT",
-        "price": 69270.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:45",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 582.6,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "06:45",
-        "action": "LONG",
-        "symbol": "BTCUSDT",
-        "price": 69726.0,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": "07:12",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 583.48,
-        "score": null,
-        "verdict": "UNKNOWN"
-      },
-      {
-        "time": " \u2014 \ud83d\udd34 ",
-        "action": "LONG",
-        "symbol": "QQQ",
-        "price": 583.67,
-        "score": null,
-        "verdict": "UNKNOWN"
-      }
-    ],
-    "total": 15
+    "signals": [],
+    "total": 0
   },
-  "_updated": "2026-03-27T04:43:48.415068Z"
+  "_updated": "2026-03-27T13:31:32.488271Z"
 }
