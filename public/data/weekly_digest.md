@@ -6,13 +6,17 @@ Your weekly roundup of creative tech news, AI tools, camera gear, plugins, and i
 
 ## 🤖 AI Launches
 
-### [New Model: aws-neuron/optimum-neuron-cache](https://huggingface.co/aws-neuron/optimum-neuron-cache)
-Model - 0 downloads, 30 likes
-*Source: Hugging Face*
+### [Let's Destroy the E-THOT Industry Together!](https://www.reddit.com/gallery/1s4bykp)
+I created a completely local Ethot online as an experiment.  
+I dream of a world that all ethots are all made on computers so easily that they have no value anymore. So instead people put down their p...
+*Source: r/StableDiffusion*
 
 ### [Mistral AI to release Voxtral TTS, a 3-billion-parameter text-to-speech model with open weights that the company says outperformed ElevenLabs Flash v2.5 in human preference tests. The model runs on about 3 GB of RAM, achieves 90-millisecond time-to-first-audio, supports nine languages.](https://www.reddit.com/gallery/1s46ylj)
 VentureBeat: Mistral AI just released a text-to-speech model it says beats ElevenLabs — and it's giving away the weights for free: [https://venturebeat.com/orchestration/mistral-ai-just-released-a-tex...
 *Source: r/LocalLLaMA*
+
+### [Tried to find out what's in LTX 2.3 training data - Everything here is T2V, no LoRa. So I made a short explainer video about black holes using the ones i've found so far.](https://v.redd.it/r95gsh6vydrg1)
+*Source: r/StableDiffusion*
 
 ### [Intel announced new enterprise GPU with 32GB vram](https://i.redd.it/avzccti3l8rg1.jpeg)
 If only it works well with work flow. Nvidia have CUDA, AMD have ROCM, I don't even know what Intel have aside from DirectX which everyone can use...
@@ -25,33 +29,44 @@ Bandwidth would be 608 GB/s (a little less than an NVIDIA 5070), and wattage wou
 ...
 *Source: r/LocalLLaMA*
 
-### [Made with ltx](https://v.redd.it/49yb3fopb4rg1)
- I made the video using ltx, can anybody tell me how I can improve it https://youtu.be/d6cm1oDTWLk?si=3ZYc-fhKihJnQaYF...
-*Source: r/StableDiffusion*
-
 
 ## 📷 Camera & Gear
 
-### [The Apple Mac Pro Is Dead](https://petapixel.com/2026/03/26/the-apple-mac-pro-is-dead/)
-Apple is discontinuing the Mac Pro and has no plans to offer future hardware in the Mac Pro line, the company told 9to5Mac today. The last Mac Pro was announced in 2023 and, even then, was a confusing...
-*Source: PetaPixel*
-
-### [Airline Wants a ‘Really Bad Photographer’ and it Might Be the Best Gig of the Year](https://petapixel.com/2026/03/26/airline-wants-a-really-bad-photographer-and-it-might-be-the-best-gig-of-the-year/)
-In a move that feels equal parts marketing stunt and dream assignment, Icelandair is searching for what it calls a “really bad photographer.” Not aspiring, not improving, and definitely not profession...
-*Source: PetaPixel*
-
-### [See the Ocean From a Sea Turtle’s Perspective](https://petapixel.com/2026/03/26/see-the-ocean-from-a-sea-turtles-perspective/)
-Marine biologist Dr. Nathan Robinson went viral over a decade ago for a video of him removing a straw from a sea turtle's nostril. However, Dr. Robinson is so much more than that viral moment. He has ...
-*Source: PetaPixel*
-
-### [The GR IV Monochrome Is Expensive Because the Sensor Is Hard to Source](https://petapixel.com/2026/03/26/the-gr-iv-monochrome-is-expensive-because-the-sensor-is-hard-to-source/)
-When Ricoh announced the GR IV Monochrome, many fans of the format first cheered because it was a long time coming, then cried in dismay at the cost. Many voiced opinions that it was a "cash grab," bu...
-*Source: PetaPixel*
-
-### [The Sora Embarrassment is a Reflection of OpenAI’s Juvenile Culture](https://petapixel.com/2026/03/26/the-sora-embarrassment-is-a-reflection-of-openais-juvenile-culture/)
-Sam Altman has always cut a strange figure to me; like a teenager in many ways. Even his Twitter bio, "AI is cool I guess," is a sullen and petulant remark.
+### [This Hilarious YouTube Video is a Brutal Take Down of Photography](https://petapixel.com/2026/03/27/this-hilarious-youtube-video-is-a-brutal-take-down-of-photography/)
+A YouTube video from a relatively new channel has lampooned the state of modern photography that many will find relatable.
 [Read More]
 *Source: PetaPixel*
+
+### [After Over 20 Years of Efforts, DNG Is Now the Official RAW Image Standard](https://petapixel.com/2026/03/27/after-over-20-years-of-efforts-dng-is-now-the-official-raw-image-standard/)
+In March 2004, Australian photographer Robert Edwards asked a simple but meaningful question on Rob Galbraith's now-defunct photography forums: "Could Adobe make a RAW format?" The answer was very muc...
+*Source: PetaPixel*
+
+### [Apple's Pro desktop computer is no more: the Studio is the new flagship](https://www.dpreview.com/news/5209343792/apple-mac-pro-discontinued-2026-mac-studio)
+So long, and thanks for all the FLOPs.Image: Apple
+
+
+
+Apple has discontinued the Mac Pro, removing the desktop computer from its website and telling 9to5Mac that there aren't any plans to replace it. ...
+*Source: Articles: Digital Photography Review (dpreview.com)*
+
+### [How to survive the great camera drought](https://www.dpreview.com/opinion/4505694703/how-to-survive-the-great-camera-drought)
+After a fascinating 2025, this year has started off really slowly. We're now three months into 2026 and only two cameras have so far appeared: the Ricoh GR IV Monochrome and the Panasonic ZS300.
+The P...
+*Source: Articles: Digital Photography Review (dpreview.com)*
+
+### [From forest trails to neon streets: a Viltrox 16mm F1.8 L sample gallery](https://www.dpreview.com/samples/9393444818/viltrox-16mm-f1-8-l-sample-gallery)
+When you use DPReview links to buy products, the site may earn a commission.
+
+
+
+
+
+Photo: Abby Ferguson
+
+
+
+Last month, Viltrox announced its first L-mount lens since joining the L-mount alliance in Sep...
+*Source: Articles: Digital Photography Review (dpreview.com)*
 
 
 ---
