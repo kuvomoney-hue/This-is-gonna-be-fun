@@ -230,12 +230,18 @@ export default function WayofWoofPortal() {
                 samples (not for sale)
               </div>
               <div className="space-y-1">
-                {Object.entries(data.production.samples || {}).map(([key, val]) => (
-                  <div key={key} className="flex justify-between text-xs" style={{ color: "#78716c" }}>
-                    <span>{key.replace(/([A-Z])/g, " $1").toLowerCase()}</span>
-                    <span className="font-medium">{val}</span>
-                  </div>
-                ))}
+                {Object.entries(data.production.samples || {}).map(([key, val]) => {
+                  const isDefective = key.includes("defective");
+                  return (
+                    <div key={key} className="flex justify-between text-xs items-center">
+                      <span style={{ color: isDefective ? "#dc2626" : "#78716c" }}>
+                        {key.replace(/_defective/, "").replace(/([A-Z])/g, " $1").toLowerCase()}
+                        {isDefective && <span className="ml-1 px-1.5 py-0.5 rounded text-xs" style={{ background: "#fee2e2", color: "#dc2626" }}>bad seal</span>}
+                      </span>
+                      <span className="font-medium" style={{ color: isDefective ? "#dc2626" : "#78716c" }}>{val}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}

@@ -14,7 +14,8 @@
       "hotMilk": 100
     },
     "samples": {
-      "malibuBlues": 27
+      "malibuBlues": 23,
+      "malibuBlues_defective": 6
     }
   },
   "milestones": [
