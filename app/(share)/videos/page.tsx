@@ -402,8 +402,8 @@ export default function IntelPage() {
                 : shownAds.map((ad) => (
                     <a
                       key={ad.id}
-                      href={ad.link || "#"}
-                      target={ad.link ? "_blank" : "_self"}
+                      href={ad.link || `https://www.facebook.com/ads/library/?id=${ad.id}`}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="group rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition-all duration-200 hover:shadow-[0_0_24px_rgba(99,102,241,0.12)]"
                     >
@@ -442,11 +442,9 @@ export default function IntelPage() {
                             {ad.keyword}
                           </span>
                           <span className="text-xs text-zinc-500">{ad.startDate}</span>
-                          {ad.link && (
-                            <span className="ml-auto text-xs text-indigo-400 group-hover:text-indigo-300 transition-colors">
-                              view →
-                            </span>
-                          )}
+                          <span className="ml-auto text-xs text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                            view →
+                          </span>
                         </div>
                       </div>
                     </a>
