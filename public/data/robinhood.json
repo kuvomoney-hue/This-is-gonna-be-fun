@@ -1,5 +1,5 @@
 {
-  "equity": 180.86,
+  "equity": 181.86,
   "buying_power": 83.86,
   "positions": [
     {
@@ -12,10 +12,10 @@
       "entry_time": null,
       "expiry": "2026-04-01",
       "tp_premium": 1.16,
-      "stop_premium": 0.82,
+      "stop_premium": 0.89,
       "status": "open"
     }
   ],
   "has_positions": true,
-  "_updated": "2026-03-30T18:29:33.683516Z"
+  "_updated": "2026-03-30T19:00:13.443430Z"
 }
