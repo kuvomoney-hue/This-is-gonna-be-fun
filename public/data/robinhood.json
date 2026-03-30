@@ -1,21 +1,7 @@
 {
-  "equity": 181.86,
+  "equity": 199.81,
   "buying_power": 83.86,
-  "positions": [
-    {
-      "symbol": "SPY",
-      "direction": "put",
-      "strike": 618.0,
-      "entry_premium": 0.97,
-      "current_premium": null,
-      "pnl_pct": null,
-      "entry_time": null,
-      "expiry": "2026-04-01",
-      "tp_premium": 1.16,
-      "stop_premium": 0.89,
-      "status": "open"
-    }
-  ],
-  "has_positions": true,
-  "_updated": "2026-03-30T19:00:13.443430Z"
+  "positions": [],
+  "has_positions": false,
+  "_updated": "2026-03-30T19:30:52.298504Z"
 }
