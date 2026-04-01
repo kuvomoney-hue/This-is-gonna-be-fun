@@ -1,12 +1,12 @@
 {
   "webhook_running": true,
   "last_signal": {
-    "direction": "LONG",
-    "symbol": "QQQ",
-    "price": 585.11
+    "direction": "SHORT",
+    "symbol": "SPY",
+    "price": 655.23
   },
-  "last_score": 6,
+  "last_score": 8,
   "last_decision": "REJECTED",
   "filter_threshold": 60,
-  "_updated": "2026-04-01T19:46:22.301257Z"
+  "_updated": "2026-04-01T20:16:32.707400Z"
 }
