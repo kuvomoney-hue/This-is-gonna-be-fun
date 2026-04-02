@@ -1,12 +1,12 @@
 {
   "webhook_running": true,
   "last_signal": {
-    "direction": "LONG",
+    "direction": "SHORT",
     "symbol": "BTCUSDT",
-    "price": 68342.0
+    "price": 67779.0
   },
-  "last_score": 7,
-  "last_decision": "REJECTED",
+  "last_score": 3,
+  "last_decision": "APPROVED",
   "filter_threshold": 60,
-  "_updated": "2026-04-02T00:48:29.154144Z"
+  "_updated": "2026-04-02T01:18:38.991883Z"
 }
