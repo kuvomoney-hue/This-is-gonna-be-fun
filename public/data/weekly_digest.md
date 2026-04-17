@@ -1,56 +1,66 @@
 # 🎬 Rendyr Weekly Digest
-*Week of April 07, 2026*
+*Week of April 10, 2026*
 
 Your weekly roundup of creative tech news, AI tools, camera gear, plugins, and industry updates.
 
 
 ## 🤖 AI Launches
 
-### [Please stop using AI for posts and showcasing your completely vibe coded projects](https://www.reddit.com/r/LocalLLaMA/comments/1skt002/please_stop_using_ai_for_posts_and_showcasing/)
-I get AI assisted coding, and yes I have AI **ASSIST** me. It gets to a point though, because I can't come on here without seeing a fully AI coded project, on that note how come almost every post is g...
+### [More reasons to go local: Claude is beginning to require identity verification, including an valid ID like passport or drivers license and a facial recognition scan.](https://support.claude.com/en/articles/14328960-identity-verification-on-claude)
 *Source: r/LocalLLaMA*
 
-### [LTX distilled lora 1.1 vs. 1.0 comparison](https://v.redd.it/mih3bito40vg1)
-Both videos have the exact same settings and seed, only the lora version is different. The new version 1.1 seems to produce more usable audio results, with 1.0 especially for the first sampler stage g...
-*Source: r/StableDiffusion*
+### [Qwen3.6-35B-A3B released!](https://i.redd.it/g6edjlxt0kvg1.jpeg)
+Meet Qwen3.6-35B-A3B：Now Open-Source！🚀🚀
 
-### [Update: Distilled v1.1 is live](https://www.reddit.com/r/StableDiffusion/comments/1skds12/update_distilled_v11_is_live/)
-We've pushed an LTX-2.3 update today. The Distilled model has been retrained (now v1.1) with improvements to audio quality and a slightly refined visual aesthetic. It's available on [HuggingFace](http...
-*Source: r/StableDiffusion*
+A sparse MoE model, 35B total params, 3B active. Apache 2.0 license.
 
-### [OpenClaw has 250K GitHub stars. The only reliable use case I've found is daily news digests.](https://www.reddit.com/r/LocalLLaMA/comments/1skce14/openclaw_has_250k_github_stars_the_only_reliable/)
-So I run cloud infra where people spin up Linux VMs. We made a video a while back showing how to deploy OpenClaw on an isolated VM in like 7 minutes, and it kind of took off. We've had roughly a thous...
+\- Agentic coding on par with models 10x its active size
+
+\-  Strong multimodal perceptio...
 *Source: r/LocalLLaMA*
 
-### [We have a new weight class...](https://i.redd.it/1ju0nb3lwwug1.png)
-Maybe this is the beginning of a trend! We'll see......
+### [Ernie is Absolute masterpiece](https://www.reddit.com/gallery/1smwanb)
+This is Ernie Turbo 8 steps, much better than the base model. But…finally 
+
+I used 6-8 steps &amp; Euler ancestral beta. Which turned really great &amp; fast!
+
+An unexpected gift from Baidu. The model...
+*Source: r/StableDiffusion*
+
+### [1-bit Bonsai 1.7B (290MB in size) running locally in your browser on WebGPU](https://v.redd.it/bdr33ip4sdvg1)
+Link to demo: [https://huggingface.co/spaces/webml-community/bonsai-webgpu](https://huggingface.co/spaces/webml-community/bonsai-webgpu)...
+*Source: r/LocalLLaMA*
+
+### [Gemma 4 Jailbreak System Prompt](https://www.reddit.com/r/LocalLLaMA/comments/1sm3swd/gemma_4_jailbreak_system_prompt/)
+Use the following system prompt to allow Gemma (and most open source models) to talk about anything you wish. Add or remove from the list of allowed content as needed. Derived from the GPT-OSS jailbre...
 *Source: r/LocalLLaMA*
 
 
 ## 📷 Camera & Gear
 
-### [This New Medium Format Film Camera Can Change its Frame Size on the Fly](https://petapixel.com/2026/04/14/this-new-medium-format-film-camera-can-change-its-frame-size-on-the-fly/)
-"One of the best things about medium-format photography is the variety of frame sizes available," says a new Kickstarter campaign for the VZ-6617 variable frame medium-format film camera. The camera a...
+### [Stanley Kubrick Shot These Photos on the New York Subway After Midnight in the 1940s](https://petapixel.com/2026/04/17/stanley-kubrick-shot-these-photos-on-the-new-york-subway-after-midnight-in-the-1940s/)
+Stanley Kubrick is one of the most influential movie directors of all time. But less well-known is that he started out as a photographer, working full-time for Look magazine in the 1940s. Now, a remar...
 *Source: PetaPixel*
 
-### [Songdian Signals it Wants to Be Taken Serious in the Camera Industry](https://petapixel.com/2026/04/14/songdian-signals-it-wants-to-be-taken-serious-in-the-camera-industry/)
-When Shenzen Sonida Digital Technology Co. Ltd. joined the Micro Four Thirds system in February, it was easy to wonder about the quality of Sonida's future products. However, the company has publicly ...
+### [First-Ever Film Depicting a Robot Discovered in Old Storage Chest](https://petapixel.com/2026/04/17/first-ever-film-depicting-a-robot-discovered-in-old-storage-chest/)
+A long-lost 19th-century film featuring what is believed to be the first on-screen robot has been restored after being discovered in an old trunk in Michigan.
+[Read More]
 *Source: PetaPixel*
 
-### [DJI Teases a New Drone, and it Could Be the Last to Get Approval in the US](https://petapixel.com/2026/04/14/dji-teases-a-new-drone-and-it-could-be-the-last-to-get-approval-in-the-us/)
-DJI is gearing up to launch what could be its last drones cleared for sale in the United States under new FCC regulations. Following a teaser posted to Instagram today and a wave of credible leaks, th...
-*Source: PetaPixel*
-
-### [Leica's latest limited edition camera has a store to go with it](https://www.dpreview.com/news/0655459442/leica-chicago-edition-17-camera-special-edition)
-Image: Leica
+### [Sony Creators' App tested: how well does it actually work?](https://www.dpreview.com/articles/5685365997/sony-creators-app-tested-how-well-does-it-actually-work)
+Photo: Mitchell Clark
 
 
 
-Leica is opening a new retail store and, as we've come to expect, that means it's also releasing a limited edition camera to commemorate the occasion. It's called the Chicago Edition 1...
+A camera companion app can unlock convenience and useful creative controls, provided it actually works well. Every major brand now offers at least one such app, promising remo...
 *Source: Articles: Digital Photography Review (dpreview.com)*
 
-### [Despite a Focus on Full-Frame, Sony Says APS-C Is a Growing Segment](https://petapixel.com/2026/04/14/despite-a-focus-on-full-frame-sony-says-aps-c-is-a-growing-segment/)
-Sony's full-frame Alpha cameras rightly get a lot of attention, especially among enthusiast and professional photographers and hybrid creators. However, the company tells PetaPixel it remains very com...
+### [Rode Unveils Cutting-Edge Tiny Mic Tech and New Pro Audio Solutions](https://petapixel.com/2026/04/17/rode-unveils-cutting-edge-tiny-mic-tech-and-new-pro-audio-solutions/)
+Rode, stylized RØDE, announced many new products today at NAB 2026. Headlining the announcements is a cutting-edge new microphone technology. However, Rode also unveiled new next-generation hardware a...
+*Source: PetaPixel*
+
+### [Ulanzi Launches D200X Creative Deck, a Control Hub and 8-in-1 Dock](https://petapixel.com/2026/04/17/ulanzi-launches-d200x-creative-deck-a-control-hub-and-8-in-1-dock/)
+Ulanzi has introduced the D200X Creative Deck, a next-generation control hub designed for streamers, editors, photographers, and filmmakers who want a more integrated way to manage complex creative wo...
 *Source: PetaPixel*
 
 
