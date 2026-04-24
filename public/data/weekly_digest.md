@@ -1,66 +1,54 @@
 # 🎬 Rendyr Weekly Digest
-*Week of April 10, 2026*
+*Week of April 17, 2026*
 
 Your weekly roundup of creative tech news, AI tools, camera gear, plugins, and industry updates.
 
 
 ## 🤖 AI Launches
 
-### [More reasons to go local: Claude is beginning to require identity verification, including an valid ID like passport or drivers license and a facial recognition scan.](https://support.claude.com/en/articles/14328960-identity-verification-on-claude)
+### [Anthropic admits to have made hosted models more stupid, proving the importance of open weight, local models](https://www.anthropic.com/engineering/april-23-postmortem)
+TL;DR:
+
+&gt;On March 4, we changed Claude Code's default reasoning effort from `high` to `medium` to reduce the very long latency—enough to make the UI appear frozen—some users were seeing in `high` m...
 *Source: r/LocalLLaMA*
 
-### [Qwen3.6-35B-A3B released!](https://i.redd.it/g6edjlxt0kvg1.jpeg)
-Meet Qwen3.6-35B-A3B：Now Open-Source！🚀🚀
-
-A sparse MoE model, 35B total params, 3B active. Apache 2.0 license.
-
-\- Agentic coding on par with models 10x its active size
-
-\-  Strong multimodal perceptio...
+### [Deepseek v4 people](https://i.redd.it/obqgr0phx2xg1.jpeg)
 *Source: r/LocalLLaMA*
 
-### [Ernie is Absolute masterpiece](https://www.reddit.com/gallery/1smwanb)
-This is Ernie Turbo 8 steps, much better than the base model. But…finally 
+### [Deepseek V4 Flash and Non-Flash Out on HuggingFace](https://www.reddit.com/r/LocalLLaMA/comments/1su3hdo/deepseek_v4_flash_and_nonflash_out_on_huggingface/)
+https://huggingface.co/collections/deepseek-ai/deepseek-v4...
+*Source: r/LocalLLaMA*
 
-I used 6-8 steps &amp; Euler ancestral beta. Which turned really great &amp; fast!
-
-An unexpected gift from Baidu. The model...
+### [Closed-source AI hate is understandable, but local AI has nothing that should concern AI haters](https://i.redd.it/95sla3ucm1xg1.jpeg)
+Let’s face it, AI is forbidden to be praised or used in pretty much any online community outside of AI-focused sites without mass anger and vitriol in said communities. the same old strawman takes and...
 *Source: r/StableDiffusion*
 
-### [1-bit Bonsai 1.7B (290MB in size) running locally in your browser on WebGPU](https://v.redd.it/bdr33ip4sdvg1)
-Link to demo: [https://huggingface.co/spaces/webml-community/bonsai-webgpu](https://huggingface.co/spaces/webml-community/bonsai-webgpu)...
-*Source: r/LocalLLaMA*
-
-### [Gemma 4 Jailbreak System Prompt](https://www.reddit.com/r/LocalLLaMA/comments/1sm3swd/gemma_4_jailbreak_system_prompt/)
-Use the following system prompt to allow Gemma (and most open source models) to talk about anything you wish. Add or remove from the list of allowed content as needed. Derived from the GPT-OSS jailbre...
-*Source: r/LocalLLaMA*
+### [[Workflow Included] Wan 2.2 Animate Motion Transfer: Swapped Joker with Harley Quinn in the Classic Stair Dance! 🃏✨](https://v.redd.it/zqkcjjiqjwwg1)
+Workflow and tutorial in the comments 👇...
+*Source: r/StableDiffusion*
 
 
 ## 📷 Camera & Gear
 
-### [Stanley Kubrick Shot These Photos on the New York Subway After Midnight in the 1940s](https://petapixel.com/2026/04/17/stanley-kubrick-shot-these-photos-on-the-new-york-subway-after-midnight-in-the-1940s/)
-Stanley Kubrick is one of the most influential movie directors of all time. But less well-known is that he started out as a photographer, working full-time for Look magazine in the 1940s. Now, a remar...
+### [570-Megapixel Dark Energy Camera Captures the Sombrero Galaxy](https://petapixel.com/2026/04/24/570-megapixel-dark-energy-camera-captures-the-sombrero-galaxy/)
+The 570-megapixel Dark Energy Camera turned its 4-meter telescope toward Messier 104, better known as the Sombrero Galaxy, and captured an exceptional side-on view of the galaxy, sometimes called "the...
 *Source: PetaPixel*
 
-### [First-Ever Film Depicting a Robot Discovered in Old Storage Chest](https://petapixel.com/2026/04/17/first-ever-film-depicting-a-robot-discovered-in-old-storage-chest/)
-A long-lost 19th-century film featuring what is believed to be the first on-screen robot has been restored after being discovered in an old trunk in Michigan.
+### [Save Big on a New Camera With These 20 Great Deals](https://petapixel.com/2026/04/24/save-big-on-a-new-camera-with-these-20-great-deals/)
+Spring is a time of new beginnings, including for photographers. Whether that means stepping into a first interchangeable lens camera or upgrading an existing kit, it's a good time to upgrade. With a ...
+*Source: PetaPixel*
+
+### [Night Photography Techniques From 15 Years in the Field](https://petapixel.com/2026/04/24/night-photography-techniques-from-15-years-in-the-field/)
+I still can’t believe it: 15 years of being addicted to capturing the night sky. Did you know this addiction all started with my first bear encounter?
 [Read More]
 *Source: PetaPixel*
 
-### [Sony Creators' App tested: how well does it actually work?](https://www.dpreview.com/articles/5685365997/sony-creators-app-tested-how-well-does-it-actually-work)
-Photo: Mitchell Clark
-
-
-
-A camera companion app can unlock convenience and useful creative controls, provided it actually works well. Every major brand now offers at least one such app, promising remo...
-*Source: Articles: Digital Photography Review (dpreview.com)*
-
-### [Rode Unveils Cutting-Edge Tiny Mic Tech and New Pro Audio Solutions](https://petapixel.com/2026/04/17/rode-unveils-cutting-edge-tiny-mic-tech-and-new-pro-audio-solutions/)
-Rode, stylized RØDE, announced many new products today at NAB 2026. Headlining the announcements is a cutting-edge new microphone technology. However, Rode also unveiled new next-generation hardware a...
+### [Panasonic Unveils the Most Beautiful Lumix S9 Color Yet](https://petapixel.com/2026/04/24/panasonic-unveils-the-most-beautiful-lumix-s9-color-yet/)
+Panasonic's most exciting news this week was definitely the new Lumix S 40mm f/2 lens, but there's also some news surrounding arguably the perfect camera to use with the new Lumix S 40mm f/2 prime, th...
 *Source: PetaPixel*
 
-### [Ulanzi Launches D200X Creative Deck, a Control Hub and 8-in-1 Dock](https://petapixel.com/2026/04/17/ulanzi-launches-d200x-creative-deck-a-control-hub-and-8-in-1-dock/)
-Ulanzi has introduced the D200X Creative Deck, a next-generation control hub designed for streamers, editors, photographers, and filmmakers who want a more integrated way to manage complex creative wo...
+### [Leica Celebrates Tokyo Store’s 20th Anniversary With Stunning Hammertone Camera](https://petapixel.com/2026/04/24/leica-celebrates-tokyo-stores-20th-anniversary-with-stunning-hammertone-camera/)
+Leica is celebrating the 20th anniversary of its flagship store in Ginza, Tokyo, Japan, in style. Leica Camera Japan Co., Ltd. is releasing just 100 units of a special edition Leica M-A Hammertone ana...
 *Source: PetaPixel*
 
 
