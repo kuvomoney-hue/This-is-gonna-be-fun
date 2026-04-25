@@ -1,9 +1,49 @@
 {
-  "generated_at": "2026-04-24T10:41:54.786109-07:00",
-  "period_start": "2026-04-17T17:41:49.223989+00:00",
-  "period_end": "2026-04-24T17:41:54.786207+00:00",
+  "generated_at": "2026-04-24T18:39:07.402838-07:00",
+  "period_start": "2026-04-18T01:38:59.869562+00:00",
+  "period_end": "2026-04-25T01:39:07.402866+00:00",
   "categories": {
     "camera_gear": [
+      {
+        "title": "DPReview is getting its first major redesign in over 25 years: The site you know, built for the modern web",
+        "link": "https://www.dpreview.com/site-news/2455747565/dpreview-site-redesign",
+        "description": "The DPReview homepage as it appears today.\n\n\n\nAfter more than 25 years, DPReview is getting a completely new website. Here's what you need to know.\n\nWhen DPReview first lit up the internet in 1998, th...",
+        "published": "2026-04-24T21:03:00+00:00",
+        "source": "Articles: Digital Photography Review (dpreview.com)",
+        "category": "camera_gear"
+      },
+      {
+        "title": "How Apple Filmed its Flashy MacBook Neo Video Using Handmade Props",
+        "link": "https://petapixel.com/2026/04/24/how-apple-filmed-its-flashy-macbook-neo-video-using-handmade-props/",
+        "description": "When Apple unveiled its new low-cost MacBook Neo laptop in early March, it did so with the flashy launch video seen above. While some of it is CGI, much of it has very practical roots, as Apple reveal...",
+        "published": "2026-04-24T20:04:00+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Antigravity Is Preserving Historical Sites in 3D Using its 360\u00b0 Drone",
+        "link": "https://petapixel.com/2026/04/24/antigravity-is-preserving-historical-sites-in-3d-using-its-360-drone/",
+        "description": "Antigravity has announced Project Eternal, a global initiative unveiled following the International Day for Monuments and Sites, aimed at preserving cultural heritage through advanced imaging and Gaus...",
+        "published": "2026-04-24T19:35:54+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "Godox\u2019s $249 Macro Twin Flash Is Made for Lighting Close-Up Photos",
+        "link": "https://petapixel.com/2026/04/24/godoxs-249-macro-twin-flash-is-made-for-lighting-close-up-photos/",
+        "description": "Godox has introduced the MF-T76S Macro Twin Flash, a dedicated macro lighting system designed to deliver precise, controllable illumination for close-up photography. The system is designed for photogr...",
+        "published": "2026-04-24T19:13:36+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
+      {
+        "title": "How to Buy the Limited Edition 30th Anniversary Canon PowerShot G7X III",
+        "link": "https://petapixel.com/2026/04/24/how-to-buy-the-limited-edition-30th-anniversary-canon-powershot-g7x-iii/",
+        "description": "The limited edition Canon PowerShot G7X Mark III 30th Anniversary Edition camera has begun arriving in select markets, including the United Kingdom, where it's in stock right now, and Australia, where...",
+        "published": "2026-04-24T18:52:24+00:00",
+        "source": "PetaPixel",
+        "category": "camera_gear"
+      },
       {
         "title": "570-Megapixel Dark Energy Camera Captures the Sombrero Galaxy",
         "link": "https://petapixel.com/2026/04/24/570-megapixel-dark-energy-camera-captures-the-sombrero-galaxy/",
@@ -53,43 +93,11 @@
         "category": "camera_gear"
       },
       {
-        "title": "Meta to Axe 8,000 Workers Amid AI Drive",
-        "link": "https://petapixel.com/2026/04/24/meta-to-axe-8000-workers-amid-ai-drive/",
-        "description": "Meta circulated a memo to staff yesterday (Thursday) informing them that the company plans to lay off 10 percent of its workforce in May. That's roughly 8,000 jobs. On top of that, Meta says it will n...",
-        "published": "2026-04-24T13:12:28+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
         "title": "Inside the lab quietly reinventing color film from scratch",
         "link": "https://www.dpreview.com/articles/9285639635/heres-what-goes-into-making-a-brand-new-color-film",
         "description": "Image: Harman Photo\n\n\n\nHarman is a name that, for many, is synonymous with black and white film. After all, it's the company behind the staple monochrome brands Ilford and Kentmere. However, in 2023, ...",
         "published": "2026-04-24T13:00:00+00:00",
         "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Meta Announces One Login for Facebook, Instagram, and AI Smart Glasses",
-        "link": "https://petapixel.com/2026/04/24/meta-announces-one-login-for-facebook-instagram-and-ai-smart-glasses/",
-        "description": "Meta has announced a new \"Account\" system that allows users to log in and manage their settings across Instagram, Facebook, Threads, AI smart glasses, and its other apps.\n[Read More]",
-        "published": "2026-04-24T11:50:46+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Minnesota Passes Landmark Bill to Ban AI Nudification Apps",
-        "link": "https://petapixel.com/2026/04/24/minnesota-passes-landmark-bill-to-ban-ai-nudification-apps/",
-        "description": "The Minnesota House has passed a landmark bill to ban AI nudification apps and websites that create explicit images of people, mostly women, without consent.\n[Read More]",
-        "published": "2026-04-24T11:45:47+00:00",
-        "source": "PetaPixel",
-        "category": "camera_gear"
-      },
-      {
-        "title": "Turkey Looks Set to Become Latest Country to Banish Kids From Social Media",
-        "link": "https://petapixel.com/2026/04/24/turkey-looks-set-to-become-latest-country-to-banish-kids-from-social-media/",
-        "description": "Turkey has become the latest country to pass a bill that will ban social media for young people.\n[Read More]",
-        "published": "2026-04-24T11:41:07+00:00",
-        "source": "PetaPixel",
         "category": "camera_gear"
       },
       {
@@ -155,17 +163,29 @@
         "published": "2026-04-20T13:00:00+00:00",
         "source": "Articles: Digital Photography Review (dpreview.com)",
         "category": "camera_gear"
-      },
-      {
-        "title": "GoPro reveals the pricing for its most exciting cameras in years",
-        "link": "https://www.dpreview.com/news/1577851101/gopro-mission-1-pricing-announcements",
-        "description": "Image: GoPro\n\n\n\nLast week, GoPro announced the Mission 1 series, a lineup of what the company says are \"compact cinema cameras\" with Type 1 sensors, the ability to shoot 4K/120 open gate and, on one o...",
-        "published": "2026-04-20T04:44:00+00:00",
-        "source": "Articles: Digital Photography Review (dpreview.com)",
-        "category": "camera_gear"
       }
     ],
     "ai_launches": [
+      {
+        "title": "This is where we are right now, LocalLLaMA",
+        "link": "https://i.redd.it/44f42a2n17xg1.png",
+        "description": "the future is now...",
+        "published": "2026-04-24T19:58:25+00:00",
+        "source": "r/LocalLLaMA",
+        "category": "ai_launches",
+        "score": 1065,
+        "comments": 218
+      },
+      {
+        "title": "Deepseek V4 AGI comfirmed",
+        "link": "https://i.redd.it/wex0qwlpp6xg1.jpeg",
+        "description": "",
+        "published": "2026-04-24T18:50:27+00:00",
+        "source": "r/LocalLLaMA",
+        "category": "ai_launches",
+        "score": 801,
+        "comments": 113
+      },
       {
         "title": "Anthropic admits to have made hosted models more stupid, proving the importance of open weight, local models",
         "link": "https://www.anthropic.com/engineering/april-23-postmortem",
@@ -173,8 +193,8 @@
         "published": "2026-04-24T12:33:01+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 738,
-        "comments": 150
+        "score": 1022,
+        "comments": 211
       },
       {
         "title": "Deepseek v4 people",
@@ -183,18 +203,8 @@
         "published": "2026-04-24T06:06:53+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1605,
-        "comments": 236
-      },
-      {
-        "title": "Deepseek V4 Flash and Non-Flash Out on HuggingFace",
-        "link": "https://www.reddit.com/r/LocalLLaMA/comments/1su3hdo/deepseek_v4_flash_and_nonflash_out_on_huggingface/",
-        "description": "https://huggingface.co/collections/deepseek-ai/deepseek-v4...",
-        "published": "2026-04-24T02:54:56+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 738,
-        "comments": 307
+        "score": 1864,
+        "comments": 265
       },
       {
         "title": "Closed-source AI hate is understandable, but local AI has nothing that should concern AI haters",
@@ -203,8 +213,8 @@
         "published": "2026-04-24T02:00:27+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 454,
-        "comments": 169
+        "score": 538,
+        "comments": 189
       },
       {
         "title": "[Workflow Included] Wan 2.2 Animate Motion Transfer: Swapped Joker with Harley Quinn in the Classic Stair Dance! \ud83c\udccf\u2728",
@@ -213,8 +223,8 @@
         "published": "2026-04-23T08:40:31+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 436,
-        "comments": 47
+        "score": 440,
+        "comments": 49
       },
       {
         "title": "Z image turbo Finetune of absurd reality",
@@ -223,8 +233,8 @@
         "published": "2026-04-23T01:53:03+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 605,
-        "comments": 138
+        "score": 617,
+        "comments": 141
       },
       {
         "title": "Forgive my ignorance but how is a 27B model better than 397B?",
@@ -233,7 +243,7 @@
         "published": "2026-04-22T22:52:53+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1090,
+        "score": 1101,
         "comments": 278
       },
       {
@@ -243,8 +253,8 @@
         "published": "2026-04-22T20:28:17+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 640,
-        "comments": 50
+        "score": 654,
+        "comments": 52
       },
       {
         "title": "Goonmaker workflow.",
@@ -253,8 +263,8 @@
         "published": "2026-04-22T15:40:50+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 446,
-        "comments": 63
+        "score": 448,
+        "comments": 71
       },
       {
         "title": "Qwen 3.6 27B is out",
@@ -263,8 +273,8 @@
         "published": "2026-04-22T13:09:55+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1677,
-        "comments": 598
+        "score": 1676,
+        "comments": 600
       },
       {
         "title": "When you forget to include \"Masterpiece\" in your prompt.",
@@ -273,7 +283,7 @@
         "published": "2026-04-22T01:15:10+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 812,
+        "score": 822,
         "comments": 102
       },
       {
@@ -283,8 +293,8 @@
         "published": "2026-04-21T21:54:44+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1438,
-        "comments": 415
+        "score": 1449,
+        "comments": 417
       },
       {
         "title": "Unpopular opinion but the amount of low effort AI slop is ruining the 2D art community",
@@ -293,7 +303,7 @@
         "published": "2026-04-21T15:44:41+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 435,
+        "score": 428,
         "comments": 402
       },
       {
@@ -303,8 +313,8 @@
         "published": "2026-04-21T08:51:10+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1133,
-        "comments": 189
+        "score": 1138,
+        "comments": 191
       },
       {
         "title": "Kimi K2.6 is a legit Opus 4.7 replacement",
@@ -313,8 +323,8 @@
         "published": "2026-04-21T00:54:48+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 1184,
-        "comments": 348
+        "score": 1194,
+        "comments": 351
       },
       {
         "title": "Open source CRT animation lora for ltx 2.3",
@@ -323,7 +333,7 @@
         "published": "2026-04-20T16:22:01+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 441,
+        "score": 439,
         "comments": 45
       },
       {
@@ -333,8 +343,8 @@
         "published": "2026-04-20T15:18:19+00:00",
         "source": "r/LocalLLaMA",
         "category": "ai_launches",
-        "score": 874,
-        "comments": 265
+        "score": 881,
+        "comments": 266
       },
       {
         "title": "\u2728Comfy Canvas v1.0 \u2728",
@@ -343,18 +353,8 @@
         "published": "2026-04-19T06:00:47+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 356,
+        "score": 357,
         "comments": 41
-      },
-      {
-        "title": "qwen3.6 performance jump is real, just make sure you have it properly configured",
-        "link": "https://i.redd.it/wq76z71k9wvg1.jpeg",
-        "description": "I've been running workloads that I typically only trust Opus and Codex with, and I can confirm 3.6 is really capable. Of course, it's not at the level of those models, but it's definitely crossing the...",
-        "published": "2026-04-18T06:37:54+00:00",
-        "source": "r/LocalLLaMA",
-        "category": "ai_launches",
-        "score": 760,
-        "comments": 308
       },
       {
         "title": "Coming up Tomorrow! Flux2Klein Identity transfer",
@@ -363,7 +363,7 @@
         "published": "2026-04-18T03:44:19+00:00",
         "source": "r/StableDiffusion",
         "category": "ai_launches",
-        "score": 554,
+        "score": 559,
         "comments": 117
       }
     ]

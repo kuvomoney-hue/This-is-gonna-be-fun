@@ -2,13 +2,13 @@
 
 hey everyone. starting something new here. every week or so, I'll drop a roundup of what's actually moving in the creative space. ai tools, camera gear, editing software, whatever matters if you're making things.
 
-this one covers the last three weeks (Apr 17 to Apr 24, 2026). buckle up.
+this one covers the last three weeks (Apr 18 to Apr 24, 2026). buckle up.
 
 ---
 
 ## the big shift: local ai is real now
 
-alibaba just committed to [keeping qwen open source](https://www.anthropic.com/engineering/april-23-postmortem). this matters because qwen is the thing that runs on your laptop, not in the cloud. people are running studio quality ai on macbooks and even decade old computers now.
+alibaba just committed to [keeping qwen open source](https://i.redd.it/44f42a2n17xg1.png). this matters because qwen is the thing that runs on your laptop, not in the cloud. people are running studio quality ai on macbooks and even decade old computers now.
 
 what this means for you: no subscription fees, no sending your work to someone else's servers, no waiting. the tools live on your machine.
 
